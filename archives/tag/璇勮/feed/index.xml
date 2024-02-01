@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>评论 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/%E8%AF%84%E8%AE%BA/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/评论</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Thu, 16 Feb 2023 06:13:28 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>评论 归档 - 时空之歌</title>
+	<link>/archives/tag/评论</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>评论禁止词</title>
+		<link>/archives/1090</link>
+					<comments>/archives/1090#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2023 06:13:28 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[评论]]></category>
+		<guid isPermaLink="false">http://space520k.42web.io/?p=1090</guid>
+
+					<description><![CDATA[<p>前言： 各位博主可能都遇到过有人在评论区发垃圾评论，特别烦人。 下面介绍一些反垃圾评论的方法。 方法 Akis [&#8230;]</p>
+<p><a href="/archives/1090">评论禁止词</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言：</h2>
+
+
+
+<blockquote class="wp-block-quote is-style-default">
+<p>各位博主可能都遇到过有人在评论区发垃圾评论，特别烦人。</p>
+
+
+
+<p>下面介绍一些反垃圾评论的方法。</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">方法</h2>
+
+
+
+<h3 class="wp-block-heading">Akismet插件</h3>
+
+
+
+<p>WordPress最著名的评论插件之一是反垃圾邮件工具<a href="https://www.wbolt.com/how-to-set-akismet-for-free.html" target="_blank" rel="noreferrer noopener">Akismet</a>。通过使用机器学习来识别低质量的提交并自动将其删除，它可以帮助审核您的评论。</p>
+
+
+
+<p>您可以通过将审核队列中的注释标记为垃圾邮件来提高插件的准确性。随着时间的进展，Akismet将开始使用经常出现的元素来表明评论为垃圾邮件，并将开始将它们移至垃圾桶，而无需您进行干预：</p>
+
+
+
+<figure class="wp-block-image is-resized"><img fetchpriority="high" decoding="async" src="https://static.wbolt.com/wp-content/uploads/2021/04/mark-spam-wordpress-1.png" alt="mark-spam-wordpress-1" width="344" height="159" title="mark-spam-wordpress-1"/></figure>
+
+
+
+<p><strong>主要功能：</strong></p>
+
+
+
+<ul>
+<li>查看每个评论的状态历史记录</li>
+
+
+
+<li>在评论正文中显示链接，以便您删除可疑链接</li>
+
+
+
+<li>查看每个用户的已批准评论数</li>
+
+
+
+<li>丢弃最差的评论，以免它们占用数据库中的空间</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">WP内置</h2>
+
+
+
+<p>您可以通过WordPress仪表盘，“设置”-“讨论”进行操作。</p>
+
+
+
+<p>如下图：</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/02/16/pSHWgoR.jpg" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/02/16/pSHWcw9.jpg" alt=""/></figure>
+
+
+
+<p>具体的自己设置，下面为我没置的一些禁止使用的评论关键字（大多是骂人的），希望对你有用。</p>
+
+
+
+<div  class='collapse-block shadow-sm collapse-block-transparent collapsed hide-border-left'><div class='collapse-block-title'><span class='collapse-block-title-inner'>隐藏部分</span><i class='collapse-icon fa fa-angle-down'></i></div><div class='collapse-block-body' style='display:none;'>
+
+
+
+<pre class="wp-block-code"><code>&lt;html
+&lt;/html
+&lt;body
+&lt;/body
+&lt;script
+&lt;/script
+&lt;meta
+&lt;/meta
+&lt;object
+&lt;/object
+&lt;applet
+&lt;/applet
+&lt;embed
+&lt;/embed
+脑瘫
+有病
+伪娘
+娘炮
+贱人
+猪头
+猪脑
+犊子
+婊子
+色鬼
+色逼
+杂种
+贱婢
+孬种
+脑残
+变态
+滚粗
+狗逼
+无知
+无耻
+无德
+无才无貌
+走狗
+神经
+废物
+逗逼
+麻痹
+神头
+2逼
+哈逼
+骚逼
+胎神
+贱货
+瘟丧
+笨猪
+淫荡
+猥琐
+淫
+傻逼
+二逼
+笨蛋
+狗生
+阳痿
+野种
+无能
+垃圾
+扑街
+蠢蛋
+白痴
+三八
+无赖
+蠢货
+傻蛋
+傻B
+2B
+智障
+畜生
+麦芽
+神经病
+猪
+鲁麻鸡
+低能
+禽兽
+二痴
+王八三八
+小兔崽子
+胡说八道蛮不讲理
+神经兮兮
+不得好死
+臭不要脸
+死皮赖脸
+令人发指
+狼心狗肺
+狼狈为奸
+水性杨花
+薄情寡义
+负心薄幸
+朝三暮四
+卑鄙下流
+不知廉耻
+勾心斗角
+猪狗不如
+禽兽不如
+阴险狡诈
+鼠目寸光
+贼眉鼠眼
+瓜婆娘
+卖钩子的
+妈卖粉批
+操你妈
+你他妈
+颠子
+老模炎恶言恶语
+讹言谎语黑木耳
+妈蛋
+傻b
+2b
+sb
+SB
+sB
+Sb</code></pre>
+
+
+
+</div></div>
+<p><a href="/archives/1090">评论禁止词</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1090/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

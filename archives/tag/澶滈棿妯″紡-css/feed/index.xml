@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>夜间模式 css 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F-css/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/夜间模式-css</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Tue, 03 Jan 2023 16:16:55 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>夜间模式 css 归档 - 时空之歌</title>
+	<link>/archives/tag/夜间模式-css</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>css夜间模式</title>
+		<link>/archives/75</link>
+					<comments>/archives/75#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 03 Jan 2023 16:16:55 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[夜间模式 css]]></category>
+		<category><![CDATA[网页夜间模式]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=75</guid>
+
+					<description><![CDATA[<p>晚上上网冲浪看页面都刺眼的白色，要是有手机浏览器中的夜间模式那就太好，自己找了下CSS的代码发现还是比较不错的 [&#8230;]</p>
+<p><a href="/archives/75">css夜间模式</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>晚上上网冲浪看页面都刺眼的白色，要是有手机浏览器中的夜间模式那就太好，自己找了下CSS的代码发现还是比较不错的，没有什么大问题，缺点也是有的，自己加了后后自己比较。</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<pre class="wp-block-code"><code>html,body,div,span,applet,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,th,td{background:#333333
+
+!important;color:#A0A0A0 !important;border-color:#A0A0A0
+
+!important;}input,button,textarea,select,option,optgroup{background-color:#444444
+
+!important;color:#CCCCCC !important;border-color:#A0A0A0
+
+!important;}a,a *{color:#93BCEC !important;background-color:#333333
+
+!important;}a:active,a:hover,a:active *,a:hover *{color:#1F72D0
+
+!important;background-color:#C0C0C0 !important;}</code></pre>
+<p><a href="/archives/75">css夜间模式</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/75/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

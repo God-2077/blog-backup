@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>春节 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/%E6%98%A5%E8%8A%82/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/春节</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Wed, 18 Jan 2023 14:42:10 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>春节 归档 - 时空之歌</title>
+	<link>/archives/tag/春节</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>网站添加灯笼</title>
+		<link>/archives/575</link>
+					<comments>/archives/575#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 18 Jan 2023 14:42:10 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[春节]]></category>
+		<category><![CDATA[灯笼]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=575</guid>
+
+					<description><![CDATA[<p>春节快到了，为网站挂个灯笼。</p>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>马上又是一年了，新年就要有新年的气氛，给自己的网站加一个灯笼吧！</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-1">第一步：添加额外css，代码如下：</h2>
+
+
+
+<pre class="wp-block-code"><code> /*右上角两个灯笼第一部分共二开始*/
+    .deng-box {
+    position: fixed;
+    top: -40px;
+    right: -20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 {
+    position: fixed;
+    top: -30px;
+    right: 10px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 .deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+ 
+.deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+ 
+.deng-a {
+    width: 100px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: 12px 8px 8px 10px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.deng-b {
+    width: 45px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: -2px 8px 8px 26px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.xian {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: #dc8f03;
+}
+ 
+.shui-a {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    -webkit-animation: swing 4s infinite ease-in-out;
+    -webkit-transform-origin: 50% -45px;
+    background: #ffa500;
+    border-radius: 0 0 5px 5px;
+}
+ 
+.shui-b {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #dc8f03;
+    border-radius: 50%;
+}
+ 
+.shui-c {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: #ffa500;
+    border-radius: 0 0 0 5px;
+}
+ 
+.deng:before {
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng:after {
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng-t {
+    font-family: 鍗庢枃琛屾シ, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 3.2rem;
+    color: #dc8f03;
+    font-weight: bold;
+    line-height: 85px;
+    text-align: center;
+}
+ 
+.night .deng-t,
+.night .deng-box,
+.night .deng-box1 {
+    background: transparent !important;
+}
+ 
+@-moz-keyframes swing {
+    0% {
+        -moz-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -moz-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -moz-transform: rotate(-10deg)
+    }
+}
+ 
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -webkit-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -webkit-transform: rotate(-10deg)
+    }
+}
+
+
+&lt;!--右上角两个灯笼第一部分共二结束--&gt;</code></pre>
+
+
+
+<p>WordPress用户，来到&nbsp;<kbd>后台=&gt;外观&nbsp;=&gt;自定义额外CSS&nbsp;</kbd>将上面所示代码全部加进去！</p>
+
+
+
+<h2 class="wp-block-heading">第二步：将下面的代码添加至主题的header.php文件或footer.php：</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--右上角两个灯笼第二部分共二开始--&gt;
+&lt;div class="deng-box1 denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;春&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;div class="deng-box denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;节&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ /*右上角两个灯笼第一部分共二开始*/</code></pre>
+
+
+
+<blockquote class="wp-block-quote">
+<p>转自湘铭呀！</p>
+
+
+
+<p><a href="https://xiangming.site/?p=505" target="_blank" rel="noreferrer noopener">https://xiangming.site/?p=505</a></p>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-湘铭呀！ wp-block-embed-湘铭呀！"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="IAmCfDvx6W"><a href="https://xiangming.site/?p=505">快过年了，给自己的网页加一个灯笼吧</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《快过年了，给自己的网页加一个灯笼吧》—湘铭呀！" src="https://xiangming.site/?p=505&#038;embed=true#?secret=OuYxoOihUL#?secret=IAmCfDvx6W" data-secret="IAmCfDvx6W" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+</blockquote>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/575/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

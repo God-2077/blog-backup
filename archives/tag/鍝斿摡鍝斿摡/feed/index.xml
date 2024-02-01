@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>哔哩哔哩 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/哔哩哔哩</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Sun, 29 Oct 2023 02:48:03 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>哔哩哔哩 归档 - 时空之歌</title>
+	<link>/archives/tag/哔哩哔哩</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>WordPress通过短代码插入bilibili视频</title>
+		<link>/archives/1477</link>
+					<comments>/archives/1477#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Sun, 07 May 2023 16:30:44 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[bilibili]]></category>
+		<category><![CDATA[哔哩哔哩]]></category>
+		<category><![CDATA[短代码]]></category>
+		<guid isPermaLink="false">/?p=1477</guid>
+
+					<description><![CDATA[<p>Bilibili 是国内知名的视频分享平台，上面有很多精良而又有趣的视频。一些人喜欢(比如我)把B站视频通过iframe插入网页上，但代码大长(约230个字符)。于是为了方便大家，我堤供一个在WordPress通过短代码插入bilibili视频的教程。</p>
+<p><a href="/archives/1477">WordPress通过短代码插入bilibili视频</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[<h1>前言</h1>
+<p>Bilibili 是国内知名的视频分享平台，上面有很多精良而又有趣的视频。一些人喜欢(比如我)把B站视频通过iframe插入网页上，但代码大长(约230个字符)。于是为了方便大家，我堤供一个在WordPress通过短代码插入bilibili视频的教程。</p>
+<div class='alert alert-info'><span class='alert-inner--text'>十分建议你去看看<a href="/archives/2344">《一个 WordPress 插件，用于使用短代码插入哔哩哔哩视频》</a></span></div>
+<h2>更新日志</h2>
+<ul>
+<li>2023/10/29 重写代码，修改了匹配bv号和av号规则，用法也改了</li>
+<li>2023/7/4 优化了代码，删掉了Bilibili视频高度和宽度控制，改为Bilibili视频自适应大小。</li>
+</ul>
+<h2>教程</h2>
+<h3>一、</h3>
+<p>打开WordPress根目录下<code>wp-content/themes/你正在使用的主题/functions.php</code>文件</p>
+<p><img decoding="async" src="https://s1.ax1x.com/2023/05/08/p9wBJPA.png" alt="" /></p>
+<p>或者你在仪表盘的主题文件编辑器中打开functions.php文件</p>
+<p><img decoding="async" src="https://s1.ax1x.com/2023/05/07/p9wAnds.jpg" alt="" /></p>
+<h3>二、</h3>
+<p>复制下面的代码到functions.php文件的最后处</p>
+<div  class='collapse-block shadow-sm collapse-block-transparent collapsed hide-border-left'><div class='collapse-block-title'><i class='fa fa-code'></i> <span class='collapse-block-title-inner'>code</span><i class='collapse-icon fa fa-angle-down'></i></div><div class='collapse-block-body' style='display:none;'></p>
+<p>&#8220;`<br />
+// 添加插入bilibili视频短代码<br />
+function vbilibili_shortcode( $atts, $content = null ) {</p>
+<p>   // 解析短代码中的参数<br />
+   $atts = shortcode_atts( $defaults, $atts );</p>
+<p>   // 提取$content中的所有bv号和av号<br />
+    preg_match_all(&amp;#039;/BV([a-zA-Z0-9]+)/&amp;#039;, $content, $bv_matches);<br />
+    preg_match_all(&amp;#039;/av([0-9]+)/&amp;#039;, $content, $av_matches);</p>
+<p>   // 构建iframe的HTML代码<br />
+   $iframes = &amp;#039;&amp;#039;;</p>
+<p>   // 生成bv号对应的iframe<br />
+   foreach ($bv_matches[1] as $bv) {</p>
+<p>       $iframe_url = &amp;#039;https://player.bilibili.com/player.html?bvid=&amp;#039; . $bv . &amp;#039;&amp;high_quality=1&amp;#039;;<br />
+       $iframe = &amp;#039;&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;&lt;iframe src=&quot;&amp;#039; . $iframe_url . &amp;#039;&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot; allowfullscreen=&quot;allowfullscreen&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;&amp;#039;;<br />
+       $iframes .= $iframe;<br />
+   }</p>
+<p>   // 生成av号对应的iframe<br />
+   foreach ($av_matches[1] as $av) {</p>
+<p>        // 将$av转换为整数类型<br />
+        $av = intval($av);</p>
+<p>       $iframe_url = &amp;#039;https://player.bilibili.com/player.html?aid=&amp;#039; . $av . &amp;#039;&amp;high_quality=1&amp;#039;;<br />
+       $iframe = &amp;#039;&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;&lt;iframe src=&quot;&amp;#039; . $iframe_url . &amp;#039;&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot; allowfullscreen=&quot;allowfullscreen&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;&amp;#039;;<br />
+       $iframes .= $iframe;<br />
+   }</p>
+<p>   // 返回所有iframe的HTML代码<br />
+   return $iframes;<br />
+}<br />
+add_shortcode( &amp;#039;vbilibili&amp;#039;, &amp;#039;vbilibili_shortcode&amp;#039; );<br />
+&#8220;`</p>
+<p></div></div>
+<h2>简码使用说明</h2>
+<h3>介绍</h3>
+<p>该短代码可以插入Bilibili视频。</p>
+<h3>用法</h3>
+<pre><code>[vbilibili]啥都行，只要有bv和av在这就行了[/vbilibili]</code></pre>
+<p>只要短代码包含bv号或av号就行了，可以有多个bv号和av号</p>
+<h3>参数</h3>
+<p>无</p>
+<h3>示例</h3>
+<pre><code>[vbilibili]https://www.bilibili.com/video/BV1EX4y127J9/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1EX4y127J9&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]华为能挡子弹？Mate 60 Pro 碾压 跌落 实弹测试！ - 哔哩哔哩https://www.bilibili.com/video/BV1L94y1p72w/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]BV1L94y1p72w[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]BV1L94y1p72w，https://www.bilibili.com/video/BV1RN411w7Bv/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br><div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1RN411w7Bv&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<p><a href="/archives/1477">WordPress通过短代码插入bilibili视频</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1477/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

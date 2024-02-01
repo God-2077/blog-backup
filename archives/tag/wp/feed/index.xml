@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>WP 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/wp/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/wp</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Tue, 04 Apr 2023 05:02:08 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>WP 归档 - 时空之歌</title>
+	<link>/archives/tag/wp</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>使用 CDN 后WordPress 获取访客真实 IP 方法</title>
+		<link>/archives/1355</link>
+					<comments>/archives/1355#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 04 Apr 2023 05:02:08 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[CDN]]></category>
+		<category><![CDATA[WP]]></category>
+		<guid isPermaLink="false">/?p=1355</guid>
+
+					<description><![CDATA[<p>使用 CDN 后 WordPress 为了获取访客真实 IP ，只需要在配置文件 wp-config.php  [&#8230;]</p>
+<p><a href="/archives/1355">使用 CDN 后WordPress 获取访客真实 IP 方法</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>使用 CDN 后 WordPress 为了获取访客真实 IP ，只需要在配置文件 <code>wp-config.php</code> 里添加如下代码即可：</p>
+
+
+
+<pre class="wp-block-code"><code>//防止 CDN 造成无法获取客户真实 IP 地址
+if(isset($_SERVER&#91;'HTTP_X_FORWARDED_FOR']))
+{
+    $list = explode(',',$_SERVER&#91;'HTTP_X_FORWARDED_FOR']);
+    $_SERVER&#91;'REMOTE_ADDR'] = $list&#91;0];
+}
+</code></pre>
+
+
+
+<p>这段代码可以在 PHP 中用来获取客户真实 IP 地址，即使在使用 CDN 的情况下也可以使用。它检查&nbsp;<code>HTTP_X_FORWARDED_FOR</code>&nbsp;标头，如果存在，则将其值分解成一个逗号分隔的列表，并将第一个 IP 地址作为客户端的真实 IP 地址。请注意，这种方法并不总是准确的，因为客户端可以伪造此标头，但通常情况下它是可靠的。</p>
+
+
+
+<p>或者您还可以使用以下 PHP 代码来在 WordPress 中获取访客真实 IP 地址：</p>
+
+
+
+<pre class="wp-block-code"><code>function get_real_ip_address(){
+    if (isset($_SERVER&#91;"HTTP_CF_CONNECTING_IP"])) {
+        $_SERVER&#91;'REMOTE_ADDR'] = $_SERVER&#91;"HTTP_CF_CONNECTING_IP"];
+        $_SERVER&#91;'HTTP_CLIENT_IP'] = $_SERVER&#91;"HTTP_CF_CONNECTING_IP"];
+    }
+    return $_SERVER&#91;'REMOTE_ADDR'];
+}
+</code></pre>
+
+
+
+<p>将这段代码添加到您的 WordPress 主题的 functions.php 文件中，然后在需要获取访客真实 IP 地址的地方调用&nbsp;<code>get_real_ip_address()</code>&nbsp;函数即可。</p>
+
+
+
+<div class="wp-block-argon-admonition admonition shadow-sm" style="border-left-color:#7889e8"><div class="admonition-body">以上为我在网上找到的方法，希望有用。</div></div>
+<p><a href="/archives/1355">使用 CDN 后WordPress 获取访客真实 IP 方法</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1355/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>评论禁止词</title>
+		<link>/archives/1090</link>
+					<comments>/archives/1090#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2023 06:13:28 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[评论]]></category>
+		<guid isPermaLink="false">http://space520k.42web.io/?p=1090</guid>
+
+					<description><![CDATA[<p>前言： 各位博主可能都遇到过有人在评论区发垃圾评论，特别烦人。 下面介绍一些反垃圾评论的方法。 方法 Akis [&#8230;]</p>
+<p><a href="/archives/1090">评论禁止词</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言：</h2>
+
+
+
+<blockquote class="wp-block-quote is-style-default">
+<p>各位博主可能都遇到过有人在评论区发垃圾评论，特别烦人。</p>
+
+
+
+<p>下面介绍一些反垃圾评论的方法。</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">方法</h2>
+
+
+
+<h3 class="wp-block-heading">Akismet插件</h3>
+
+
+
+<p>WordPress最著名的评论插件之一是反垃圾邮件工具<a href="https://www.wbolt.com/how-to-set-akismet-for-free.html" target="_blank" rel="noreferrer noopener">Akismet</a>。通过使用机器学习来识别低质量的提交并自动将其删除，它可以帮助审核您的评论。</p>
+
+
+
+<p>您可以通过将审核队列中的注释标记为垃圾邮件来提高插件的准确性。随着时间的进展，Akismet将开始使用经常出现的元素来表明评论为垃圾邮件，并将开始将它们移至垃圾桶，而无需您进行干预：</p>
+
+
+
+<figure class="wp-block-image is-resized"><img fetchpriority="high" decoding="async" src="https://static.wbolt.com/wp-content/uploads/2021/04/mark-spam-wordpress-1.png" alt="mark-spam-wordpress-1" width="344" height="159" title="mark-spam-wordpress-1"/></figure>
+
+
+
+<p><strong>主要功能：</strong></p>
+
+
+
+<ul>
+<li>查看每个评论的状态历史记录</li>
+
+
+
+<li>在评论正文中显示链接，以便您删除可疑链接</li>
+
+
+
+<li>查看每个用户的已批准评论数</li>
+
+
+
+<li>丢弃最差的评论，以免它们占用数据库中的空间</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">WP内置</h2>
+
+
+
+<p>您可以通过WordPress仪表盘，“设置”-“讨论”进行操作。</p>
+
+
+
+<p>如下图：</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/02/16/pSHWgoR.jpg" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/02/16/pSHWcw9.jpg" alt=""/></figure>
+
+
+
+<p>具体的自己设置，下面为我没置的一些禁止使用的评论关键字（大多是骂人的），希望对你有用。</p>
+
+
+
+<div  class='collapse-block shadow-sm collapse-block-transparent collapsed hide-border-left'><div class='collapse-block-title'><span class='collapse-block-title-inner'>隐藏部分</span><i class='collapse-icon fa fa-angle-down'></i></div><div class='collapse-block-body' style='display:none;'>
+
+
+
+<pre class="wp-block-code"><code>&lt;html
+&lt;/html
+&lt;body
+&lt;/body
+&lt;script
+&lt;/script
+&lt;meta
+&lt;/meta
+&lt;object
+&lt;/object
+&lt;applet
+&lt;/applet
+&lt;embed
+&lt;/embed
+脑瘫
+有病
+伪娘
+娘炮
+贱人
+猪头
+猪脑
+犊子
+婊子
+色鬼
+色逼
+杂种
+贱婢
+孬种
+脑残
+变态
+滚粗
+狗逼
+无知
+无耻
+无德
+无才无貌
+走狗
+神经
+废物
+逗逼
+麻痹
+神头
+2逼
+哈逼
+骚逼
+胎神
+贱货
+瘟丧
+笨猪
+淫荡
+猥琐
+淫
+傻逼
+二逼
+笨蛋
+狗生
+阳痿
+野种
+无能
+垃圾
+扑街
+蠢蛋
+白痴
+三八
+无赖
+蠢货
+傻蛋
+傻B
+2B
+智障
+畜生
+麦芽
+神经病
+猪
+鲁麻鸡
+低能
+禽兽
+二痴
+王八三八
+小兔崽子
+胡说八道蛮不讲理
+神经兮兮
+不得好死
+臭不要脸
+死皮赖脸
+令人发指
+狼心狗肺
+狼狈为奸
+水性杨花
+薄情寡义
+负心薄幸
+朝三暮四
+卑鄙下流
+不知廉耻
+勾心斗角
+猪狗不如
+禽兽不如
+阴险狡诈
+鼠目寸光
+贼眉鼠眼
+瓜婆娘
+卖钩子的
+妈卖粉批
+操你妈
+你他妈
+颠子
+老模炎恶言恶语
+讹言谎语黑木耳
+妈蛋
+傻b
+2b
+sb
+SB
+sB
+Sb</code></pre>
+
+
+
+</div></div>
+<p><a href="/archives/1090">评论禁止词</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1090/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>wordpress插件推荐</title>
+		<link>/archives/1043</link>
+					<comments>/archives/1043#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Sun, 12 Feb 2023 08:34:19 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[插件]]></category>
+		<guid isPermaLink="false">http://space520k.42web.io/?p=1043</guid>
+
+					<description><![CDATA[<p>前言 在这篇文章中，我将为大家推荐一些实用的WordPress插件。WordPress是一个功能强大的内容管理 [&#8230;]</p>
+<p><a href="/archives/1043">wordpress插件推荐</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<p>在这篇文章中，我将为大家推荐一些实用的WordPress插件。WordPress是一个功能强大的内容管理系统，但是有时候需要使用插件来扩展其功能。我将介绍我使用的插件，这些插件可以帮助您优化网站、提高用户体验、增加流量等等。无论您是新手还是经验丰富的WordPress用户，希望这些插件都会对您有所帮助。</p>
+
+
+
+<h2 class="wp-block-heading">强烈推荐插件</h2>
+
+
+
+<h3 class="wp-block-heading">Wordfence Security（安全）</h3>
+
+
+
+<p>相当于电脑上的360安全卫士，但没有360那么流氓。虽然我网站的流量少的可怜，但是装了它感觉心里很有安全感。</p>
+
+
+
+<p>Wordfence的详细设置还是有点复杂的，你可以看一下这个视频来进行一步一步地设置：<a rel="noreferrer noopener" href="https://www.bilibili.com/video/BV1BL411M7F1" target="_blank">B站：WordFence Security 教程：强大 WordPress 网站安全插件（完整设定）</a>&nbsp;。如果你觉得很麻烦可以用原来的默认设置。</p>
+
+
+
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1BL411M7F1&amp;high_quality=1" width="100%" height="600" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen"></iframe>
+
+
+
+<h3 class="wp-block-heading">WP Super Cache（缓存）</h3>
+
+
+
+<p>网上说缓存可以加快速度，尽管我用肉眼分辨不出快有多少。但网上是这么说的我就装了！</p>
+
+
+
+<p>具体的设置你可以看这个博客的教程</p>
+
+
+
+<figure class="wp-block-embed aligncenter is-type-wp-embed is-provider-bensz wp-block-embed-bensz"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="y1cF4OIow8"><a href="https://blognas.hwb0307.com/linux/docker/927">Docker系列 WordPress系列 缓存插件WP Super Cache</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《Docker系列 WordPress系列 缓存插件WP Super Cache》—Bensz" src="https://blognas.hwb0307.com/linux/docker/927/embed#?secret=6trn4jbKTy#?secret=y1cF4OIow8" data-secret="y1cF4OIow8" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">WP Githuber MD（markdown）</h3>
+
+
+
+<p>这是我们华人开发的一个可以在wordpress使用markdown语法的卡插件，必须要推荐！</p>
+
+
+
+<h3 class="wp-block-heading">External Media without Import（外链图片导入媒体库）</h3>
+
+
+
+<p>这个插件的主要功能就是把外部图片的链接放到媒体库里，而不是把图片导进媒体库里。这样可以利用图床来直接服务器的资源，对于某些人来说比如我就非常有用。</p>
+
+
+
+<p>这也是下载链接，在wordpress安装插件那是找不到的。</p>
+
+
+
+<p>我向你分享了：<a rel="noreferrer noopener" href="https://pan.huang1111.cn/s/332nHm" target="_blank">external-media-without-import.1.1.2.zip</a> 链接：<a rel="noreferrer noopener" href="https://pan.huang1111.cn/s/332nHm" target="_blank">https://pan.huang1111.cn/s/332nHm</a> 密码： space</p>
+
+
+
+<h3 class="wp-block-heading">Featured Image from URL（特色图片外链）</h3>
+
+
+
+<p>Featured Image from URL (FIFU)是一个WordPress插件，可以让用户在文章中添加外部特色图片、视频、音频等内容[1]。该插件自2015年以来已经帮助全球数千个网站节省了存储空间[1]。使用Featured Image from URL插件，用户可以直接填写图片的URL地址，而无需将其上传到媒体库中[2]。此外，该插件还支持自定义文章类型[2]。需要注意的是，有些类似的插件并不是真正意义上的外链图片做特色图片，而是将外链图片采集到博客的媒体库里并设置为特色图片[3]。</p>
+
+
+
+<h3 class="wp-block-heading"><strong>WP Mail SMTP</strong>（发送邮件）</h3>
+
+
+
+<p>这个插件可以用于解决网站自动发送邮件的应用场景，比如想<strong>监控博客的评论及回复</strong>。</p>
+
+
+
+<p>WP Mail SMTP插件通过改进和更改WordPress站点的电子邮件发送方式，重新配置了<code>wp_mail()</code>函数，以使用正确的SMTP主机凭据或是内置的SMTP邮件提供程序。</p>
+
+
+
+<p>WP Mail SMTP支持许多邮箱。我推荐大家使用微软的<a href="https://outlook.live.com/" target="_blank" rel="noreferrer noopener">outlook</a>邮箱， 你注册后就可以直接使用SMTP。</p>
+
+
+
+<p>WP Mail SMTP在你安装后就会掏出一个安装向导（英文），你照着做就是了。</p>
+
+
+
+<h3 class="wp-block-heading">easy-location  在评论下面显示评论者的IP归属地</h3>
+
+
+
+<p>就如标题所说的，在评论下面显示评论者的IP归属地。算是一个美化的插件吧！</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://pic.imgdb.cn/item/63e898ba4757feff33cb3411.webp" alt=""/></figure>
+
+
+
+<p>和<strong>External Media without Import</strong>一样，在wordpress安装插件那是找不到的。</p>
+
+
+
+<p>我向你分享了：<a href="https://pan.huang1111.cn/s/4qz3Cg" target="_blank" rel="noreferrer noopener">easy-location.zip</a> 链接：<a href="https://pan.huang1111.cn/s/4qz3Cg" target="_blank" rel="noreferrer noopener">https://pan.huang1111.cn/s/4qz3Cg</a> 密码： space</p>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full is-style-github-info-card-full" data-author="serenadegx" data-project="EasyLocation"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/serenadegx/EasyLocation" target="_blank" rel="noopener"><span class="github-info-card-name">serenadegx/EasyLocation</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h3 class="wp-block-heading">WP Statistics（统计信息插件）</h3>
+
+
+
+<p>WP Statistics统计分析结果页面清爽而直观，一眼就能看到当前网站的访客统计分析数据。插件中的模块都能单独访问，能看到更多详细数据。</p>
+
+
+
+<p>空闲的时看看这些统计数椐感觉挺有趣的。</p>
+
+
+
+<h3 class="wp-block-heading"><strong>All-in-One WP Migration</strong>（备份）</h3>
+
+
+
+<p>一个wordpress备份插件网上的好评率挺高的。</p>
+
+
+
+<h3 class="wp-block-heading">Big File Uploads（突破限制上传超大文件）</h3>
+
+
+
+<p>Big File Uploads 允许您使用 WordPress 媒体上传器将大型媒体文件直接上传到媒体库。将您的最大上传大小增加到任何值（只要您的可用磁盘空间允许）并采用<strong>文件分块上传机制</strong>以避免服务器超时错误。</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-2">按需装：功能插件</h2>
+
+
+
+<ol>
+<li>Easy Table of Contents（目录）</li>
+
+
+
+<li>Yet Another Related Posts（相关文章）</li>
+
+
+
+<li>WPS Hide Login（修改登录入口地址后缀）</li>
+
+
+
+<li>Really Simple SSL（启用 HTTPS）</li>
+
+
+
+<li>Ivory Search（可搜索到评论）</li>
+
+
+
+<li>Akismet Anti-Spam（过滤垃圾评论）</li>
+
+
+
+<li>WP-Optimize（清理）</li>
+
+
+
+<li>WPvivid Backup Plugin（备份）</li>
+</ol>
+
+
+
+<p>这些插件就按需启用吧，准备用的时候再去找同类插件里找最好的。以上只是我目前的解决方案，不一定是最优的。</p>
+
+
+
+<h2 class="wp-block-heading">不推荐的插件（黑名单）</h2>
+
+
+
+<ol>
+<li>Jetpack（官方）</li>
+
+
+
+<li>Autoptimize（优化）</li>
+
+
+
+<li>UpdraftPlus（备份）</li>
+
+
+
+<li>Comment Reply Email Notification（收到回复邮件提醒）</li>
+
+
+
+<li>OSS Upload（阿里云 OSS）</li>
+</ol>
+
+
+
+<p>这些插件不装就是， 一个比一个坑。</p>
+<p><a href="/archives/1043">wordpress插件推荐</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1043/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>JavaScript网页特效</title>
+		<link>/archives/652</link>
+					<comments>/archives/652#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Fri, 20 Jan 2023 08:24:15 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=652</guid>
+
+					<description><![CDATA[<p>1. 韩小韩 1.1 博客添加梅花API接口 接口地址https://api.vvhan.com/api/me [&#8230;]</p>
+<p><a href="/archives/652">JavaScript网页特效</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-argon-alert alert" style="background-color:#7889e8"><span class="alert-inner--icon"><i class="fa fa-info-circle"></i></span><span class="alert-inner--text">本文所有资源来自网上，</span></div>
+
+
+
+<h2 class="wp-block-heading">1. 韩小韩</h2>
+
+
+
+<h3 class="wp-block-heading">1.1 博客添加梅花API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/meihua<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/meihua</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://api.vvhan.com/api/meihua'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/meihua.json'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9MNV.png" alt="" width="344" height="610"/></figure>
+
+
+
+<h3 class="wp-block-heading">1.2 博客添加春节灯笼API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/denglong<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例（旧）：<br>https://api.vvhan.com/api/denglong<br>请求示例（新）：<br>https://api.vvhan.com/api/denglong2</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>// 旧
+&lt;script src="https://api.vvhan.com/api/denglong"&gt;&lt;/script&gt;
+// 新
+&lt;script src="https://api.vvhan.com/api/denglong2"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>// 旧
+&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/denglong.json"&gt;&lt;/script&gt;
+// 新
+&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/denglong2.json"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9KA0.png" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">1.3 满屏雪花下雪API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/snow<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/snow</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://api.vvhan.com/api/snow'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/snow.json'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9n7q.png" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">1.4 HTML的svg透明波浪特效API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/bolang<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/bolang</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://api.vvhan.com/api/bolang"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/bolang.json"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9VXj.png" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">1.5 网站添加樱花效果API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/yinghua<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/yinghua</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://api.vvhan.com/api/yinghua"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/yinghua.json"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9mBn.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">2. 鼠标点击爆炸烟花特效</h2>
+
+
+
+<h3 class="wp-block-heading">调用实例</h3>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--鼠标点击爆炸五颜六色特效--&gt;
+&lt;canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"&gt; 
+&lt;/canvas&gt;
+&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/anime.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/fireworks.js"&gt;&lt;/script&gt;
+&lt;!--end--&gt;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading">示例图</h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9A1g.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9EcQ.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+ <blockquote class="wp-embedded-content" data-secret="rvbOKAa26Z"><a href="http://space520.42web.io/word/2023/652/">JavaScript网页特效</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《JavaScript网页特效》—Space520" src="http://space520.42web.io/word/2023/652/embed/#?secret=rgYW0Z3j6v#?secret=rvbOKAa26Z" data-secret="rvbOKAa26Z" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+<p><a href="/archives/652">JavaScript网页特效</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/652/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WP迁备份插件  (All-in-One WP Migration)</title>
+		<link>/archives/615</link>
+					<comments>/archives/615#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 19 Jan 2023 05:38:25 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[备份]]></category>
+		<category><![CDATA[迁站]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=615</guid>
+
+					<description><![CDATA[<p>中文名：一站式WP迁移 备份位置：WP目录/wp-content/ai1wm-backups/*.wpress [&#8230;]</p>
+<p><a href="/archives/615">WP迁备份插件  (All-in-One WP Migration)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>中文名：一站式WP迁移</p>
+
+
+
+<p>备份位置：WP目录/wp-content/ai1wm-backups/*.wpress</p>
+
+
+
+<h2 class="wp-block-heading" id="description-header">描述</h2>
+
+
+
+<p>多合一WP Migration于2013年推出，被超过6000万个网站使用，是WordPress最值得信赖和利用的插件之一，可以绝对轻松地移动网站。</p>
+
+
+
+<p>多合一WP迁移专为非技术用户而构建，加载了新手友好的功能，可让您在几乎没有技术知识或经验的情况下迁移WordPress网站。</p>
+
+
+
+<p>准备好迁移您的网站了吗？它像 1、2、3 一样快速简便：</p>
+
+
+
+<ol>
+<li>安装多合一WP迁移插件。</li>
+
+
+
+<li>点击导出按钮将您的数据库、媒体文件、插件和主题捆绑到一个整洁的文件中。</li>
+
+
+
+<li>在新网站的WordPress仪表板中使用易于使用的“拖放”功能在新位置解压缩文件。</li>
+</ol>
+
+
+
+<p>遵循这三个简单的步骤，您的网站将以最小的压力和<strong>零停机时间</strong>在其新位置上线！</p>
+
+
+
+<p>使多合一WP迁移广受喜爱的一项功能（超过6，000个5星用户评论）是安装插件的技术要求很简单。</p>
+
+
+
+<p>如果您的WordPress版本在3.3和6.0之间，PHP版本在5.3和8.1.12之间，那么一切都很好。多合一WP迁移还支持所有版本的MySQL和MariaDB。</p>
+
+
+
+<p><strong>功能聚焦：</strong></p>
+
+
+
+<ul>
+<li>支持自定义上传、插件、主题文件夹等。</li>
+
+
+
+<li>提供 50 多种语言翻译 – 包括日语。</li>
+
+
+
+<li>残障人士无障碍（符合WCAG 2.1 AA级）</li>
+
+
+
+<li>对主机或操作系统没有限制。</li>
+
+
+
+<li>支持广泛的托管服务提供商 —&nbsp;<a href="https://help.servmask.com/knowledgebase/supported-hosting-providers/">单击此处查看受支持提供商的完整列表。</a></li>
+
+
+
+<li>一长串<a href="https://servmask.com/products">高级扩展</a>，让您能够执行更多操作。</li>
+
+
+
+<li>移动设备兼容。</li>
+
+
+
+<li>在导入过程中智能且完美地自动替换网站网址。</li>
+
+
+
+<li>全面的产品支持。</li>
+
+
+
+<li>使用<a href="https://traktor.servmask.com/">Traktor Web</a>在线浏览WPRESS文件</li>
+
+
+
+<li>使用<a href="https://traktor.wp-migration.com/">Traktor桌面</a>提取计算机上的WPRESS文件</li>
+
+
+
+<li>还有更多！</li>
+</ul>
+
+
+
+<p>以下是使用多合一WP迁移的其他原因&#8230;</p>
+
+
+
+<p><strong>受到政府和大公司的信任：</strong></p>
+
+
+
+<p>许多企业客户、政府组织和大学使用、喜爱和信任多合一 WP 迁移。以下是一些：波音，美国宇航局，大众，IBM，哈佛大学，斯坦福大学，乐高，宝洁，Automattic，加利福尼亚州，夏威夷州。<br>多合一WP迁移的广泛采用和使用表明该插件对于几乎任何网站迁移需求的安全性<strong>，可靠性和适应性</strong>。</p>
+
+
+
+<p><strong>完全兼容性和支持：</strong></p>
+
+
+
+<p>多合一WP迁移已经过广泛测试，并确认与大多数WordPress插件和主题兼容。<br>这意味着当您安装和使用多合一WP迁移时，您不会遇到跨插件兼容性问题，这些问题可能会减慢，错误或破坏您的WordPress网站。<br>事实上，多合一WP Migration已与多个主题/插件供应商合作，将他们的主题/插件作为一个单一的，易于使用的，易于安装的软件包与我们一起分发。<br>这些供应商信任我们和我们的插件，为客户提供可靠的产品交付、支持、迁移和备份。</p>
+
+
+
+<p><strong>支持的云存储：</strong></p>
+
+
+
+<p>多合一WP迁移支持并与顶级云存储服务无缝同步。<br>该插件预装在AWS，Google Compute Cloud和Microsoft Azure上运行的所有Bitnami WordPress站点上。</p>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-plugin-directory wp-block-embed-plugin-directory"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="4PuM8Sdy07"><a href="https://wordpress.org/plugins/all-in-one-wp-migration/">All-in-One WP Migration</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;All-in-One WP Migration&#8221; &#8212; Plugin Directory" src="https://wordpress.org/plugins/all-in-one-wp-migration/embed/#?secret=xeeGp6vLsl#?secret=4PuM8Sdy07" data-secret="4PuM8Sdy07" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<div class="wp-block-file"><a id="wp-block-file--media-9313bca7-2ded-429c-8455-3960ee54e66a" href="http://space520.42web.io/wp-content/uploads/2023/01/all-in-one-wp-migration.7.70.zip">all-in-one-wp-migration.7.70</a><a href="http://space520.42web.io/wp-content/uploads/2023/01/all-in-one-wp-migration.7.70.zip" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-9313bca7-2ded-429c-8455-3960ee54e66a">下载</a></div>
+<p><a href="/archives/615">WP迁备份插件  (All-in-One WP Migration)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/615/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>网站添加灯笼</title>
+		<link>/archives/575</link>
+					<comments>/archives/575#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 18 Jan 2023 14:42:10 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[春节]]></category>
+		<category><![CDATA[灯笼]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=575</guid>
+
+					<description><![CDATA[<p>春节快到了，为网站挂个灯笼。</p>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>马上又是一年了，新年就要有新年的气氛，给自己的网站加一个灯笼吧！</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-1">第一步：添加额外css，代码如下：</h2>
+
+
+
+<pre class="wp-block-code"><code> /*右上角两个灯笼第一部分共二开始*/
+    .deng-box {
+    position: fixed;
+    top: -40px;
+    right: -20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 {
+    position: fixed;
+    top: -30px;
+    right: 10px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 .deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+ 
+.deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+ 
+.deng-a {
+    width: 100px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: 12px 8px 8px 10px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.deng-b {
+    width: 45px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: -2px 8px 8px 26px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.xian {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: #dc8f03;
+}
+ 
+.shui-a {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    -webkit-animation: swing 4s infinite ease-in-out;
+    -webkit-transform-origin: 50% -45px;
+    background: #ffa500;
+    border-radius: 0 0 5px 5px;
+}
+ 
+.shui-b {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #dc8f03;
+    border-radius: 50%;
+}
+ 
+.shui-c {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: #ffa500;
+    border-radius: 0 0 0 5px;
+}
+ 
+.deng:before {
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng:after {
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng-t {
+    font-family: 鍗庢枃琛屾シ, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 3.2rem;
+    color: #dc8f03;
+    font-weight: bold;
+    line-height: 85px;
+    text-align: center;
+}
+ 
+.night .deng-t,
+.night .deng-box,
+.night .deng-box1 {
+    background: transparent !important;
+}
+ 
+@-moz-keyframes swing {
+    0% {
+        -moz-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -moz-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -moz-transform: rotate(-10deg)
+    }
+}
+ 
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -webkit-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -webkit-transform: rotate(-10deg)
+    }
+}
+
+
+&lt;!--右上角两个灯笼第一部分共二结束--&gt;</code></pre>
+
+
+
+<p>WordPress用户，来到&nbsp;<kbd>后台=&gt;外观&nbsp;=&gt;自定义额外CSS&nbsp;</kbd>将上面所示代码全部加进去！</p>
+
+
+
+<h2 class="wp-block-heading">第二步：将下面的代码添加至主题的header.php文件或footer.php：</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--右上角两个灯笼第二部分共二开始--&gt;
+&lt;div class="deng-box1 denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;春&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;div class="deng-box denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;节&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ /*右上角两个灯笼第一部分共二开始*/</code></pre>
+
+
+
+<blockquote class="wp-block-quote">
+<p>转自湘铭呀！</p>
+
+
+
+<p><a href="https://xiangming.site/?p=505" target="_blank" rel="noreferrer noopener">https://xiangming.site/?p=505</a></p>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-湘铭呀！ wp-block-embed-湘铭呀！"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="IAmCfDvx6W"><a href="https://xiangming.site/?p=505">快过年了，给自己的网页加一个灯笼吧</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《快过年了，给自己的网页加一个灯笼吧》—湘铭呀！" src="https://xiangming.site/?p=505&#038;embed=true#?secret=OuYxoOihUL#?secret=IAmCfDvx6W" data-secret="IAmCfDvx6W" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+</blockquote>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/575/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Argon主题博客美化</title>
+		<link>/archives/507</link>
+					<comments>/archives/507#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2023 06:29:34 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=507</guid>
+
+					<description><![CDATA[<p>前言 常言道：工欲善其事必先利其器，在发表文章前，美化博客，使其利于自己的观看与管理极其重要，所以我四处搜寻， [&#8230;]</p>
+<p><a href="/archives/507">Argon主题博客美化</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[<div class="wp-block-image is-style-default">
+<figure class="aligncenter size-large"><img decoding="async" src="https://s1.ax1x.com/2023/03/06/ppVR0kF.jpg" alt=""/></figure></div>
+
+
+<h2 class="wp-block-heading" id="header-id-1">前言</h2>
+
+
+
+<p>常言道：工欲善其事必先利其器，在发表文章前，美化博客，使其利于自己的观看与管理极其重要，所以我四处搜寻，得到了以下美化代码。</p>
+
+
+
+<p>但是，有时候我们走得太远，会忘了为什么出发。希望阅览本文章的人不要忘记初心，想想一开始为什么搭建博客。我相信大部分朋友都是为了记录自己学习笔记，生活故事。</p>
+
+
+
+<p>所以，有时候博客美化过度会适得其反，望各位仔细斟酌，莫要使自己的博客变成了花架子，好的文章才是博客之本，立足之根。</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-2">主题资源</h2>
+
+
+
+<p>链接：<a rel="noreferrer noopener" href="https://pan.baidu.com/s/1yyA-m_h_wku7n3qzK-eYEQ?pwd=echo" target="_blank">https://pan.baidu.com/s/1yyA-m_h_wku7n3qzK-eYEQ?pwd=echo</a>&nbsp;</p>
+
+
+
+<p>提取码：echo</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-3">我的博客美化 JSON</h2>
+
+
+
+<p><strong><code>注意</code>：可复制一键导入</strong></p>
+
+
+
+<p><strong>别忘记在主题设置页面修改头像、背景以及底部信息等设置哦</strong></p>
+
+
+
+<pre id="jInREkTAMPZFZ5nFQoFPJvIigVM1XreZ" class="wp-block-code"><code>{"argon_theme_color":"#5e72e4","argon_theme_color_hex_preview":"#5e72e4","argon_show_customize_theme_color_picker":true,"argon_enable_immersion_color":"true","argon_darkmode_autoswitch":"time","argon_enable_amoled_dark":"false","argon_card_radius":"15","argon_card_shadow":"default","argon_page_layout":"double","argon_article_list_waterflow":"2","argon_article_list_layout":"1","argon_font":"serif","argon_assets_path":"sourcegcdn","argon_custom_assets_path":"","argon_wp_path":"/","argon_dateformat":"YMD","argon_enable_headroom":"true","argon_toolbar_title":"Echo","argon_toolbar_icon":"","argon_toolbar_icon_link":" ","argon_toolbar_blur":"true","argon_banner_title":"Echo‘s blog","argon_banner_subtitle":"Banner 副标题","argon_banner_size":"fullscreen","argon_page_background_banner_style":"transparent","argon_show_toolbar_mask":true,"argon_banner_background_url":"--bing--","argon_banner_background_color_type":"shape-primary","argon_banner_background_hide_shapes":true,"argon_enable_banner_title_typing_effect":"true","argon_banner_typing_effect_interval":"100","argon_page_background_url":"https://yy.liveout.cn/background/wallhaven-yxjm57_1920x1080.png","argon_page_background_dark_url":"https://yy.liveout.cn/background/wallhaven-6dqjdl_1920x1080.png","argon_page_background_opacity":"1","argon_sidebar_banner_title":"左侧栏标题","argon_sidebar_banner_subtitle":"左侧栏子标题（格言）","argon_sidebar_auther_name":"Echo","argon_sidebar_auther_image":"https://yy.liveout.cn/photo/photo1.png","argon_sidebar_author_description":"左侧栏作者简介","argon_sidebar_announcement":"","argon_fab_show_settings_button":"false","argon_fab_show_darkmode_button":"true","argon_fab_show_gotocomment_button":"false","argon_seo_description":"网站描述 (Description Meta 标签)","argon_seo_keywords":"搜索引擎关键词（Keywords Meta 标签）","argon_article_meta":"time|categories|views","argon_show_readingtime":"true","argon_reading_speed":"580","argon_reading_speed_en":"80","argon_reading_speed_code":"10","argon_show_thumbnail_in_banner_in_content_page":"false","argon_first_image_as_thumbnail_by_default":"true","argon_reference_list_title":"参考","argon_show_sharebtn":"true","argon_show_headindex_number":"false","argon_donate_qrcode_url":"https://www.liveout.cn/wp-content/uploads/2022/10/wechat1.jpg","argon_additional_content_after_post":"文末附加内容","argon_related_post":"category,tag","argon_related_post_sort_orderby":"meta_value_num","argon_related_post_sort_order":"DESC","argon_related_post_limit":"10","argon_article_header_style":"article-header-style-2","argon_outdated_info_time_type":"createdtime","argon_outdated_info_days":"1","argon_outdated_info_tip_type":"inpost","argon_outdated_info_tip_content":"本文最后更新于%modify_date_delta% 天前，其中的信息可能已经过时，如有错误请发送邮件到big_fw@foxmail.com","argon_archives_timeline_show_month":"true","argon_archives_timeline_url":"https://www.liveout.cn/pigeonhole/","argon_footer_html":"&lt;style&gt;\n/* 核心样式 */\n.github-badge {\ndisplay: inline-block;\nborder-radius: 4px;\ntext-shadow: none;\nfont-size: 13.1px;\ncolor: #fff;\nline-height: 15px;\nmargin-bottom: 5px;\nfont-family: \"Open Sans\", sans-serif;\n}\n.github-badge .badge-subject {\ndisplay: inline-block;\nbackground-color: #4d4d4d;\npadding: 4px 4px 4px 6px;\nborder-top-left-radius: 4px;\nborder-bottom-left-radius: 4px;\nfont-family: \"Open Sans\", sans-serif;\n}\n.github-badge .badge-value {\ndisplay: inline-block;\npadding: 4px 6px 4px 4px;\nborder-top-right-radius: 4px;\nborder-bottom-right-radius: 4px;\nfont-family: \"Open Sans\", sans-serif;\n}\n.github-badge-big {\ndisplay: inline-block;\nborder-radius: 6px;\ntext-shadow: none;\nfont-size: 14.1px;\ncolor: #fff;\nline-height: 18px;\nmargin-bottom: 7px;\n}\n.github-badge-big .badge-subject {\ndisplay: inline-block;\nbackground-color: #4d4d4d;\npadding: 4px 4px 4px 6px;\nborder-top-left-radius: 4px;\nborder-bottom-left-radius: 4px;\n}\n.github-badge-big .badge-value {\ndisplay: inline-block;\npadding: 4px 6px 4px 4px;\nborder-top-right-radius: 4px;\nborder-bottom-right-radius: 4px;\n}\n.bg-orange {\nbackground-color: #ec8a64 !important;\n}\n.bg-red {\nbackground-color: #cb7574 !important;\n}\n.bg-apricots {\nbackground-color: #f7c280 !important;\n}\n.bg-casein {\nbackground-color: #dfe291 !important;\n}\n.bg-shallots {\nbackground-color: #97c3c6 !important;\n}\n.bg-ogling {\nbackground-color: #95c7e0 !important;\n}\n.bg-haze {\nbackground-color: #9aaec7 !important;\n}\n.bg-mountain-terrier {\nbackground-color: #99a5cd !important;\n}\n&lt;/style&gt;\n \n&lt;div class=\"github-badge-big\"&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;i class=\"fa fa-id-card\"&gt;&lt;/i&gt; 备案号 &lt;/span\n&gt;&lt;span class=\"badge-value bg-orange\"&gt;\n&lt;a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" one-link-mark=\"yes\"\n&gt;苏ICP备0000000000号&lt;/a\n&gt;\n|\n&lt;a\nhref=\"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode= 32072202010255\"\ntarget=\"_blank\"\none-link-mark=\"yes\"\n&gt;苏公网安备 00000000000000号&lt;/a\n&gt;&lt;/span\n&gt;\n&lt;/div&gt;\n\n \n&lt;div class=\"github-badge\"&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;img src=\"https://www.liveout.cn/wp-content/uploads/2022/10/又拍云_logo4.png\" height=\"20\" width=\"20\"/&gt;&lt;/i&gt; CDN&lt;/span\n&gt;&lt;span class=\"badge-value bg-shallots\"\n&gt;&lt;a href=\"\" target=\"_blank\" one-link-mark=\"yes\"&gt;&lt;/a\n&gt;&lt;a\nhref=\"https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral\"\ntarget=\"_blank\"\none-link-mark=\"yes\"\n&gt;Upyun&lt;/a\n&gt;&lt;/span\n&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;i class=\"fa fa-wordpress\"&gt;&lt;/i&gt; Powered&lt;/span\n&gt;&lt;span class=\"badge-value bg-green\"\n&gt;&lt;a href=\"https://cn.wordpress.org/\" target=\"_blank\" one-link-mark=\"yes\"\n&gt;WordPress&lt;/a\n&gt;&lt;/span\n&gt;\n&lt;/div&gt;\n&lt;div class=\"github-badge-big\"&gt;\n&lt;span class=\"badge-subject\"&gt;Copyright &lt;/span\n&gt;&lt;span class=\"badge-value bg-red\"&gt;\n2022-2022\n&lt;i class=\"fa fa-copyright\"&gt;&lt;/i&gt; Echo&lt;/span\n&gt;\n&lt;/script&gt;\n&lt;/div&gt;\n&lt;div class=\"github-badge-big\"&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;i class=\"fa fa-clock-o\"&gt;&lt;/i&gt; Running Time&lt;/span\n&gt;&lt;span class=\"badge-value bg-apricots\"\n&gt;&lt;span id=\"blog_running_days\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt;\ndays\n&lt;span id=\"blog_running_hours\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt; H\n&lt;span id=\"blog_running_mins\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt; M\n&lt;span id=\"blog_running_secs\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt;\nS&lt;/span\n&gt;\n &lt;script no-pjax=\"\"&gt;\nvar blog_running_days = document.getElementById(\"blog_running_days\");\nvar blog_running_hours = document.getElementById(\"blog_running_hours\");\nvar blog_running_mins = document.getElementById(\"blog_running_mins\");\nvar blog_running_secs = document.getElementById(\"blog_running_secs\");\nfunction refresh_blog_running_time() {\nvar time = new Date() - new Date(2020, 0,0, 0, 0, 0);\nvar d = parseInt(time / 24 / 60 / 60 / 1000);\nvar h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);\nvar m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);\nvar s = parseInt((time % (60 * 1000)) / 1000);\nblog_running_days.innerHTML = d;\nblog_running_hours.innerHTML = h;\nblog_running_mins.innerHTML = m;\nblog_running_secs.innerHTML = s;\n}\nrefresh_blog_running_time();\nif (typeof bottomTimeIntervalHasSet == \"undefined\") {\nvar bottomTimeIntervalHasSet = true;\nsetInterval(function () {\nrefresh_blog_running_time();\n}, 500);\n}\n&lt;/script&gt;\n","argon_enable_code_highlight":"true","argon_code_theme":"vs2015","argon_code_highlight_hide_linenumber":"true","argon_code_highlight_break_line":"false","argon_code_highlight_transparent_linenumber":"false","argon_math_render":"none","argon_mathjax_cdn_url":"//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js","argon_mathjax_v2_cdn_url":"//cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-AMS_HTML","argon_katex_cdn_url":"//cdn.jsdelivr.net/npm/katex@0.11.1/dist/","argon_enable_lazyload":"true","argon_lazyload_threshold":"800","argon_lazyload_effect":"fadeIn","argon_lazyload_loading_style":"1","argon_enable_fancybox":"true","argon_enable_zoomify":"false","argon_zoomify_duration":"200","argon_zoomify_easing":"cubic-bezier(0.4,0,0,1)","argon_zoomify_scale":"0.9","argon_enable_pangu":"article","argon_custom_html_head":"","argon_custom_html_foot":"&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css\"&gt;\n&lt;script src=\"https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js\"&gt;&lt;/script&gt;\n&lt;script src=\"https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js\"&gt;&lt;/script&gt;\n \n&lt;meting-js \n    server=\"netease\" \n    type=\"playlist\" \n    id=\"7373135320\"\n    fixed=\"true\" \n    mini=\"true\"\n    order=\"list\"\n    loop=\"all\"\n    preload=\"auto\"\n    list-folded=\"true\"\n    lrc-type=\"0\"\n&gt;\n&lt;/meting-js&gt;\n\n\n","argon_enable_smoothscroll_type":"1_pulse","argon_enable_into_article_animation":"true","argon_disable_pjax_animation":"false","argon_comment_pagination_type":"page","argon_comment_emotion_keyboard":"true","argon_hide_name_email_site_input":"false","argon_comment_need_captcha":"false","argon_get_captcha_by_ajax":"false","argon_comment_allow_markdown":"true","argon_comment_allow_editing":"true","argon_comment_allow_privatemode":"true","argon_comment_allow_mailnotice":"true","argon_comment_mailnotice_checkbox_checked":true,"argon_comment_enable_qq_avatar":"true","argon_comment_avatar_vcenter":"false","argon_who_can_visit_comment_edit_history":"commentsender","argon_enable_comment_pinning":"true","argon_enable_comment_upvote":"true","argon_comment_ua":"platform,browser","argon_show_comment_parent_info":"true","argon_fold_long_comments":"true","argon_gravatar_cdn":"gravatar.pho.ink/avatar/","argon_text_gravatar":"true","argon_enable_search_filters":"true","argon_search_filters_type":"*post,*page,shuoshuo","argon_pjax_disabled":"false","argon_hide_categories":"","argon_enable_login_css":"true","argon_home_show_shuoshuo":"false","argon_fold_long_shuoshuo":"true","argon_enable_timezone_fix":"false","argon_hide_shortcode_in_preview":"true","argon_trim_words_count":"0","argon_enable_mobile_scale":"false","argon_disable_googlefont":"false","argon_disable_codeblock_style":"false","argon_update_source":"github","argon_hide_footer_author":"true"}</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-4">年度倒计时显示 (左侧栏)</h2>
+
+
+
+<p><strong>在左侧栏里添加工具 —— 简码，复制一下代码粘贴进去</strong></p>
+
+
+
+<pre id="9wpvTWrkx69wEObbXnpoK390ceS9xEXV" class="wp-block-code"><code>&lt;div class="progress-wrapper" style="padding: 0"&gt;
+&lt;div class="progress-info"&gt;
+&lt;div class="progress-label"&gt;
+&lt;span id="yearprogress_yearname"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id="yearprogress_text_container" class="progress-percentage"&gt;
+&lt;span id="yearprogress_progresstext"&gt;&lt;/span&gt;
+&lt;span id="yearprogress_progresstext_full"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+&lt;div id="yearprogress_progressbar" class="progress-bar bg-primary"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script no-pjax=""&gt;
+function yearprogress_refresh() {
+let year = new Date().getFullYear();
+$("#yearprogress_yearname").text(year);
+let from = new Date(year, 0, 1, 0, 0, 0);
+let to = new Date(year, 11, 31, 23, 59, 59);
+let now = new Date();
+let progress = (((now - from) / (to - from + 1)) * 100).toFixed(7);
+let progressshort = (((now - from) / (to - from + 1)) * 100).toFixed(2);
+$("#yearprogress_progresstext").text(progressshort + "%");
+$("#yearprogress_progresstext_full").text(progress + "%");
+$("#yearprogress_progressbar").css("width", progress + "%");
+}
+yearprogress_refresh();
+if (typeof yearProgressIntervalHasSet == "undefined") {
+var yearProgressIntervalHasSet = true;
+setInterval(function () {
+yearprogress_refresh();
+}, 500);
+}
+&lt;/script&gt;
+&lt;style&gt;
+#yearprogress_text_container {
+width: 100%;
+height: 22px;
+overflow: hidden;
+user-select: none;
+}
+#yearprogress_text_container &gt; span {
+transition: all 0.3s ease;
+display: block;
+}
+#yearprogress_text_container:hover &gt; span {
+transform: translateY(-20px);
+}
+&lt;/style&gt;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-5">音乐播放功能</h2>
+
+
+
+<p><strong><code>server="netease"</code>&nbsp;指定音乐平台为网易云，<code>type="song"</code>&nbsp;指单曲类型，<code>id="7373135320"</code>&nbsp;为音乐的 id（这里的 id 为打开音乐歌单，网址显示的 id）</strong></p>
+
+
+
+<p><strong>开启吸底模式&nbsp;<code>fixed="true"</code>, 开启迷你模式</strong>&nbsp;<code>mini="true"</code>, 随机播放&nbsp;<code>order="random"</code>, 关闭底部歌词&nbsp;<code>lrc-type="0"</code></p>
+
+
+
+<p><strong><code>注意</code></strong>：id 需要为自己创建的歌单，不能为我喜欢的音乐；server 可以改自己用的音乐平台，如 netease (网易云)、tencent (QQ 音乐)</p>
+
+
+
+<p>具体参数设置点击此链接：<a href="https://yy.liveout.cn/article/Learn/front-end/aplayer%E5%8F%82%E6%95%B0.png" target="_blank" rel="noreferrer noopener">https://yy.liveout.cn/article/Learn/front-end/aplayer%E5%8F%82%E6%95%B0.png</a></p>
+
+
+
+<p>Aplayer 播放器官网文档：<a href="https://ace520.github.io/blog/post/2020/05/26/aplayer/">APlayer HTML5 音乐播放器 | ACE-BLOG (ace520.github.io)</a></p>
+
+
+
+<pre id="lICd6MqMJnJmzHyPmxLsBO7vwCYI33pD" class="wp-block-code"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"&gt;&lt;/script&gt;
+ 
+&lt;meting-js 
+    server="netease" 
+    type="playlist" 
+    id="7360465359"
+    fixed="true" 
+    mini="true"
+    order="random"
+    loop="all"
+    preload="auto"
+    list-folded="false"&gt;
+&lt;/meting-js&gt;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-6">动态背景</h2>
+
+
+
+<p><strong>背景可以通过更改 url 链接设置为自己的动态视频</strong>，<em>尽量不要太大，否则别人访问时会刷新许久</em></p>
+
+
+
+<p><code>注意</code><strong>视频链接已过期，可更换为自己的链接</strong></p>
+
+
+
+<pre id="XygN24oH4bIpDTOCB55lQzMQTUFLFB60" class="wp-block-code"><code>&lt;video
+src="https://new.gcxstudio.cn/wp-content/uploads/2022/03/daymode.mp4" /*白天动态视频链接*/
+class="bg-video bg-video-day"
+autoplay=""
+loop="loop"
+muted=""
+&gt;&lt;/video&gt;
+&lt;video
+src="https://new.gcxstudio.cn/wp-content/uploads/2022/03/darkmode.webm" /*夜间动态视频链接*/
+class="bg-video bg-video-night"
+autoplay=""
+loop="loop"
+muted=""
+&gt;&lt;/video&gt;
+&lt;style&gt;
+video.bg-video {
+position: fixed;
+z-index: -1;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+pointer-events: none;
+}
+html.darkmode video.bg-video.bg-video-day {
+opacity: 0;
+}
+html.darkmode video.bg-video.bg-video-night {
+opacity: 1;
+}
+video.bg-video.bg-video-day {
+opacity: 1;
+}
+video.bg-video.bg-video-night {
+opacity: 0;
+}
+#banner,
+#banner .shape {
+background: transparent !important;
+}
+* {
+font-family: "Comfortaa", "Open Sans", -apple-system, system-ui,
+BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+}
+&lt;/style&gt;
+&lt;script
+src="https://api.gcxstudio.cn/odometer/odometer.min.js"
+integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw="
+crossorigin="anonymous"
+&gt;&lt;/script&gt;
+ 
+ 
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+ 
+&lt;div id='aplayer'&gt;&lt;/div&gt;
+ 
+ 
+</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-7">虚拟人物 (看板娘)</h2>
+
+
+
+<p>以下代码选择一项复制即可，效果不同，自行选择</p>
+
+
+
+<p>具体文章：<a href="https://github.com/stevenjoezhang/live2d-widget">stevenjoezhang/live2d-widget: 把萌萌哒的看板娘抱回家 (ノ≧∇≦) ノ | Live2D widget for web platform (github.com)</a></p>
+
+
+
+<ol>
+<li></li>
+</ol>
+
+
+
+<pre id="iGBitY7SpC6lAtrrVRjdxlzhivZjtrYz" class="wp-block-code"><code>&lt;script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<ol start="2">
+<li><strong>其中 jsonpath: 后面的链接可按自己爱好更改，选择别的虚拟人物</strong></li>
+</ol>
+
+
+
+<pre id="KxpidaV9T7QJJIVyIfo7PIsbDW9DE1FJ" class="wp-block-code"><code>&lt;script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    L2Dwidget.init({
+        "model": {
+　　　　　　　//jsonpath控制显示那个小萝莉模型，
+            //(切换模型需要改动)
+//              "https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
+            jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 75,  //小萝莉的宽度
+            "height": 150, //小萝莉的高度
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+&lt;/script&gt;
+ 
+   /*   小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json
+      萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
+      白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
+      黑猫： https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
+      小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
+      小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json
+      初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json
+      圣职者妹妹：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
+      茶杯犬：https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+      绿毛妹妹：https://unpkg.com/live2d-widget-model-tsumiki@1.0.5/assets/tsumiki.model.json
+      金龟子妹妹：https://unpkg.com/live2d-widget-model-unitychan@1.0.5/assets/unitychan.model.json
+      https:&#47;&#47;unpkg.com/live2d-widget-model-nito@1.0.5/assets/nito.model.json
+      https://unpkg.com/live2d-widget-model-ni-j@1.0.5/assets/ni-j.model.json
+      小阿狸： https://unpkg.com/live2d-widget-model-nico@1.0.5/assets/nico.model.json
+      https://unpkg.com/live2d-widget-model-nietzche@1.0.5/assets/nietzche.model.json
+      https://unpkg.com/live2d-widget-model-nipsilon@1.0.5/assets/nipsilon.model.json
+      女学生： https://unpkg.com/live2d-widget-model-hibiki@1.0.5/assets/hibiki.model.json */</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-8">网站访问数据 (左侧栏)</h2>
+
+
+
+<ol>
+<li><strong>进入 WordPress，点击插件，搜索并且下载 Wp Statistics</strong></li>
+
+
+
+<li><strong>外观 —— 小工具 —— 站点额外内容 —— 旧版小工具 —— 统计</strong></li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://yy.liveout.cn/article/Learn/front-end/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1.jpg" alt="" width="1158" height="567"/></figure>
+
+
+
+<h2 class="wp-block-heading" id="header-id-9">网站底部信息</h2>
+
+
+
+<h3 class="wp-block-heading" id="header-id-10">CSS (样式表)</h3>
+
+
+
+<pre id="cAZupwE4vMV9YjsHwkrlppjktEQpgDKM" class="wp-block-code"><code>&lt;style&gt;
+/* 核心样式 */
+.github-badge {
+display: inline-block;
+border-radius: 4px;
+text-shadow: none;
+font-size: 13.1px;
+color: #fff;
+line-height: 15px;
+margin-bottom: 5px;
+font-family: "Open Sans", sans-serif;
+}
+.github-badge .badge-subject {
+display: inline-block;
+background-color: #4d4d4d;
+padding: 4px 4px 4px 6px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+font-family: "Open Sans", sans-serif;
+}
+.github-badge .badge-value {
+display: inline-block;
+padding: 4px 6px 4px 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+font-family: "Open Sans", sans-serif;
+}
+.github-badge-big {
+display: inline-block;
+border-radius: 6px;
+text-shadow: none;
+font-size: 14.1px;
+color: #fff;
+line-height: 18px;
+margin-bottom: 7px;
+}
+.github-badge-big .badge-subject {
+display: inline-block;
+background-color: #4d4d4d;
+padding: 4px 4px 4px 6px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+.github-badge-big .badge-value {
+display: inline-block;
+padding: 4px 6px 4px 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.bg-orange {
+background-color: #ec8a64 !important;
+}
+.bg-red {
+background-color: #cb7574 !important;
+}
+.bg-apricots {
+background-color: #f7c280 !important;
+}
+.bg-casein {
+background-color: #dfe291 !important;
+}
+.bg-shallots {
+background-color: #97c3c6 !important;
+}
+.bg-ogling {
+background-color: #95c7e0 !important;
+}
+.bg-haze {
+background-color: #9aaec7 !important;
+}
+.bg-mountain-terrier {
+background-color: #99a5cd !important;
+}
+&lt;/style&gt;
+ </code></pre>
+
+
+
+<h3 class="wp-block-heading" id="header-id-11">HTML (底部信息)</h3>
+
+
+
+<pre id="wjPp5PN46Hd9SjtlEz6OhJfcLr9y85Uu" class="wp-block-code"><code>&lt;div class="github-badge-big"&gt;
+&lt;span class="badge-subject"&gt;&lt;i class="fa fa-id-card"&gt;&lt;/i&gt; 备案号 &lt;/span
+&gt;&lt;span class="badge-value bg-orange"&gt;
+&lt;a href="https://beian.miit.gov.cn/" target="_blank" one-link-mark="yes"
+&gt;苏ICP备2022020194号&lt;/a
+&gt;
+|
+&lt;a
+href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode= 32072202010255"
+target="_blank"
+one-link-mark="yes"
+&gt;苏公网安备 32072202010255号&lt;/a
+&gt;&lt;/span
+&gt;
+&lt;/div&gt;
+&lt;div class="github-badge-big"&gt;
+&lt;span class="badge-subject"&gt;Copyright &lt;/span
+&gt;&lt;span class="badge-value bg-red"&gt;
+2022-2022
+&lt;i class="fa fa-copyright"&gt;&lt;/i&gt; Echo&lt;/span
+&gt;
+&lt;/script&gt;
+&lt;/div&gt;
+ 
+&lt;div class="github-badge"&gt;
+&lt;span class="badge-subject"&gt;&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt; Powered&lt;/span
+&gt;&lt;span class="badge-value bg-green"
+&gt;&lt;a href="https://cn.wordpress.org/" target="_blank" one-link-mark="yes"
+&gt;WordPress&lt;/a
+&gt;&lt;/span
+&gt;
+&lt;/div&gt;
+&lt;div class="github-badge-big"&gt;
+&lt;span class="badge-subject"&gt;&lt;i class="fa fa-clock-o"&gt;&lt;/i&gt; Running Time&lt;/span
+&gt;&lt;span class="badge-value bg-apricots"
+&gt;&lt;span id="blog_running_days" class="odometer odometer-auto-theme"&gt;&lt;/span&gt;
+days
+&lt;span id="blog_running_hours" class="odometer odometer-auto-theme"&gt;&lt;/span&gt; H
+&lt;span id="blog_running_mins" class="odometer odometer-auto-theme"&gt;&lt;/span&gt; M
+&lt;span id="blog_running_secs" class="odometer odometer-auto-theme"&gt;&lt;/span&gt;
+S&lt;/span
+&gt;
+ </code></pre>
+
+
+
+<h3 class="wp-block-heading" id="header-id-12">JavaScript（网站运行时间脚本）</h3>
+
+
+
+<p><strong><code>注意</code>：new Date (year, month, date, hrs, min, sec) 按给定的参数创建 日期对象</strong></p>
+
+
+
+<p><strong>其中 month 的值域为 0～11，0 代表 1 月，11 表代表 12 月；所以你输入的月份需要为自己真正月份的前一个月</strong></p>
+
+
+
+<pre id="qePcVGivf5r2vGEZRBh11n8Nb6McrxVe" class="wp-block-code"><code>&lt;script no-pjax=""&gt;
+var blog_running_days = document.getElementById("blog_running_days");
+var blog_running_hours = document.getElementById("blog_running_hours");
+var blog_running_mins = document.getElementById("blog_running_mins");
+var blog_running_secs = document.getElementById("blog_running_secs");
+function refresh_blog_running_time() {
+var time = new Date() - new Date(2022, 5, 31, 0, 0, 0); /*此处日期的月份改为自己真正月份的前一个月*/
+var d = parseInt(time / 24 / 60 / 60 / 1000);
+var h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);
+var m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);
+var s = parseInt((time % (60 * 1000)) / 1000);
+blog_running_days.innerHTML = d;
+blog_running_hours.innerHTML = h;
+blog_running_mins.innerHTML = m;
+blog_running_secs.innerHTML = s;
+}
+refresh_blog_running_time();
+if (typeof bottomTimeIntervalHasSet == "undefined") {
+var bottomTimeIntervalHasSet = true;
+setInterval(function () {
+refresh_blog_running_time();
+}, 500);
+}
+&lt;/script&gt;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-13">字体，鼠标等特效</h2>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-bensz wp-block-embed-bensz"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="WncgyEFhNZ"><a href="https://blognas.hwb0307.com/linux/docker/744">Docker系列 WordPress系列 特效</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《Docker系列 WordPress系列 特效》—Bensz" src="https://blognas.hwb0307.com/linux/docker/744/embed#?secret=b1MmKbfhUq#?secret=WncgyEFhNZ" data-secret="WncgyEFhNZ" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading" id="header-id-14">教程视频</h2>
+
+
+
+<p><a href="https://www.bilibili.com/video/BV1qM411k7NK/?spm_id_from=333.999.0.0">个人博客网站美化代码使用<em>哔哩哔哩</em>&nbsp;bilibili</a></p>
+
+
+
+<p><a href="https://www.bilibili.com/video/BV1uW4y1E7wA/?spm_id_from=333.999.0.0">个人博客网站 (WordPress) 基本使用<em>哔哩哔哩</em>&nbsp;bilibili</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-15">相关链接</h2>
+
+
+
+<p><strong>本文所涉及的代码出自以下博客文章，十分感谢下面各位大佬的分享</strong></p>
+
+
+
+<p><strong>关于 Argon 主题 更多美化内容文章</strong>：&nbsp;<a href="https://new.gcxstudio.cn/archives/argon-theme-settings/">Argon 主题的美化设置 – Gong_cx (gcxstudio.cn)</a></p>
+
+
+
+<p><strong>关于博客中添加音乐插件</strong>:&nbsp;<a href="https://echeverra.cn/aplayer" target="_blank" rel="noreferrer noopener">https://echeverra.cn/aplayer</a></p>
+
+
+
+<p><strong>Argon 主题 GitHub 地址</strong>：<a href="https://github.com/solstice23/argon-theme">solstice23/argon-theme:&nbsp;&nbsp;Argon – 一个轻盈、简洁的 WordPress 主题 (github.com)</a></p>
+
+
+
+<p><strong>Argon 主题制作人博客</strong>：<a href="https://solstice23.top/">solstice23 – Blog</a></p>
+
+
+
+<p><strong>Argon 主题使用文档</strong>：<a href="https://argon-docs-old.solstice23.top/">首页 – Argon Theme Docs (solstice23.top)</a></p>
+
+
+
+<p>作者：<a href="https://www.liveout.cn/" target="_blank" rel="noreferrer noopener">Echo</a></p>
+
+
+
+<p>原文地址：<a href="https://www.liveout.cn/argon_beauty/" target="_blank" rel="noreferrer noopener">Argon主题博客美化 – Echo （在新窗口中打开）</a></p>
+<p><a href="/archives/507">Argon主题博客美化</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/507/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

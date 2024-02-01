@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>其它归档 - 时空之歌</title>
+	<atom:link href="/archives/category/%E5%A8%B1%E4%B9%90/%E5%85%B6%E5%AE%83/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/category/娱乐/其它</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Thu, 16 Feb 2023 15:46:31 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>其它归档 - 时空之歌</title>
+	<link>/archives/category/娱乐/其它</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Github奇怪项目</title>
+		<link>/archives/1107</link>
+					<comments>/archives/1107#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2023 15:46:31 +0000</pubDate>
+				<category><![CDATA[其它]]></category>
+		<category><![CDATA[娱乐]]></category>
+		<category><![CDATA[github]]></category>
+		<guid isPermaLink="false">http://space520k.42web.io/?p=1107</guid>
+
+					<description><![CDATA[<p>分享几个Github上奇奇怪怪的项目 鱼了个鱼： 程序员延寿指南： 各种语言的免费编程书： 真正的无代码，兄弟 [&#8230;]</p>
+<p><a href="/archives/1107">Github奇怪项目</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>分享几个Github上奇奇怪怪的项目</p>
+
+
+
+<h2 class="wp-block-heading">鱼了个鱼：</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="liyupi" data-project="yulegeyu"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/liyupi/yulegeyu" target="_blank" rel="noopener"><span class="github-info-card-name">liyupi/yulegeyu</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">程序员延寿指南：</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="geekan" data-project="HowToLiveLonger"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/geekan/HowToLiveLonger" target="_blank" rel="noopener"><span class="github-info-card-name">geekan/HowToLiveLonger</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">各种语言的免费编程书：</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="EbookFoundation" data-project="free-programming-books"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener"><span class="github-info-card-name">EbookFoundation/free-programming-books</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">真正的无代码，兄弟你做到了！</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="kelseyhightower" data-project="nocode"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/kelseyhightower/nocode" target="_blank" rel="noopener"><span class="github-info-card-name">kelseyhightower/nocode</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">&#8211;eeeeeeeeeeeeee……eeee，能运行的！</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" data-project="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" target="_blank" rel="noopener"><span class="github-info-card-name">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">女装大佬的女装照</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="di404" data-project="Dress"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/di404/Dress" target="_blank" rel="noopener"><span class="github-info-card-name">di404/Dress</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">随机删除电脑里一半的文件</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="hotvulcan" data-project="Thanos.sh"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/hotvulcan/Thanos.sh" target="_blank" rel="noopener"><span class="github-info-card-name">hotvulcan/Thanos.sh</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">自动生成壁纸</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="pearmini" data-project="colorfu"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/pearmini/colorfu" target="_blank" rel="noopener"><span class="github-info-card-name">pearmini/colorfu</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">人生重开模拟器</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="VickScarlet" data-project="lifeRestart"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/VickScarlet/lifeRestart" target="_blank" rel="noopener"><span class="github-info-card-name">VickScarlet/lifeRestart</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">人生重开模拟器同一系列，魔改之码农搬砖</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="xitu" data-project="coding-life"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/xitu/coding-life" target="_blank" rel="noopener"><span class="github-info-card-name">xitu/coding-life</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+
+
+
+<h2 class="wp-block-heading">单词记忆与英语肌肉记忆锻炼</h2>
+
+
+
+<div class="wp-block-argon-github github-info-card card shadow-sm github-info-card-full" data-author="Kaiyiwing" data-project="qwerty-learner"><div class="github-info-card-header"><a href="https://github.com/" target="_blank" title="Github" rel="noopener"><span><i class="fa fa-github"></i> GitHub</span></a></div><div class="github-info-card-body"><div class="github-info-card-name-a"><a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noopener"><span class="github-info-card-name">Kaiyiwing/qwerty-learner</span></a></div><div class="github-info-card-description"></div></div><div class="github-info-card-bottom"><span class="github-info-card-meta github-info-card-meta-stars"><i class="fa fa-star"></i> <span class="github-info-card-stars"></span></span><span class="github-info-card-meta github-info-card-meta-forks"><i class="fa fa-code-fork"></i> <span class="github-info-card-forks"></span></span></div></div>
+<p><a href="/archives/1107">Github奇怪项目</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1107/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

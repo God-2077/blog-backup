@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>APlayer 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/aplayer/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/aplayer</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Mon, 16 Jan 2023 06:08:47 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>APlayer 归档 - 时空之歌</title>
+	<link>/archives/tag/aplayer</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Aplayer 搭配MetingJS音乐插件简单使用</title>
+		<link>/archives/424</link>
+					<comments>/archives/424#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Mon, 16 Jan 2023 06:08:47 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[APlayer]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[音乐]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=424</guid>
+
+					<description><![CDATA[<p>Aplayer 播放器简单使用</p>
+<p><a href="/archives/424">Aplayer 搭配MetingJS音乐插件简单使用</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">1、语法</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td class="has-text-align-center" data-align="center">属性</td><td class="has-text-align-center" data-align="center">值</td><td class="has-text-align-center" data-align="center">默认值</td><td class="has-text-align-center" data-align="center">描述</td></tr><tr><td class="has-text-align-center" data-align="center">server</td><td class="has-text-align-center" data-align="center">netease/tencent/kugou/xiami/baidu</td><td class="has-text-align-center" data-align="center"><strong>require</strong></td><td class="has-text-align-center" data-align="center">指定音乐平台(网易云：netease；QQ 音乐：tencent)</td></tr><tr><td class="has-text-align-center" data-align="center">type</td><td class="has-text-align-center" data-align="center">song/playlist/<code>album</code>/<code>artist</code></td><td class="has-text-align-center" data-align="center"><strong>require</strong></td><td class="has-text-align-center" data-align="center">类型:<br><code>song</code>，<code>playlist</code>，<code>album</code>，<code>search</code>，<code>artist</code></td></tr><tr><td class="has-text-align-center" data-align="center">id</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center"><strong>require</strong></td><td class="has-text-align-center" data-align="center">歌曲ID /播放列表ID /专辑ID /搜索关键字</td></tr><tr><td class="has-text-align-center" data-align="center">fixed</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">开启吸底模式(不需要则删掉)</td></tr><tr><td class="has-text-align-center" data-align="center">mini</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">开启迷你模式(不需要则删掉)</td></tr><tr><td class="has-text-align-center" data-align="center">autoplay</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">音频自动播放(不需要则删掉)</td></tr><tr><td class="has-text-align-center" data-align="center">order</td><td class="has-text-align-center" data-align="center">list/random</td><td class="has-text-align-center" data-align="center">list</td><td class="has-text-align-center" data-align="center">音频循环顺序(随机播放：random；列表播放：list)</td></tr><tr><td class="has-text-align-center" data-align="center">theme</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">#2980b9</td><td class="has-text-align-center" data-align="center">主题颜色，默认<code>#2980b9</code></td></tr><tr><td class="has-text-align-center" data-align="center">loop</td><td class="has-text-align-center" data-align="center">all/one/none</td><td class="has-text-align-center" data-align="center">all</td><td class="has-text-align-center" data-align="center">播放器循环播放，值：“all”，one”，“none”</td></tr><tr><td class="has-text-align-center" data-align="center">preload</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">auto</td><td class="has-text-align-center" data-align="center">预加载，可选值: &#8216;none&#8217;, &#8216;metadata&#8217;, &#8216;auto&#8217;</td></tr><tr><td class="has-text-align-center" data-align="center">volume</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">0.7</td><td class="has-text-align-center" data-align="center">默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td></tr><tr><td class="has-text-align-center" data-align="center">mutex</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td></tr><tr><td class="has-text-align-center" data-align="center">listfolded</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">列表默认折叠</td></tr><tr><td class="has-text-align-center" data-align="center">listMaxHeight</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">340px</td><td class="has-text-align-center" data-align="center">列表最大高度</td></tr><tr><td class="has-text-align-center" data-align="center">storage-Name</td><td class="has-text-align-center" data-align="center">metingjs</td><td class="has-text-align-center" data-align="center">metingjs</td><td class="has-text-align-center" data-align="center">存储播放器设置的localStorage键</td></tr><tr><td class="has-text-align-center" data-align="center">lrc-type</td><td class="has-text-align-center" data-align="center">0</td><td class="has-text-align-center" data-align="center">0</td><td class="has-text-align-center" data-align="center">关闭歌词(不需要则删掉)</td></tr></tbody></table></figure>
+
+
+
+<p>示例：</p>
+
+
+
+<pre class="wp-block-code"><code><strong><code>server="netease"</code></strong></code></pre>
+
+
+
+<h2 class="wp-block-heading">2、示例</h2>
+
+
+
+<h3 class="wp-block-heading">2.1、</h3>
+
+
+
+<p><strong><code>server="netease"</code>&nbsp;指定音乐平台为网易云，<code>type="song"</code>&nbsp;指单曲类型，<code>id="7373135320"</code>&nbsp;为音乐的 id（这里的 id 为打开音乐歌单，网址显示的 id）</strong></p>
+
+
+
+<p><strong>开启吸底模式&nbsp;<code>fixed="true"</code>, 开启迷你模式</strong>&nbsp;<code>mini="true"</code>, 随机播放&nbsp;<code>order="random"</code>, 关闭底部歌词&nbsp;<code>lrc-type="0"</code></p>
+
+
+
+<p><strong><code>注意</code></strong>：id 需要为自己创建的歌单，不能为我喜欢的音乐；server 可以改自己用的音乐平台，如 netease (网易云)、tencent (QQ 音乐)</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"&gt;&lt;/script&gt;
+ 
+&lt;meting-js 
+    server="netease" 
+    type="playlist" 
+    id="7360465359"
+    fixed="true" 
+    mini="true"
+    order="random"
+    loop="all"
+    preload="auto"
+    list-folded="false"&gt;
+&lt;/meting-js&gt;</code></pre>
+
+
+
+<p>2.2、</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--css--&gt;
+ 
+　　&lt;link&nbsp;rel="stylesheet"&nbsp;href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+ 
+&lt;!--js--&gt;
+ 
+　　&lt;script&nbsp;src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+ 
+　　&lt;script&nbsp;src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"&gt;&lt;/script&gt;
+&lt;!--参数设置--&gt;
+&lt;meting-js
+ 
+　　server="netease"
+ 
+　　type="playlist"
+ 
+　　id="5195463265"
+ 
+　　fixed="true"
+ 
+　　autoplay="true"
+ 
+　　loop="all"
+ 
+　　order="random"
+ 
+　　preload="auto"
+ 
+　　list-folded="ture"
+ 
+　　list-max-height="500px"
+ 
+　　lrc-type="1"&gt;
+ 
+&lt;/meting-js&gt;</code></pre>
+<p><a href="/archives/424">Aplayer 搭配MetingJS音乐插件简单使用</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/424/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

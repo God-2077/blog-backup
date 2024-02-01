@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>未分类归档 - 时空之歌</title>
+	<atom:link href="/archives/category/uncategorized/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/category/uncategorized</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Fri, 31 Mar 2023 05:46:56 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>未分类归档 - 时空之歌</title>
+	<link>/archives/category/uncategorized</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>将自己的域名添加到 GitHub Pages</title>
+		<link>/archives/1343</link>
+					<comments>/archives/1343#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2023 05:46:56 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[github]]></category>
+		<guid isPermaLink="false">/?p=1343</guid>
+
+					<description><![CDATA[<p>GitHub Pages 是一个方便的网站托管服务，可让用户轻松地创建和发布自己的网站。如果您想使用自己的域名来访问 GitHub Pages 上的网站，本文将介绍如何添加自己的域名到 GitHub Pages。</p>
+<p><a href="/archives/1343">将自己的域名添加到 GitHub Pages</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<p>GitHub Pages 是一个方便的网站托管服务，可让用户轻松地创建和发布自己的网站。如果您想使用自己的域名来访问 GitHub Pages 上的网站，本文将介绍如何添加自己的域名到 GitHub Pages。</p>
+
+
+
+<h2 class="wp-block-heading">工具</h2>
+
+
+
+<ol>
+<li>GitHub 账号</li>
+
+
+
+<li>一个域名（请注意，您必须拥有该域名的所有权或者有权访问 DNS 记录以便修改域名配置。）</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">步骤</h2>
+
+
+
+<h3 class="wp-block-heading">第一步：在 GitHub 上创建一个仓库</h3>
+
+
+
+<p>在 GitHub 上创建仓库的步骤如下：</p>
+
+
+
+<ol>
+<li>首先，在 GitHub 的首页上登录你的账户。</li>
+
+
+
+<li>然后，点击页面右上角的加号图标。</li>
+
+
+
+<li>在下拉菜单中，选择“New repository”。</li>
+
+
+
+<li>在“Repository name”文本框中输入仓库的名称“username.github.io”。（其中“username”是您的 GitHub 用户名）</li>
+
+
+
+<li>可选：在“Description”文本框中输入仓库的描述。</li>
+
+
+
+<li>选择：选择“Public”权限。</li>
+
+
+
+<li>选择“Initialize this repository with a README”。</li>
+
+
+
+<li>可选：选择相应的 .gitignore 和 License 文件。</li>
+
+
+
+<li>点击“Create repository”按钮。</li>
+</ol>
+
+
+
+<p>你的仓库就已经创建好了。接下来，你可以将网站上传到仓库中。</p>
+
+
+
+<h3 class="wp-block-heading">第二步：将网站上传到仓库</h3>
+
+
+
+<p>在创建了仓库后，您需要将自己的网站文件上传到该仓库。您可以使用 Git 或者 GitHub Desktop 等工具来管理和上传您的代码。</p>
+
+
+
+<h3 class="wp-block-heading">第三步：添加自定义域名</h3>
+
+
+
+<p>要将自己的域名添加到Github Pages上，需要完成以下步骤：</p>
+
+
+
+<ol>
+<li>进入的repository，选择Settings选项卡。</li>
+
+
+
+<li>向下滚动页面，找到“GitHub Pages”部分，并单击“Custom domain”下的“Add domain”按钮。</li>
+
+
+
+<li>在弹出的框中输入您的域名，并单击“Add domain”按钮。</li>
+
+
+
+<li>最后，点击“Save”按钮保存更改即可。</li>
+</ol>
+
+
+
+<p>或者是添加“CNAME”文件</p>
+
+
+
+<ol>
+<li>打开你的 GitHub 仓库。</li>
+
+
+
+<li>点击仓库页面上方的“Add file”按钮，然后选择“Create new file”选项。</li>
+
+
+
+<li>在“Name your file&#8230;”文本框中输入“CNAME”（注意，文件名必须全大写）。</li>
+
+
+
+<li>在“Edit new file”文本框中输入你的自定义域名，例如：“example.com”。</li>
+
+
+
+<li>点击页面下方的“Commit new file”按钮，将“CNAME”文件提交到你的仓库中。</li>
+</ol>
+
+
+
+<div class="wp-block-argon-admonition admonition shadow-sm" style="border-left-color:#7889e8"><div class="admonition-body">请注意，您必须拥有该域名的所有权或者有权访问 DNS 记录以便修改域名配置。</div></div>
+
+
+
+<h3 class="wp-block-heading">第四步：配置 DNS</h3>
+
+
+
+<p>在添加了自定义域名后，您需要配置 DNS 解析器以将该域名指向 GitHub Pages 服务器。您需要添加两个 DNS 记录：一条 A 记录和一条 CNAME 记录。</p>
+
+
+
+<p>A 记录用于将域名解析为 GitHub Pages 的 IP 地址，具体而言，您需要将 A 记录设置为以下 IP 地址：185.199.108.153、185.199.109.153、185.199.110.153、185.199.111.153。</p>
+
+
+
+<p>CNAME 记录用于将域名的子域名（通常为 www）解析为您在第三步中添加到 CNAME 文件中的自定义域名。具体而言，您需要将 CNAME 记录设置为“username.github.io”。</p>
+
+
+
+<div class="wp-block-argon-admonition admonition shadow-sm" style="border-left-color:#7889e8"><div class="admonition-body">请注意，由于 DNS 记录需要时间来传播和生效，因此您可能需要等待一段时间才能看到您的网站使用自定义域名访问。</div></div>
+
+
+
+<h2 class="wp-block-heading">总结</h2>
+
+
+
+<p>通过以上步骤，您可以将自己的域名添加到 GitHub Pages，让访问者可以使用自定义域名来访问您的网站。请确保您拥有该域名的所有权或者有权访问 DNS 记录，以便您可以成功配置域名和 DNS 记录。</p>
+<p><a href="/archives/1343">将自己的域名添加到 GitHub Pages</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1343/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

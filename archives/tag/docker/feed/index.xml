@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Docker 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/docker/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/docker</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Mon, 21 Aug 2023 16:27:58 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>Docker 归档 - 时空之歌</title>
+	<link>/archives/tag/docker</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>在Docker上部署ubuntu系统</title>
+		<link>/archives/2591</link>
+					<comments>/archives/2591#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Mon, 21 Aug 2023 16:27:54 +0000</pubDate>
+				<category><![CDATA[Docker]]></category>
+		<category><![CDATA[IT]]></category>
+		<guid isPermaLink="false">/?p=2591</guid>
+
+					<description><![CDATA[<p>如标题所写的这篇文章是“在Docker上部署ubuntu系统”而不是“在ubuntu上部署Docker”。<br />
+这篇文章是讲在Docker上部署ubuntu系统的。这类文章很少见，很少有人在Docker上部署ubuntu的。但我最近对rm -rf /*这个命令挺感兴趣的，但又不敢在实体机上运行。安装虚拟化软件太麻烦，干脆就利用Docker资源隔离的特点安装了个ubuntu系统运行rm -rf /*。<br />
+于是顺便有了这篇文章《在Docker上部署ubuntu系统》</p>
+<p><a href="/archives/2591">在Docker上部署ubuntu系统</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<p>如标题所写的这篇文章是“在Docker上部署ubuntu系统”而不是“在ubuntu上部署Docker”。</p>
+
+
+
+<p>这篇文章是讲在Docker上部署ubuntu系统的。这类文章很少见，很少有人在Docker上部署ubuntu的。但我最近对<code>rm -rf /*</code>这个命令挺感兴趣的，但又不敢在实体机上运行。安装虚拟化软件太麻烦，干脆就利用Docker资源隔离的特点安装了个ubuntu系统运行<code>rm -rf /*</code>。</p>
+
+
+
+<p>于是顺便有了这篇文章《在Docker上部署ubuntu系统》</p>
+
+
+
+<h2 class="wp-block-heading">准备</h2>
+
+
+
+<p>开始前请你确保你自己的 VPS 已经正确安装好了 <code>Docker</code> 和 <code>docker compose</code>，并且你具有一定的Linux基础。</p>
+
+
+
+<h2 class="wp-block-heading">开始</h2>
+
+
+
+<p>首先，我们创建目录：</p>
+
+
+
+<pre class="wp-block-code"><code>work=~/docker/ubuntu/ &amp;&amp; mkdir -p $work &amp;&amp; cd $work</code></pre>
+
+
+
+<p><code>~/docker/ubuntu/</code>可以改为你想要的位置。</p>
+
+
+
+<p>新建一个 <code>docker-compose.yml</code></p>
+
+
+
+<pre class="wp-block-code"><code>vim docker-compose.yml</code></pre>
+
+
+
+<p>输入以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>version: '3'
+services:
+  ubuntu:
+    image: ubuntu
+    container_name: my_ubuntu
+    command: tail -f /dev/null</code></pre>
+
+
+
+<p>上线服务</p>
+
+
+
+<pre class="wp-block-code"><code>docker-compose up -d</code></pre>
+
+
+
+<p>如果没出什么问题的话，一个在docker上的ubuntu成功运行起来了！</p>
+
+
+
+<h2 class="wp-block-heading">管理命令</h2>
+
+
+
+<p>进入容器ubuntu bash</p>
+
+
+
+<pre class="wp-block-code"><code>docker exec -it my_ubuntu bash</code></pre>
+
+
+
+<p>上线服务</p>
+
+
+
+<pre class="wp-block-code"><code>docker-compose up -d</code></pre>
+
+
+
+<p>下线服务</p>
+
+
+
+<p>docker-compose down</p>
+
+
+
+<h2 class="wp-block-heading">最后要注意的</h2>
+
+
+
+<ol>
+<li>Docker版的ubuntu可能有些命令无法正常运行。</li>
+
+
+
+<li>上面安装的ubuntu十分精简的，有许多常用的命令都没有。(<code>apt</code>命令还是有的)</li>
+
+
+
+<li>使用上面<code>docker-compose.yml</code>文件部署的，下线服务后，容器里面的文件等都会丢失。你可以在<code>docker-compose.yml</code>添加配置<code>volumes</code>来挂载目录以保存文件。</li>
+</ol>
+<p><a href="/archives/2591">在Docker上部署ubuntu系统</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2591/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>在Docker上部署Cloudreve云盘服务</title>
+		<link>/archives/2516</link>
+					<comments>/archives/2516#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 01 Aug 2023 14:55:06 +0000</pubDate>
+				<category><![CDATA[Docker]]></category>
+		<category><![CDATA[IT]]></category>
+		<guid isPermaLink="false">/?p=2516</guid>
+
+					<description><![CDATA[<p>云盘服务已成为人们日常生活中不可或缺的一部分。本文将介绍如何使用Docker compose来部署Cloudreve云盘服务。通过Docker的容器化技术，我们可以轻松地搭建和管理云盘系统，实现便捷的文件存储和共享体验。让我们开始吧！</p>
+<p><a href="/archives/2516">在Docker上部署Cloudreve云盘服务</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<p>云盘服务已成为人们日常生活中不可或缺的一部分。本文将介绍如何使用Docker compose来部署Cloudreve云盘服务。通过Docker的容器化技术，我们可以轻松地搭建和管理云盘系统，实现便捷的文件存储和共享体验。让我们开始吧！</p>
+
+
+
+<h2 class="wp-block-heading">Cloudreve 简介</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>Cloudreve 是一款<strong>开源的网盘软件</strong>，支持服务器本机及腾讯云对象存储 COS 等多种存储方式，提供离线下载、拖拽上传、在线预览等功能，能够帮助您快速搭建个人使用或多人共享的云盘系统。</p>
+
+
+
+<ul>
+<li>官网：<a href="https://cloudreve.org/" target="_blank" rel="noreferrer noopener">https://cloudreve.org/</a></li>
+
+
+
+<li>Github：<a href="https://github.com/cloudreve/Cloudreve" target="_blank" rel="noreferrer noopener">https://github.com/cloudreve/Cloudreve</a></li>
+
+
+
+<li>文档：<a href="https://docs.cloudreve.org/" target="_blank" rel="noreferrer noopener">https://docs.cloudreve.org/</a></li>
+
+
+
+<li>演示：<a href="https://demo.cloudreve.org/" target="_blank" rel="noreferrer noopener">https://demo.cloudreve.org/</a></li>
+</ul>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">准备</h2>
+
+
+
+<p>开始前请你确保你自己的VPS已经正确安装好了<code>Docker</code>和<code>docker compose</code>。</p>
+
+
+
+<h2 class="wp-block-heading">安装Cloudreve</h2>
+
+
+
+<p>首先，我们创建目录：</p>
+
+
+
+<pre class="wp-block-code"><code>work=~/docker/cloudreve/ &amp;&amp; mkdir -p $work &amp;&amp; cd $work</code></pre>
+
+
+
+<p>上述代码建立一个临时的变量叫做work，<code>~/docker/cloudreve/</code>可以改为你想要的位置。注意，一旦你退出终端，这个变量就会消失。</p>
+
+
+
+<p>创建目录结构：</p>
+
+
+
+<pre class="wp-block-code"><code>mkdir -vp cloudreve/{uploads,avatar} \
+&amp;&amp; touch cloudreve/conf.ini \
+&amp;&amp; touch cloudreve/cloudreve.db \
+&amp;&amp; mkdir -p aria2/config \
+&amp;&amp; mkdir -p data/aria2 \
+&amp;&amp; chmod -R 777 data/aria2</code></pre>
+
+
+
+<p>此时的目录结构如下：</p>
+
+
+
+<pre class="wp-block-code"><code>├── aria2
+│&nbsp;&nbsp; └── config
+├── cloudreve
+│&nbsp;&nbsp; ├── avatar
+│&nbsp;&nbsp; ├── cloudreve.db
+│&nbsp;&nbsp; ├── conf.ini
+│&nbsp;&nbsp; └── uploads
+├── data
+│&nbsp;&nbsp; └── aria2</code></pre>
+
+
+
+<p>获取随机Token：</p>
+
+
+
+<pre class="wp-block-code"><code>openssl rand -base64 48 ## 生成Token，用Aria2 RPC Token</code></pre>
+
+
+
+<p>新建一个<code>docker-compose.yml</code>：</p>
+
+
+
+<pre class="wp-block-code"><code>vim docker-compose.yml</code></pre>
+
+
+
+<p>输入以下内容：</p>
+
+
+
+<pre class="wp-block-code"><code>version: "3.8"
+services:
+  cloudreve:
+    container_name: cloudreve
+    image: cloudreve/cloudreve:latest
+    restart: unless-stopped
+    ports:
+      - "5212:5212"
+    volumes:
+      - ./data:/data
+      - ./cloudreve/uploads:/cloudreve/uploads
+      - ./cloudreve/conf.ini:/cloudreve/conf.ini
+      - ./cloudreve/cloudreve.db:/cloudreve/cloudreve.db
+      - ./cloudreve/avatar:/cloudreve/avatar
+    depends_on:
+      - aria2
+  aria2:
+    container_name: aria2
+    image: p3terx/aria2-pro
+    ports:
+      - 6800:6800
+      - 6888:6888
+      - 6888:6888/udp
+    logging:
+      options:
+        max-size: 1m
+    restart: unless-stopped
+    environment:
+      - RPC_SECRET=your_aria_rpc_token
+      - RPC_PORT=6800
+    volumes:
+      - ./aria2/config:/config
+      - ./data:/data
+volumes:
+  temp_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: $PWD/data
+      o: bind</code></pre>
+
+
+
+<p>修改文件中的<code>RPC_SECRET</code>为你获取的随机<code>Token</code>，<code>5212:5212</code>中左边的<code>5212</code>为你所需的端口号。</p>
+
+
+
+<p>上线服务</p>
+
+
+
+<pre class="wp-block-code"><code>docker-compose up -d</code></pre>
+
+
+
+<p>从docker-compose的日志中获取默认管理员账户用户名和密码</p>
+
+
+
+<pre class="wp-block-code"><code>docker-compose logs</code></pre>
+
+
+
+<p>至此，Cloudreve的安装已经基本完成了。</p>
+
+
+
+<h2 class="wp-block-heading">反代设置</h2>
+
+
+
+<p>Cloudreve 默认会监听5212端口(如果你没改的话)</p>
+
+
+
+<p>反代设置：https://www.example.com/ =&gt; http://172.17.0.1:5212/</p>
+
+
+
+<h2 class="wp-block-heading">Aria2配置</h2>
+
+
+
+<h3 class="wp-block-heading">后台控制面板</h3>
+
+
+
+<ol>
+<li><strong>[不可修改]</strong> RPC 服务器地址 =&gt; <code>http://aria2:6800/</code></li>
+
+
+
+<li><strong>[可修改, 需保持和 docker-compose.yml 文件一致]</strong> RPC 授权令牌 =&gt; <code>your_aria_rpc_token</code></li>
+
+
+
+<li><strong>[不可修改]</strong> Aria2 用作临时下载目录的 节点上的绝对路径 =&gt; <code>/data</code></li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">获取DHT网络节点数据</h3>
+
+
+
+<p>打开Shell</p>
+
+
+
+<pre class="wp-block-code"><code>cd $work &amp;&amp; cd ./aria2/config/ &amp;&amp; sudo rm dht.dat &amp;&amp; wget https://down.cheshirex.com/%E6%9D%82%E9%A1%B9/dht.dat</code></pre>
+
+
+
+<h2 class="wp-block-heading">常用管理命令</h2>
+
+
+
+<h3 class="wp-block-heading">上线服务</h3>
+
+
+
+<pre class="wp-block-code"><code>docker-compose up -d</code></pre>
+
+
+
+<h3 class="wp-block-heading">下线服务</h3>
+
+
+
+<pre class="wp-block-code"><code>docker-compose down</code></pre>
+
+
+
+<h3 class="wp-block-heading">更新Cloudreve</h3>
+
+
+
+<pre class="wp-block-code"><code>docker-compose down &amp;&amp; docker pull cloudreve/cloudreve &amp;&amp; docker-compose up -d</code></pre>
+<p><a href="/archives/2516">在Docker上部署Cloudreve云盘服务</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2516/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

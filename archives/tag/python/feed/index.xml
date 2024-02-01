@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>python 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/python/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/python</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Fri, 13 Jan 2023 22:59:39 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>python 归档 - 时空之歌</title>
+	<link>/archives/tag/python</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Python打包exe，pyinstaller</title>
+		<link>/archives/342</link>
+					<comments>/archives/342#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2023 22:59:39 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[exe]]></category>
+		<category><![CDATA[pyinstaller]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=342</guid>
+
+					<description><![CDATA[<p>PyInstaller 是一个在 Windows、GNU/Linux、macOS、FreeBSD、OpenBSD、Solaris 和 AIX 下将 Python 程序冻结（打包）为独立可执行文件的程序。与类似工具相比，它的主要优点是 PyInstaller 与 Python 3.7-3.10 一起工作，由于透明压缩，它构建了更小的可执行文件，它是完全多平台的，并使用操作系统支持加载动态库，从而确保完全兼容。</p>
+<p><a href="/archives/342">Python打包exe，pyinstaller</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">一、工具：<strong>pyinstaller</strong></h2>
+
+
+
+<h3 class="wp-block-heading">1、介简：</h3>
+
+
+
+<p><em><strong><a href="https://baike.baidu.com/item/PyInstaller/61918865" target="_blank" rel="noreferrer noopener">PyInstaller</a></strong></em> 是一个在 Windows、GNU/Linux、macOS、<a href="https://baike.baidu.com/item/FreeBSD/413712" target="_blank" rel="noreferrer noopener">FreeBSD</a>、<a href="https://baike.baidu.com/item/OpenBSD/6122227" target="_blank" rel="noreferrer noopener">OpenBSD</a>、<a href="https://baike.baidu.com/item/Solaris/3517" target="_blank" rel="noreferrer noopener">Solaris</a>&nbsp;和&nbsp;<a href="https://baike.baidu.com/item/AIX/6343483" target="_blank" rel="noreferrer noopener">AIX</a>&nbsp;下将 Python 程序冻结（打包）为独立<a href="https://baike.baidu.com/item/%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/2885816" target="_blank" rel="noreferrer noopener">可执行文件</a>的程序。与类似工具相比，它的主要优点是 <code>PyInstaller</code> 与 <code>Python 3.7-3.10</code> 一起工作，由于透明压缩，它构建了更小的可执行文件，它是完全多平台的，并使用操作系统支持加载动态库，从而确保完全兼容。</p>
+
+
+
+<h3 class="wp-block-heading">2、安装：</h3>
+
+
+
+<p><code>PyInstaller</code> 是一个普通的 <code>Python</code> 包。可以使用<a href="https://baike.baidu.com/item/pip/20435212" target="_blank" rel="noreferrer noopener">pip</a>安装，例如：</p>
+
+
+
+<pre class="wp-block-code"><code><strong><em>pip install pyinstaller</em></strong></code></pre>
+
+
+
+<p><strong>注</strong>：<strong><code>pip</code> 已内置于 <code>Python 3.4</code> 和 <code>2.7</code> 及以上版本，其他版本需另行安装。</strong></p>
+
+
+
+<h2 class="wp-block-heading">二、命令行参数</h2>
+
+
+
+<h3 class="wp-block-heading">1、生成</h3>
+
+
+
+<p><code>-D, --onedir</code></p>
+
+
+
+<p>创建一个包含可执行文件的单文件夹包（默认）</p>
+
+
+
+<p><code>-F, --onefile</code></p>
+
+
+
+<p>创建一个单一文件捆绑的可执行文件。</p>
+
+
+
+<p><code>--specpath DIR</code></p>
+
+
+
+<p>存放生成的<code>spec</code>文件的文件夹（默认：当前目录）</p>
+
+
+
+<p><code>-n NAME, --name NAME</code></p>
+
+
+
+<p>分配给捆绑的应用程序和规范文件的名称（默认值：第一个脚本的基本名称）<sup>[2]</sup></p>
+
+
+
+<h3 class="wp-block-heading">2、<code>Windows</code> 和 <code>Mac OS</code>特定选项</h3>
+
+
+
+<p><code>-c, --console, --nowindowed</code></p>
+
+
+
+<p>打开标准<code> i/o</code> 的控制台窗口（默认）。在 <code>Windows</code> 上，如果第一个脚本是“<code>.pyw</code>”文件，则此选项无效。</p>
+
+
+
+<p><code>-w, --windowed, --noconsole</code></p>
+
+
+
+<p><code>Windows</code> 和 <code>Mac OS X</code>：不为标准<code> i/o</code> 提供控制台窗口。在 <code>Mac OS</code> 上，这也会触发构建 <code>Mac OS .app</code> 包。在 <code>Windows</code> 上，如果第一个脚本是“<code>.pyw</code>”文件，则会自动设置此选项。此选项在 UNIX 系统上被忽略。</p>
+
+
+
+<p><code>-i &lt;FILE.ico or FILE.exe,ID or FILE.icns or Image or “NONE”&gt;, --icon &lt;FILE.ico or FILE.exe,ID or FILE.icns or Image or “NONE”&gt;</code></p>
+
+
+
+<p><code>FILE.ico</code>：将图标应用于 <code>Windows</code> 可执行文件。</p>
+
+
+
+<p><code>FILE.exe,ID</code>：从<code>exe</code>中提取带有<code>ID</code>的图标。</p>
+
+
+
+<p><code>FILE.icns</code>：将图标应用到 <code>Mac OS</code> 上的 <code>.app</code> 包。如果输入的图像文件不是平台格式（<code>Windows</code> 上的 <code>ico</code>，<code>Mac</code> 上的 <code>icns</code>），<code>PyInstaller</code> 会尝试使用 <code>Pillow</code> 将图标转换为正确的格式（如果安装了 <code>Pillow</code>）。</p>
+
+
+
+<p>使用“<code>NONE</code>”不应用任何图标，从而使操作系统显示一些默认值（默认值：应用 <code>PyInstaller</code> 的图标）</p>
+
+
+
+<h3 class="wp-block-heading">3、其他参数</h3>
+
+
+
+<p><code>-h, --help</code></p>
+
+
+
+<p>显示此帮助信息并退出</p>
+
+
+
+<p><code>-v, --version</code></p>
+
+
+
+<p>显示程序版本信息并退出。</p>
+
+
+
+<p><code>--distpath DIR</code></p>
+
+
+
+<p>捆绑应用程序的放置位置（默认：<code>./dist</code>）</p>
+
+
+
+<p><code>--workpath WORKPATH</code></p>
+
+
+
+<p>将所有临时工作文件、<code>.log</code>、<code>.pyz</code> 等放在哪里（默认：<code>./build</code>）</p>
+
+
+
+<p><code>-y, --noconfirm</code></p>
+
+
+
+<p>替换输出目录（默认：<code>SPECPATH/dist/SPECNAME</code>）而不要求确认</p>
+
+
+
+<p><code>--upx-dir UPX_DIR</code></p>
+
+
+
+<p><code>UPX</code> 实用程序的路径（默认：搜索执行路径）</p>
+
+
+
+<p><code>-a, --ascii</code></p>
+
+
+
+<p>不包括 <code>unicode</code> 编码支持（默认：如果可用，包括在内）</p>
+
+
+
+<p><code>--clean</code></p>
+
+
+
+<p>在构建之前清理 <code>PyInstaller</code> 缓存并删除临时文件。</p>
+
+
+
+<p><code>--log-level LEVEL</code></p>
+
+
+
+<p>构建时控制台消息中的详细信息量。<code>LEVEL</code> 可以是 <code>TRACE</code>、<code>DEBUG</code>、<code>INFO</code>、<code>WARN</code>、<code>ERROR</code>、<code>CRITICAL</code> 之一（默认值：<code>INFO</code>）。</p>
+
+
+
+<h2 class="wp-block-heading">三、常用命令</h2>
+
+
+
+<h3 class="wp-block-heading">1、打包exe</h3>
+
+
+
+<pre class="wp-block-code"><code>Pyinstaller -F xxx.py</code></pre>
+
+
+
+<h3 class="wp-block-heading">2、不带控制台的打包</h3>
+
+
+
+<pre class="wp-block-code"><code>Pyinstaller -F -w xxx.py</code></pre>
+
+
+
+<h3 class="wp-block-heading">3、打包指定exe图标打包</h3>
+
+
+
+<pre class="wp-block-code"><code>Pyinstaller -F -i xx.ico xxx.py</code></pre>
+
+
+
+<p>平常我们只需要这三个就好了，足够满足所有需求了。</p>
+
+
+
+<h2 class="wp-block-heading">四、参考资料</h2>
+
+
+
+<ul>
+<li>[1]&nbsp;&nbsp;<a href="https://baike.baidu.com/reference/61918865/5e64cXmdeS0XK9VK_zGEE_zK9Dj8MooeQ8McoYdkc5azlHTn7qnLpJAUgzWL0DO52YzbbkpR5n4aQpUMJD48wbpwxa3r_B3PWw6R_eEexGg" data-type="URL" data-id="https://baike.baidu.com/reference/61918865/5e64cXmdeS0XK9VK_zGEE_zK9Dj8MooeQ8McoYdkc5azlHTn7qnLpJAUgzWL0DO52YzbbkpR5n4aQpUMJD48wbpwxa3r_B3PWw6R_eEexGg">How to Install PyInstaller — PyInstaller 5.3 documentation</a>．</li>
+
+
+
+<li>[2]&nbsp;&nbsp;<a href="https://baike.baidu.com/reference/61918865/c2f3r-xpe2lvlNPX2IaH301dC-tpz_BxUR0jVqNuIUNhPNwyEKnEEdzyW0abZEakmwEmZHSfPpK_xuMuo2hdOqUaNG38v4lx0nLMHz9D8guv4vk" target="_blank" rel="noreferrer noopener">pyinstaller — PyInstaller 5.3 documentation</a>．</li>
+
+
+
+<li>[3]  <a href="https://baike.baidu.com/item/PyInstaller/61918865" target="_blank" rel="noreferrer noopener">PyInstaller_百度百科</a>.</li>
+
+
+
+<li>[4]  <a href="https://zhuanlan.zhihu.com/p/162237978?utm_id=0" target="_blank" rel="noreferrer noopener">别再问我怎么Python打包成exe了！ &#8211; 知乎</a></li>
+</ul>
+<p><a href="/archives/342">Python打包exe，pyinstaller</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/342/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

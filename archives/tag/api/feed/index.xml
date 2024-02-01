@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>api 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/api/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/api</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Tue, 10 Jan 2023 04:54:22 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>api 归档 - 时空之歌</title>
+	<link>/archives/tag/api</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</title>
+		<link>/archives/262</link>
+					<comments>/archives/262#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2023 04:54:22 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[二次元]]></category>
+		<category><![CDATA[网页]]></category>
+		<category><![CDATA[调用]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=262</guid>
+
+					<description><![CDATA[<p>1. 韩小韩API 1.1. 接口文档 https://api.vvhan.com/dongman.html  [&#8230;]</p>
+<p><a href="/archives/262">【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h1 class="wp-block-heading has-text-align-center">1. 韩小韩API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.vvhan.com/dongman.html" target="_blank" rel="noreferrer noopener">https://api.vvhan.com/dongman.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.vvhan.com/api/acgimg" target="_blank" rel="noreferrer noopener">https://api.vvhan.com/api/acgimg</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">1.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">1.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.vvhan.com/api/acgimg'
+params = {'type': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "success": true,
+  "imgurl": "https://cdn.jsdelivr.net/gh/uxiaohan/GitImgTypecho/Acg/api.vvhan.com&#91;337].jpg",
+  "info": {
+    "width": 1920,
+    "height": 1080,
+    "type": "img"
+  }
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">1.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.vvhan.com/api/acgimg" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">1.8. 温馨提示</h2>
+
+
+
+<p>调用多次发现，该接口返回的图片尺寸大多是<code>1920x1800</code>，且图片<code>url</code>地址中只有最后<code>[ ]</code>里面的数值在变化，截止目前该变化范围是<code>0-696</code>，也就是该接口是从<code>697</code>张二次元图片中随机返回一张。如果你想下载该接口所有的<code>697</code>张图片，可以使用下方代码：</p>
+
+
+
+<pre class="wp-block-code"><code>'''依赖模块
+pip install requests
+'''
+import concurrent.futures as cf
+import os, time, requests
+
+<em># 单张图片下载函数</em>
+def down(fname, url):
+    res = requests.get(url)
+    with open(fname, 'wb') as f:
+        f.write(res.content)
+
+<em># 进度条打印函数</em>
+def show(num, _sum,  runTime):
+    barLen = 20
+    perFin = num/_sum
+    numFin = round(barLen*perFin)
+    numNon = barLen-numFin
+    leftTime = (1-perFin)*(runTime/perFin)
+    print(
+        f"{num:0&gt;{len(str(_sum))}}/{_sum}",
+        f"|{'█'*numFin}{' '*numNon}|",
+        f"PROCESS: {perFin*100:.0f}%",
+        f"RUN: {runTime:.0f}S",
+        f"ETA: {leftTime:.0f}S",
+        end='
+'
+    )
+    if num == _sum:
+        print()
+
+<em># 主函数（多线程）</em>
+def main():                  
+    floder = './img/'
+    os.makedirs(floder, exist_ok=True)
+    fmt = 'https://cdn.jsdelivr.net/gh/uxiaohan/GitImgTypecho/Acg/api.vvhan.com&#91;{}].jpg'
+    total = 697
+    with cf.ThreadPoolExecutor() as tp:
+        t1 = time.time()
+        futures = &#91;]
+        for i in range(total):
+            url = fmt.format(i)
+            fname = floder+os.path.basename(url)
+            future = tp.submit(down, fname, url)
+            futures.append(future)
+        count = 0
+        for future in cf.as_completed(futures):
+            count += 1
+            t2 = time.time()
+            show(count, total, t2-t1)
+    os.system('pause')
+
+
+main()
+</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">2. 樱花API</h1>
+
+
+
+<h2 class="wp-block-heading">2.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.dmoe.cc/" target="_blank" rel="noreferrer noopener">https://www.dmoe.cc/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.dmoe.cc/random.php" target="_blank" rel="noreferrer noopener">https://www.dmoe.cc/random.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'http://www.dmoe.cc/random.php'
+params = {'return': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "code": "200",
+  "imgurl": "https://tva1.sinaimg.cn/large/0072Vf1pgy1foxkil4o6qj31hc0u0nbz.jpg",
+  "width": "1920",
+  "height": "1080"
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">2.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://dmoe.cc/random.php" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">3. 岁月小筑API</h1>
+
+
+
+<h2 class="wp-block-heading">3.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="http://img.xjh.me/" target="_blank" rel="noreferrer noopener">http://img.xjh.me/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<ul>
+<li>https</li>
+</ul>
+
+
+
+<p><a href="https://img.xjh.me/random_img.php" target="_blank" rel="noreferrer noopener">https://img.xjh.me/random_img.php</a></p>
+
+
+
+<ul>
+<li>http</li>
+</ul>
+
+
+
+<p><a href="http://img.xjh.me/random_img.php" target="_blank" rel="noreferrer noopener">http://img.xjh.me/random_img.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json或302</td></tr><tr><td>type</td><td>str</td><td>返回图片类型，可选bg即背景图</td></tr><tr><td>ctype</td><td>str</td><td>背景图类型，可选acg或nature</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://img.xjh.me/random_img.php'
+params = {
+    'return': 'json',
+    'type': 'bg',
+    'cytpe': 'acg'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "error": 0,
+  "result": 200,
+  "img": "//img.xjh.me/desktop/bg/acg/53829526_p0.jpg"
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">3.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://img.xjh.me/random_img.php?type=bg&amp;return=302" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center"><s>4. Lucky小站API<mark>(失效)</mark></s></h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.nck.cc/index.php/archives/3/" target="_blank" rel="noreferrer noopener">https://www.nck.cc/index.php/archives/3/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.rrll.cc/tuceng/ecy.php" target="_blank" rel="noreferrer noopener">https://www.rrll.cc/tuceng/ecy.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>url = 'https://www.rrll.cc/tuceng/ecy.php'
+params = {
+    'return': 'json'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "code": "200",
+  "acgurl": "https://tva4.sinaimg.cn/large/0072Vf1pgy1foxkgc5msdj31hc0u01cv.jpg",
+  "width": "1920",
+  "height": "1080",
+  "size": "jpg"
+}
+</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">5. 三秋API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.ghser.com/acg.html" target="_blank" rel="noreferrer noopener">https://api.ghser.com/acg.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.ghser.com/random/api.php" target="_blank" rel="noreferrer noopener">https://api.ghser.com/random/api.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get/post</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.4. 请求参数</h2>
+
+
+
+<p>空</p>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.ghser.com/random/api.php'
+res = requests.get(url)
+print(res.url)
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.6. 响应数据</h2>
+
+
+
+<p>返回<code>302</code>重定向后的图片<code>url</code></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;tva1.sinaimg.cn/large/006gkh44ly1fz1kddbampj31hc0u0tyb.jpg
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://api.ghser.com/random/api.php" alt="在这里插入图片描述" width="250" height="333"/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">7. 呓喵酱API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.eee.dog/tech/rand-pic-api.html" target="_blank" rel="noreferrer noopener">https://www.eee.dog/tech/rand-pic-api.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.yimian.xyz/img" target="_blank" rel="noreferrer noopener">https://api.yimian.xyz/img</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get/post</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>type</td><td>str</td><td>图片类型，可选moe为二次元图</td></tr><tr><td>size</td><td>str</td><td>图片大小，可选1920&#215;1080</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.yimian.xyz/img'
+params = {
+    'type': 'moe',
+    'size': '1920x1080'
+}
+res = requests.get(url, params=params)
+print(res.url)
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.6. 响应数据</h2>
+
+
+
+<p>返回<code>302</code>重定向后的图片<code>url</code></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;yimian-image.obs.cn-east-2.myhuaweicloud.com/moe/img_865_2048x1152_96.5199966430664_null_normal.jpg?AWSAccessKeyId=6LJRZC0YN3MQXXFOWMIH&amp;Expires=1608815304&amp;Signature=C5BWWC/r1/o230t1VVLHHmH0kF4%3D
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.yimian.xyz/img" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">8. 调用代码汇总</h1>
+
+
+
+<pre class="wp-block-code"><code><em># %%1. 韩小韩API</em>
+import json, requests
+url = 'https://api.vvhan.com/api/acgimg'
+params = {'type': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%2. 樱花API</em>
+import json, requests
+url = 'http://www.dmoe.cc/random.php'
+params = {'return': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%3. 岁月小筑API</em>
+import json, requests
+url = 'https://img.xjh.me/random_img.php'
+params = {
+    'return': 'json',
+    'type': 'bg',
+    'cytpe': 'acg'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%4. Lucky小站API</em>
+import json, requests
+url = 'https://www.rrll.cc/tuceng/ecy.php'
+params = {
+    'return': 'json'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%5. 一叶三秋API</em>
+import json, requests
+url = 'https://api.ghser.com/random/api.php'
+res = requests.get(url)
+print(res.url)
+
+
+<em># %%6. 汐岑API</em>
+import json, requests
+url = 'https://acg.yanwz.cn/wallpaper/api.php'
+res = requests.get(url)
+with open('test.jpg', 'wb') as f:
+    f.write(res.content)
+
+<em># %%7. 呓喵酱API</em>
+import json, requests
+url = 'https://api.yimian.xyz/img'
+params = {
+    'type': 'moe',
+    'size': '1920x1080'
+}
+res = requests.get(url, params=params)
+print(res.url)</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">9. 网页调用示例</h1>
+
+
+
+<p>以<code>樱花API</code>为例</p>
+
+
+
+<ul>
+<li>插入图片</li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&lt;img src="http://www.dmoe.cc/random.php"/&gt;
+</code></pre>
+
+
+
+<ul>
+<li>背景图片</li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&lt;body style="background: url(http://www.dmoe.cc/random.php);"&gt;&lt;/body&gt;
+</code></pre>
+
+
+
+<p>其它<code>API</code>只需要替换<code>src</code>或<code>url</code>属性值为以下值</p>
+
+
+
+<pre class="wp-block-code"><code>1. 韩小韩API
+https:&#47;&#47;api.vvhan.com/api/acgimg
+2. 樱花API(失效)
+http://www.dmoe.cc/random.php
+3. 岁月小筑API
+https://img.xjh.me/random_img.php?return=302
+<s>4. Lucky小站API(失效)
+https://www.rrll.cc/tuceng/ecy.php</s>
+5. 一叶三秋API(失效)
+https://api.ghser.com/random/api.php
+6. 汐岑API(失效)
+https://acg.yanwz.cn/wallpaper/api.php
+7. 呓喵酱API
+https://api.yimian.xyz/img</code></pre>
+
+
+
+<span id="more-262"></span>
+
+
+
+<p class="has-text-align-left">原文地址：<a rel="noreferrer noopener" href="https://www.cnblogs.com/ghgxj/p/14219047.html" target="_blank"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">https://www.cnblogs.com/ghgxj/p/14219047.html</mark></a></p>
+<p><a href="/archives/262">【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/262/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

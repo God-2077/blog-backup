@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>其它归档 - 时空之歌</title>
+	<atom:link href="/archives/category/it/other/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/category/it/other</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Tue, 17 Jan 2023 15:21:57 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>其它归档 - 时空之歌</title>
+	<link>/archives/category/it/other</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>网易云音乐解析下载</title>
+		<link>/archives/557</link>
+					<comments>/archives/557#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2023 15:21:57 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[其它]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[音乐]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[解析]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=557</guid>
+
+					<description><![CDATA[<p>网易云音乐解析下载(原创)</p>
+<p><a href="/archives/557">网易云音乐解析下载</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">一、用官方地址下载</h2>
+
+
+
+<h3 class="wp-block-heading">1.找到id</h3>
+
+
+
+<blockquote class="wp-block-quote">
+<pre class="wp-block-code"><code>URL：<code>https://music.163.com/#/song?id=xxx</code></code></pre>
+
+
+
+<p>其中的<code>id=xxx</code>就是这首歌id</p>
+
+
+
+<p><strong>示例：</strong></p>
+
+
+
+<pre class="wp-block-code"><code>URL：https://music.163.com/#/song?id=186453</code></pre>
+
+
+
+<p>id：186453</p>
+</blockquote>
+
+
+
+<h3 class="wp-block-heading">2.解析</h3>
+
+
+
+<p>网易云音乐的官方地址解析接口是</p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;music.163.com/song/media/outer/url?id=xxx.mp3</code></pre>
+
+
+
+<p>xxx为音乐的id</p>
+
+
+
+<p><strong>例如：</strong></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;music.163.com/song/media/outer/url?id=186453.mp3</code></pre>
+
+
+
+<h2 class="wp-block-heading">二、借助其他网址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>1.音乐搜索器：<a rel="noreferrer noopener" href="https://iw233.cn/music/" target="_blank">https://iw233.cn/music/</a></p>
+
+
+
+<p>2.音乐外链工具：<a href="http://bbwyzz.sygjx.com/yinyue.php" target="_blank" rel="noreferrer noopener">http://bbwyzz.sygjx.com/yinyue.php</a></p>
+</blockquote>
+<p><a href="/archives/557">网易云音乐解析下载</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/557/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

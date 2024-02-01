@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>WordPress 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/wordpress/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/wordpress</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Sat, 09 Dec 2023 04:54:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>WordPress 归档 - 时空之歌</title>
+	<link>/archives/tag/wordpress</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>一个WordPress插件，用于使用短代码插入哔哩哔哩视频</title>
+		<link>/archives/2344</link>
+					<comments>/archives/2344#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 04 Jul 2023 03:11:05 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">/?p=2344</guid>
+
+					<description><![CDATA[<p>前言 我把文章《WordPress通过短代码插入bilibili视频》中的代码改为通过WordPress插件的 [&#8230;]</p>
+<p><a href="/archives/2344">一个WordPress插件，用于使用短代码插入哔哩哔哩视频</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[<h2>前言</h2>
+<p>我把文章<a href="/archives/1477">《WordPress通过短代码插入bilibili视频》</a>中的代码改为通过WordPress插件的方式添加BiliBili短代码支持。</p>
+<h2>插件下载</h2>
+<div class='github-info-card github-info-card-full card shadow-sm' data-author='God-2077' data-project='bilibili_shortcode' githubinfo-card-id='3968924117' data-getdata='frontend' data-description='' data-stars='' data-forks=''><div class='github-info-card-header'><a href='https://github.com/' ref='nofollow' target='_blank' title='Github' no-pjax><span><i class='fa fa-github'></i> GitHub</span></a></div><div class='github-info-card-body'>
+			<div class='github-info-card-name-a'>
+				<a href='https://github.com/God-2077/bilibili_shortcode' target='_blank' no-pjax>
+					<span class='github-info-card-name'>God-2077/bilibili_shortcode</span>
+				</a>
+				</div>
+			<div class='github-info-card-description'></div>
+		</div><div class='github-info-card-bottom'>
+				<span class='github-info-card-meta github-info-card-meta-stars'>
+					<i class='fa fa-star'></i> <span class='github-info-card-stars'></span>
+				</span>
+				<span class='github-info-card-meta github-info-card-meta-forks'>
+					<i class='fa fa-code-fork'></i> <span class='github-info-card-forks'></span>
+				</span>
+			</div></div>
+<blockquote>
+<p><a href="https://github.com/God-2077/bilibili_shortcode/releases/download/v2.1/Plugin.zip">点我下载(Github)</a></p>
+</blockquote>
+<h2>安装插件</h2>
+<ol>
+<li>打开WordPress后台</li>
+<li>点击插件，安装插件</li>
+<li>点击上传插件，选择下载好的<code>Plugin.zip</code>插件文件，点击立即安装</li>
+<li>启用插件</li>
+</ol>
+<h2>插件使用说明</h2>
+<h3>介绍</h3>
+<p>该插件可以通过短代码插入Bilibili视频。</p>
+<h3>用法</h3>
+<pre><code>[vbilibili]啥都行，只要有bv和av在这就行了[/vbilibili]</code></pre>
+<p>只要短代码包含bv号或av号就行了，可以有多个bv号和av号</p>
+<h3>参数</h3>
+<p>无</p>
+<h3>示例</h3>
+<pre><code>[vbilibili]https://www.bilibili.com/video/BV1EX4y127J9/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1EX4y127J9&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]华为能挡子弹？Mate 60 Pro 碾压 跌落 实弹测试！ - 哔哩哔哩https://www.bilibili.com/video/BV1L94y1p72w/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]BV1L94y1p72w[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]BV1L94y1p72w，https://www.bilibili.com/video/BV1RN41BV1RN411w7Bv1w7Bv/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br><div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1RN411w7Bv&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<p><a href="/archives/2344">一个WordPress插件，用于使用短代码插入哔哩哔哩视频</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2344/feed</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress通过短代码插入bilibili视频</title>
+		<link>/archives/1477</link>
+					<comments>/archives/1477#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Sun, 07 May 2023 16:30:44 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[bilibili]]></category>
+		<category><![CDATA[哔哩哔哩]]></category>
+		<category><![CDATA[短代码]]></category>
+		<guid isPermaLink="false">/?p=1477</guid>
+
+					<description><![CDATA[<p>Bilibili 是国内知名的视频分享平台，上面有很多精良而又有趣的视频。一些人喜欢(比如我)把B站视频通过iframe插入网页上，但代码大长(约230个字符)。于是为了方便大家，我堤供一个在WordPress通过短代码插入bilibili视频的教程。</p>
+<p><a href="/archives/1477">WordPress通过短代码插入bilibili视频</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[<h1>前言</h1>
+<p>Bilibili 是国内知名的视频分享平台，上面有很多精良而又有趣的视频。一些人喜欢(比如我)把B站视频通过iframe插入网页上，但代码大长(约230个字符)。于是为了方便大家，我堤供一个在WordPress通过短代码插入bilibili视频的教程。</p>
+<div class='alert alert-info'><span class='alert-inner--text'>十分建议你去看看<a href="/archives/2344">《一个 WordPress 插件，用于使用短代码插入哔哩哔哩视频》</a></span></div>
+<h2>更新日志</h2>
+<ul>
+<li>2023/10/29 重写代码，修改了匹配bv号和av号规则，用法也改了</li>
+<li>2023/7/4 优化了代码，删掉了Bilibili视频高度和宽度控制，改为Bilibili视频自适应大小。</li>
+</ul>
+<h2>教程</h2>
+<h3>一、</h3>
+<p>打开WordPress根目录下<code>wp-content/themes/你正在使用的主题/functions.php</code>文件</p>
+<p><img decoding="async" src="https://s1.ax1x.com/2023/05/08/p9wBJPA.png" alt="" /></p>
+<p>或者你在仪表盘的主题文件编辑器中打开functions.php文件</p>
+<p><img decoding="async" src="https://s1.ax1x.com/2023/05/07/p9wAnds.jpg" alt="" /></p>
+<h3>二、</h3>
+<p>复制下面的代码到functions.php文件的最后处</p>
+<div  class='collapse-block shadow-sm collapse-block-transparent collapsed hide-border-left'><div class='collapse-block-title'><i class='fa fa-code'></i> <span class='collapse-block-title-inner'>code</span><i class='collapse-icon fa fa-angle-down'></i></div><div class='collapse-block-body' style='display:none;'></p>
+<p>&#8220;`<br />
+// 添加插入bilibili视频短代码<br />
+function vbilibili_shortcode( $atts, $content = null ) {</p>
+<p>   // 解析短代码中的参数<br />
+   $atts = shortcode_atts( $defaults, $atts );</p>
+<p>   // 提取$content中的所有bv号和av号<br />
+    preg_match_all(&amp;#039;/BV([a-zA-Z0-9]+)/&amp;#039;, $content, $bv_matches);<br />
+    preg_match_all(&amp;#039;/av([0-9]+)/&amp;#039;, $content, $av_matches);</p>
+<p>   // 构建iframe的HTML代码<br />
+   $iframes = &amp;#039;&amp;#039;;</p>
+<p>   // 生成bv号对应的iframe<br />
+   foreach ($bv_matches[1] as $bv) {</p>
+<p>       $iframe_url = &amp;#039;https://player.bilibili.com/player.html?bvid=&amp;#039; . $bv . &amp;#039;&amp;high_quality=1&amp;#039;;<br />
+       $iframe = &amp;#039;&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;&lt;iframe src=&quot;&amp;#039; . $iframe_url . &amp;#039;&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot; allowfullscreen=&quot;allowfullscreen&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;&amp;#039;;<br />
+       $iframes .= $iframe;<br />
+   }</p>
+<p>   // 生成av号对应的iframe<br />
+   foreach ($av_matches[1] as $av) {</p>
+<p>        // 将$av转换为整数类型<br />
+        $av = intval($av);</p>
+<p>       $iframe_url = &amp;#039;https://player.bilibili.com/player.html?aid=&amp;#039; . $av . &amp;#039;&amp;high_quality=1&amp;#039;;<br />
+       $iframe = &amp;#039;&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;&lt;iframe src=&quot;&amp;#039; . $iframe_url . &amp;#039;&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot; allowfullscreen=&quot;allowfullscreen&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;&amp;#039;;<br />
+       $iframes .= $iframe;<br />
+   }</p>
+<p>   // 返回所有iframe的HTML代码<br />
+   return $iframes;<br />
+}<br />
+add_shortcode( &amp;#039;vbilibili&amp;#039;, &amp;#039;vbilibili_shortcode&amp;#039; );<br />
+&#8220;`</p>
+<p></div></div>
+<h2>简码使用说明</h2>
+<h3>介绍</h3>
+<p>该短代码可以插入Bilibili视频。</p>
+<h3>用法</h3>
+<pre><code>[vbilibili]啥都行，只要有bv和av在这就行了[/vbilibili]</code></pre>
+<p>只要短代码包含bv号或av号就行了，可以有多个bv号和av号</p>
+<h3>参数</h3>
+<p>无</p>
+<h3>示例</h3>
+<pre><code>[vbilibili]https://www.bilibili.com/video/BV1EX4y127J9/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1EX4y127J9&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]华为能挡子弹？Mate 60 Pro 碾压 跌落 实弹测试！ - 哔哩哔哩https://www.bilibili.com/video/BV1L94y1p72w/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]BV1L94y1p72w[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<pre><code>[vbilibili]BV1L94y1p72w，https://www.bilibili.com/video/BV1RN411w7Bv/[/vbilibili]</code></pre>
+<div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1L94y1p72w&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br><div style="position: relative; padding: 30% 45%;"><iframe src="https://player.bilibili.com/player.html?bvid=1RN411w7Bv&amp;high_quality=1" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><br>
+<p><a href="/archives/1477">WordPress通过短代码插入bilibili视频</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1477/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>禁止wordpress自动更新</title>
+		<link>/archives/1338</link>
+					<comments>/archives/1338#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 30 Mar 2023 05:22:52 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">/?p=1338</guid>
+
+					<description><![CDATA[<p>WordPress 是目前全球最受欢迎的内容管理系统之一，它拥有强大的功能和灵活的扩展性，让用户可以轻松创建和管理自己的网站。然而，虽然 WordPress 的自动更新功能可以让网站始终保持最新、安全和稳定，但有时候这也可能会对用户造成不必要的麻烦。比如，如果一个新版本的 WordPress 或其插件和主题与你的网站不兼容，那么你的网站可能会遭受损失。此时，禁止 WordPress 的自动更新功能将成为你的一个好选择。</p>
+<p><a href="/archives/1338">禁止wordpress自动更新</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言</h2>
+
+
+
+<p>WordPress 是目前全球最受欢迎的内容管理系统之一，它拥有强大的功能和灵活的扩展性，让用户可以轻松创建和管理自己的网站。然而，虽然 WordPress 的自动更新功能可以让网站始终保持最新、安全和稳定，但有时候这也可能会对用户造成不必要的麻烦。比如，如果一个新版本的 WordPress 或其插件和主题与你的网站不兼容，那么你的网站可能会遭受损失。此时，禁止 WordPress 的自动更新功能将成为你的一个好选择。</p>
+
+
+
+<h2 class="wp-block-heading">方法</h2>
+
+
+
+<p>下面介绍几种禁止 WordPress 自动更新的方法：</p>
+
+
+
+<ol>
+<li>在 <code>wp-config.php</code> 文件中手动禁用自动更新</li>
+</ol>
+
+
+
+<p>打开 WordPress 安装目录下的 <code>wp-config.php</code> 文件，然后找到以下代码：</p>
+
+
+
+<pre class="wp-block-code"><code>define( 'WP_AUTO_UPDATE_CORE', true );</code></pre>
+
+
+
+<p>将上述代码中的 “<code>true</code>” 改为 “<code>false</code>”，即可禁用 WordPress 的自动更新功能。如果你的 <code>wp-config.php</code> 文件中没有这个代码，你可以手动添加以下代码：</p>
+
+
+
+<pre class="wp-block-code"><code>define( 'WP_AUTO_UPDATE_CORE', false );</code></pre>
+
+
+
+<ol start="2">
+<li>使用插件禁止自动更新</li>
+</ol>
+
+
+
+<p>你可以安装并启用名为 “<a href="https://cn.wordpress.org/plugins/disable-wordpress-updates/" target="_blank" rel="noreferrer noopener">Disable All WordPress Updates</a>” 的插件，该插件可以禁用所有自动更新功能。这个插件还可以提供其他有用的功能，例如禁用特定插件的更新等。</p>
+
+
+
+<ol start="3">
+<li>使用托管服务提供商的控制面板禁止自动更新</li>
+</ol>
+
+
+
+<p>如果你使用的是托管服务提供商，它们通常会提供控制面板，你可以在这个控制面板中方便地管理你的网站。你可以使用这些控制面板来禁用 WordPress 的自动更新功能。</p>
+
+
+
+<ol start="4">
+<li>禁止单个组件的自动更新</li>
+</ol>
+
+
+
+<p>如果你只想禁用 WordPress 核心文件的自动更新，而允许插件和主题自动更新，你可以在 <code>wp-config.php</code> 文件中添加以下代码：</p>
+
+
+
+<pre class="wp-block-code"><code>define( 'WP_AUTO_UPDATE_CORE', 'minor' );</code></pre>
+
+
+
+<p>这将只允许 WordPress 的次要版本自动更新，而不会影响插件和主题的自动更新。</p>
+
+
+
+<div class="wp-block-argon-admonition admonition shadow-sm" style="border-left-color:#7889e8"><div class="admonition-body">请注意，虽然禁用自动更新功能可能会让你更好地掌控网站的更新和升级，但也会对网站的安全性和稳定性造成潜在风险。因此，你应该及时更新 WordPress 核心文件、主题和插件，以确保网站始终保持最新、安全和稳定。</div></div>
+<p><a href="/archives/1338">禁止wordpress自动更新</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1338/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>网站添加灯笼</title>
+		<link>/archives/575</link>
+					<comments>/archives/575#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 18 Jan 2023 14:42:10 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[春节]]></category>
+		<category><![CDATA[灯笼]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=575</guid>
+
+					<description><![CDATA[<p>春节快到了，为网站挂个灯笼。</p>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>马上又是一年了，新年就要有新年的气氛，给自己的网站加一个灯笼吧！</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-1">第一步：添加额外css，代码如下：</h2>
+
+
+
+<pre class="wp-block-code"><code> /*右上角两个灯笼第一部分共二开始*/
+    .deng-box {
+    position: fixed;
+    top: -40px;
+    right: -20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 {
+    position: fixed;
+    top: -30px;
+    right: 10px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 .deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+ 
+.deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+ 
+.deng-a {
+    width: 100px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: 12px 8px 8px 10px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.deng-b {
+    width: 45px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: -2px 8px 8px 26px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.xian {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: #dc8f03;
+}
+ 
+.shui-a {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    -webkit-animation: swing 4s infinite ease-in-out;
+    -webkit-transform-origin: 50% -45px;
+    background: #ffa500;
+    border-radius: 0 0 5px 5px;
+}
+ 
+.shui-b {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #dc8f03;
+    border-radius: 50%;
+}
+ 
+.shui-c {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: #ffa500;
+    border-radius: 0 0 0 5px;
+}
+ 
+.deng:before {
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng:after {
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng-t {
+    font-family: 鍗庢枃琛屾シ, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 3.2rem;
+    color: #dc8f03;
+    font-weight: bold;
+    line-height: 85px;
+    text-align: center;
+}
+ 
+.night .deng-t,
+.night .deng-box,
+.night .deng-box1 {
+    background: transparent !important;
+}
+ 
+@-moz-keyframes swing {
+    0% {
+        -moz-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -moz-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -moz-transform: rotate(-10deg)
+    }
+}
+ 
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -webkit-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -webkit-transform: rotate(-10deg)
+    }
+}
+
+
+&lt;!--右上角两个灯笼第一部分共二结束--&gt;</code></pre>
+
+
+
+<p>WordPress用户，来到&nbsp;<kbd>后台=&gt;外观&nbsp;=&gt;自定义额外CSS&nbsp;</kbd>将上面所示代码全部加进去！</p>
+
+
+
+<h2 class="wp-block-heading">第二步：将下面的代码添加至主题的header.php文件或footer.php：</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--右上角两个灯笼第二部分共二开始--&gt;
+&lt;div class="deng-box1 denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;春&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;div class="deng-box denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;节&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ /*右上角两个灯笼第一部分共二开始*/</code></pre>
+
+
+
+<blockquote class="wp-block-quote">
+<p>转自湘铭呀！</p>
+
+
+
+<p><a href="https://xiangming.site/?p=505" target="_blank" rel="noreferrer noopener">https://xiangming.site/?p=505</a></p>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-湘铭呀！ wp-block-embed-湘铭呀！"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="IAmCfDvx6W"><a href="https://xiangming.site/?p=505">快过年了，给自己的网页加一个灯笼吧</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《快过年了，给自己的网页加一个灯笼吧》—湘铭呀！" src="https://xiangming.site/?p=505&#038;embed=true#?secret=OuYxoOihUL#?secret=IAmCfDvx6W" data-secret="IAmCfDvx6W" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+</blockquote>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/575/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

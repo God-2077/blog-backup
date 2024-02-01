@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《一个WordPress插件，用于使用短代码插入哔哩哔哩视频》的评论	</title>
+	<atom:link href="/archives/2344/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/2344</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Sun, 24 Dec 2023 16:32:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<item>
+		<title>
+		评论者：XX666		</title>
+		<link>/archives/2344#comment-197</link>
+
+		<dc:creator><![CDATA[XX666]]></dc:creator>
+		<pubDate>Sun, 24 Dec 2023 16:32:22 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-197</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/2344#comment-195&quot;&gt;Space520&lt;/a&gt;。
+
+感谢]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/2344#comment-195">Space520</a>。</p>
+<p>感谢</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：若翎		</title>
+		<link>/archives/2344#comment-196</link>
+
+		<dc:creator><![CDATA[若翎]]></dc:creator>
+		<pubDate>Mon, 18 Dec 2023 03:30:17 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-196</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/2344#comment-192&quot;&gt;Space520&lt;/a&gt;。
+
+感谢您的回复！近期有些忙，看到邮件后忘记回复了，十分抱歉，后面有时间我照着您这个教程自己去实践一下！]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/2344#comment-192">Space520</a>。</p>
+<p>感谢您的回复！近期有些忙，看到邮件后忘记回复了，十分抱歉，后面有时间我照着您这个教程自己去实践一下！</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：Space520		</title>
+		<link>/archives/2344#comment-195</link>
+
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Mon, 04 Dec 2023 13:18:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-195</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/2344#comment-193&quot;&gt;xx666&lt;/a&gt;。
+
+GitHub处的源码已更新，
+&lt;a href=&quot;https://github.com/God-2077/bilibili_shortcode/releases/&quot; target=&quot;_blank&quot; rel=&quot;nofollow ugc&quot;&gt;GitHub God-2077/bilibili_shortcode&lt;/a&gt;
+&#124;´・ω・)ノ]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/2344#comment-193">xx666</a>。</p>
+<p>GitHub处的源码已更新，<br />
+<a href="https://github.com/God-2077/bilibili_shortcode/releases/" target="_blank" rel="nofollow ugc">GitHub God-2077/bilibili_shortcode</a><br />
+|´・ω・)ノ</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：Space520		</title>
+		<link>/archives/2344#comment-194</link>
+
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 29 Nov 2023 08:51:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-194</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/2344#comment-193&quot;&gt;xx666&lt;/a&gt;。
+
+收到，周末时看一下。]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/2344#comment-193">xx666</a>。</p>
+<p>收到，周末时看一下。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：xx666		</title>
+		<link>/archives/2344#comment-193</link>
+
+		<dc:creator><![CDATA[xx666]]></dc:creator>
+		<pubDate>Sun, 26 Nov 2023 05:53:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-193</guid>
+
+					<description><![CDATA[感谢博主分享，就是开启后出现了一个问题
+Warning: Invalid argument supplied for foreach() in /www/wwwroot/ue.tiktokssl.tk/wp-includes/shortcodes.php on line 586
+反之关闭就没有了，本人比较白]]></description>
+			<content:encoded><![CDATA[<p>感谢博主分享，就是开启后出现了一个问题<br />
+Warning: Invalid argument supplied for foreach() in /www/wwwroot/ue.tiktokssl.tk/wp-includes/shortcodes.php on line 586<br />
+反之关闭就没有了，本人比较白</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：Space520		</title>
+		<link>/archives/2344#comment-192</link>
+
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Sun, 29 Oct 2023 03:37:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-192</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/2344#comment-116&quot;&gt;若翎&lt;/a&gt;。
+
+今天早上，我重写了代码，修改了匹配 bv 号和 av 号规则，用法也改了。使用也更方便了
+有空的话，希望你能来看看。]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/2344#comment-116">若翎</a>。</p>
+<p>今天早上，我重写了代码，修改了匹配 bv 号和 av 号规则，用法也改了。使用也更方便了<br />
+有空的话，希望你能来看看。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：Space520		</title>
+		<link>/archives/2344#comment-117</link>
+
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 04 Jul 2023 08:08:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-117</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/2344#comment-116&quot;&gt;若翎&lt;/a&gt;。
+
+欢迎常来看看。]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/2344#comment-116">若翎</a>。</p>
+<p>欢迎常来看看。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：若翎		</title>
+		<link>/archives/2344#comment-116</link>
+
+		<dc:creator><![CDATA[若翎]]></dc:creator>
+		<pubDate>Tue, 04 Jul 2023 08:02:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=2344#comment-116</guid>
+
+					<description><![CDATA[留个言，码住啦，说不定以后自己会用到，感谢博主分享。另外随便逛了逛发现，博主是初中刚毕业嘛？很厉害吼，祝你学业有成，继续加油！~我的博客网站刚建立没有多久，欢迎博主有空来逛逛~]]></description>
+			<content:encoded><![CDATA[<p>留个言，码住啦，说不定以后自己会用到，感谢博主分享。另外随便逛了逛发现，博主是初中刚毕业嘛？很厉害吼，祝你学业有成，继续加油！~我的博客网站刚建立没有多久，欢迎博主有空来逛逛~</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

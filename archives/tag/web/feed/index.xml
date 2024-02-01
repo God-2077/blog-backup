@@ -1,0 +1,3284 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>web 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/web/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/web</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Thu, 16 Feb 2023 06:13:28 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>web 归档 - 时空之歌</title>
+	<link>/archives/tag/web</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>评论禁止词</title>
+		<link>/archives/1090</link>
+					<comments>/archives/1090#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2023 06:13:28 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[评论]]></category>
+		<guid isPermaLink="false">http://space520k.42web.io/?p=1090</guid>
+
+					<description><![CDATA[<p>前言： 各位博主可能都遇到过有人在评论区发垃圾评论，特别烦人。 下面介绍一些反垃圾评论的方法。 方法 Akis [&#8230;]</p>
+<p><a href="/archives/1090">评论禁止词</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">前言：</h2>
+
+
+
+<blockquote class="wp-block-quote is-style-default">
+<p>各位博主可能都遇到过有人在评论区发垃圾评论，特别烦人。</p>
+
+
+
+<p>下面介绍一些反垃圾评论的方法。</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">方法</h2>
+
+
+
+<h3 class="wp-block-heading">Akismet插件</h3>
+
+
+
+<p>WordPress最著名的评论插件之一是反垃圾邮件工具<a href="https://www.wbolt.com/how-to-set-akismet-for-free.html" target="_blank" rel="noreferrer noopener">Akismet</a>。通过使用机器学习来识别低质量的提交并自动将其删除，它可以帮助审核您的评论。</p>
+
+
+
+<p>您可以通过将审核队列中的注释标记为垃圾邮件来提高插件的准确性。随着时间的进展，Akismet将开始使用经常出现的元素来表明评论为垃圾邮件，并将开始将它们移至垃圾桶，而无需您进行干预：</p>
+
+
+
+<figure class="wp-block-image is-resized"><img fetchpriority="high" decoding="async" src="https://static.wbolt.com/wp-content/uploads/2021/04/mark-spam-wordpress-1.png" alt="mark-spam-wordpress-1" width="344" height="159" title="mark-spam-wordpress-1"/></figure>
+
+
+
+<p><strong>主要功能：</strong></p>
+
+
+
+<ul>
+<li>查看每个评论的状态历史记录</li>
+
+
+
+<li>在评论正文中显示链接，以便您删除可疑链接</li>
+
+
+
+<li>查看每个用户的已批准评论数</li>
+
+
+
+<li>丢弃最差的评论，以免它们占用数据库中的空间</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">WP内置</h2>
+
+
+
+<p>您可以通过WordPress仪表盘，“设置”-“讨论”进行操作。</p>
+
+
+
+<p>如下图：</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/02/16/pSHWgoR.jpg" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/02/16/pSHWcw9.jpg" alt=""/></figure>
+
+
+
+<p>具体的自己设置，下面为我没置的一些禁止使用的评论关键字（大多是骂人的），希望对你有用。</p>
+
+
+
+<div  class='collapse-block shadow-sm collapse-block-transparent collapsed hide-border-left'><div class='collapse-block-title'><span class='collapse-block-title-inner'>隐藏部分</span><i class='collapse-icon fa fa-angle-down'></i></div><div class='collapse-block-body' style='display:none;'>
+
+
+
+<pre class="wp-block-code"><code>&lt;html
+&lt;/html
+&lt;body
+&lt;/body
+&lt;script
+&lt;/script
+&lt;meta
+&lt;/meta
+&lt;object
+&lt;/object
+&lt;applet
+&lt;/applet
+&lt;embed
+&lt;/embed
+脑瘫
+有病
+伪娘
+娘炮
+贱人
+猪头
+猪脑
+犊子
+婊子
+色鬼
+色逼
+杂种
+贱婢
+孬种
+脑残
+变态
+滚粗
+狗逼
+无知
+无耻
+无德
+无才无貌
+走狗
+神经
+废物
+逗逼
+麻痹
+神头
+2逼
+哈逼
+骚逼
+胎神
+贱货
+瘟丧
+笨猪
+淫荡
+猥琐
+淫
+傻逼
+二逼
+笨蛋
+狗生
+阳痿
+野种
+无能
+垃圾
+扑街
+蠢蛋
+白痴
+三八
+无赖
+蠢货
+傻蛋
+傻B
+2B
+智障
+畜生
+麦芽
+神经病
+猪
+鲁麻鸡
+低能
+禽兽
+二痴
+王八三八
+小兔崽子
+胡说八道蛮不讲理
+神经兮兮
+不得好死
+臭不要脸
+死皮赖脸
+令人发指
+狼心狗肺
+狼狈为奸
+水性杨花
+薄情寡义
+负心薄幸
+朝三暮四
+卑鄙下流
+不知廉耻
+勾心斗角
+猪狗不如
+禽兽不如
+阴险狡诈
+鼠目寸光
+贼眉鼠眼
+瓜婆娘
+卖钩子的
+妈卖粉批
+操你妈
+你他妈
+颠子
+老模炎恶言恶语
+讹言谎语黑木耳
+妈蛋
+傻b
+2b
+sb
+SB
+sB
+Sb</code></pre>
+
+
+
+</div></div>
+<p><a href="/archives/1090">评论禁止词</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1090/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>JavaScript网页特效</title>
+		<link>/archives/652</link>
+					<comments>/archives/652#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Fri, 20 Jan 2023 08:24:15 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=652</guid>
+
+					<description><![CDATA[<p>1. 韩小韩 1.1 博客添加梅花API接口 接口地址https://api.vvhan.com/api/me [&#8230;]</p>
+<p><a href="/archives/652">JavaScript网页特效</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-argon-alert alert" style="background-color:#7889e8"><span class="alert-inner--icon"><i class="fa fa-info-circle"></i></span><span class="alert-inner--text">本文所有资源来自网上，</span></div>
+
+
+
+<h2 class="wp-block-heading">1. 韩小韩</h2>
+
+
+
+<h3 class="wp-block-heading">1.1 博客添加梅花API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/meihua<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/meihua</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://api.vvhan.com/api/meihua'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/meihua.json'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9MNV.png" alt="" width="344" height="610"/></figure>
+
+
+
+<h3 class="wp-block-heading">1.2 博客添加春节灯笼API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/denglong<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例（旧）：<br>https://api.vvhan.com/api/denglong<br>请求示例（新）：<br>https://api.vvhan.com/api/denglong2</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>// 旧
+&lt;script src="https://api.vvhan.com/api/denglong"&gt;&lt;/script&gt;
+// 新
+&lt;script src="https://api.vvhan.com/api/denglong2"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>// 旧
+&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/denglong.json"&gt;&lt;/script&gt;
+// 新
+&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/denglong2.json"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9KA0.png" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">1.3 满屏雪花下雪API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/snow<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/snow</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://api.vvhan.com/api/snow'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src='https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/snow.json'&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9n7q.png" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">1.4 HTML的svg透明波浪特效API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/bolang<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/bolang</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://api.vvhan.com/api/bolang"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/bolang.json"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9VXj.png" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">1.5 网站添加樱花效果API接口</h3>
+
+
+
+<p>接口地址<br>https://api.vvhan.com/api/yinghua<br>返回格式<br>JSON<br>请求方式：<br>GET<br>请求示例：<br>https://api.vvhan.com/api/yinghua</p>
+
+
+
+<h4 class="wp-block-heading">调用实例</h4>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://api.vvhan.com/api/yinghua"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<pre class="wp-block-code"><code>&lt;script src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/yinghua.json"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<h4 class="wp-block-heading">示例</h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9mBn.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">2. 鼠标点击爆炸烟花特效</h2>
+
+
+
+<h3 class="wp-block-heading">调用实例</h3>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--鼠标点击爆炸五颜六色特效--&gt;
+&lt;canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"&gt; 
+&lt;/canvas&gt;
+&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/anime.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/god-2077/bloger@main/js/fireworks.js"&gt;&lt;/script&gt;
+&lt;!--end--&gt;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading">示例图</h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9A1g.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9EcQ.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+ <blockquote class="wp-embedded-content" data-secret="rvbOKAa26Z"><a href="http://space520.42web.io/word/2023/652/">JavaScript网页特效</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《JavaScript网页特效》—Space520" src="http://space520.42web.io/word/2023/652/embed/#?secret=rgYW0Z3j6v#?secret=rvbOKAa26Z" data-secret="rvbOKAa26Z" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+<p><a href="/archives/652">JavaScript网页特效</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/652/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>网页音乐播放器&#8211;明月浩空音乐播放器</title>
+		<link>/archives/636</link>
+					<comments>/archives/636#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Thu, 19 Jan 2023 15:11:29 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[播放器]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=636</guid>
+
+					<description><![CDATA[<p>网址：https://myhkw.cn/ 明月浩空-HTML5浮窗音乐播放器研发于2014年，并持续更新至今是 [&#8230;]</p>
+<p><a href="/archives/636">网页音乐播放器&#8211;明月浩空音乐播放器</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>网址：<a rel="noreferrer noopener" href="https://myhkw.cn/" target="_blank">https://myhkw.cn/</a></p>
+
+
+
+<p>明月浩空-HTML5浮窗音乐播放器研发于2014年，并持续更新至今是基于QQ、酷我、酷狗等平台来源的网页音乐播放器同时播放器主体会跟随专辑图片主色值自动变色，歌词跟随MP3播放动态滚动并支持歌单，歌手热门歌曲，自定义歌曲，域名授权等丰富功能和数项自定义个性化设置是一款兼容任何网站的HTML5音乐播放器，并提供配套插件/短代码，安装播放器方便快捷，永久免费。</p>
+
+
+
+<p>示例：</p>
+
+
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9x8U.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://s1.ax1x.com/2023/01/20/pSG9X5V.png" alt=""/></figure>
+<p><a href="/archives/636">网页音乐播放器&#8211;明月浩空音乐播放器</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/636/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>网站添加灯笼</title>
+		<link>/archives/575</link>
+					<comments>/archives/575#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 18 Jan 2023 14:42:10 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<category><![CDATA[春节]]></category>
+		<category><![CDATA[灯笼]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=575</guid>
+
+					<description><![CDATA[<p>春节快到了，为网站挂个灯笼。</p>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>马上又是一年了，新年就要有新年的气氛，给自己的网站加一个灯笼吧！</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-1">第一步：添加额外css，代码如下：</h2>
+
+
+
+<pre class="wp-block-code"><code> /*右上角两个灯笼第一部分共二开始*/
+    .deng-box {
+    position: fixed;
+    top: -40px;
+    right: -20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 {
+    position: fixed;
+    top: -30px;
+    right: 10px;
+    z-index: 9999;
+    pointer-events: none;
+}
+ 
+.deng-box1 .deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+ 
+.deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+ 
+.deng-a {
+    width: 100px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: 12px 8px 8px 10px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.deng-b {
+    width: 45px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: -2px 8px 8px 26px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
+ 
+.xian {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: #dc8f03;
+}
+ 
+.shui-a {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    -webkit-animation: swing 4s infinite ease-in-out;
+    -webkit-transform-origin: 50% -45px;
+    background: #ffa500;
+    border-radius: 0 0 5px 5px;
+}
+ 
+.shui-b {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #dc8f03;
+    border-radius: 50%;
+}
+ 
+.shui-c {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: #ffa500;
+    border-radius: 0 0 0 5px;
+}
+ 
+.deng:before {
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng:after {
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng-t {
+    font-family: 鍗庢枃琛屾シ, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 3.2rem;
+    color: #dc8f03;
+    font-weight: bold;
+    line-height: 85px;
+    text-align: center;
+}
+ 
+.night .deng-t,
+.night .deng-box,
+.night .deng-box1 {
+    background: transparent !important;
+}
+ 
+@-moz-keyframes swing {
+    0% {
+        -moz-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -moz-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -moz-transform: rotate(-10deg)
+    }
+}
+ 
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-10deg)
+    }
+ 
+    50% {
+        -webkit-transform: rotate(10deg)
+    }
+ 
+    100% {
+        -webkit-transform: rotate(-10deg)
+    }
+}
+
+
+&lt;!--右上角两个灯笼第一部分共二结束--&gt;</code></pre>
+
+
+
+<p>WordPress用户，来到&nbsp;<kbd>后台=&gt;外观&nbsp;=&gt;自定义额外CSS&nbsp;</kbd>将上面所示代码全部加进去！</p>
+
+
+
+<h2 class="wp-block-heading">第二步：将下面的代码添加至主题的header.php文件或footer.php：</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--右上角两个灯笼第二部分共二开始--&gt;
+&lt;div class="deng-box1 denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;春&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;div class="deng-box denglong"&gt;
+&lt;div class="deng"&gt;
+&lt;div class="xian"&gt;&lt;/div&gt;
+&lt;div class="deng-a"&gt;
+&lt;div class="deng-b"&gt;
+&lt;div class="deng-t" style="margin-left: -8px;"&gt;节&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shui shui-a"&gt;
+&lt;div class="shui-c"&gt;&lt;/div&gt;
+&lt;div class="shui-b"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ /*右上角两个灯笼第一部分共二开始*/</code></pre>
+
+
+
+<blockquote class="wp-block-quote">
+<p>转自湘铭呀！</p>
+
+
+
+<p><a href="https://xiangming.site/?p=505" target="_blank" rel="noreferrer noopener">https://xiangming.site/?p=505</a></p>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-湘铭呀！ wp-block-embed-湘铭呀！"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="IAmCfDvx6W"><a href="https://xiangming.site/?p=505">快过年了，给自己的网页加一个灯笼吧</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《快过年了，给自己的网页加一个灯笼吧》—湘铭呀！" src="https://xiangming.site/?p=505&#038;embed=true#?secret=OuYxoOihUL#?secret=IAmCfDvx6W" data-secret="IAmCfDvx6W" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+</blockquote>
+<p><a href="/archives/575">网站添加灯笼</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/575/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>网站插入高清bilibili视频代码</title>
+		<link>/archives/567</link>
+					<comments>/archives/567#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 18 Jan 2023 07:49:56 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[bilibili]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[调用]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=567</guid>
+
+					<description><![CDATA[<p>网站插入高清bilibili视频代码</p>
+<p><a href="/archives/567">网站插入高清bilibili视频代码</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">一、前言</h2>
+
+
+
+<p>在B站有很多影片资源可以分享，若想分想到自己的WP、ty网站该怎么做呢?</p>
+
+
+
+<h2 class="wp-block-heading">二、链接</h2>
+
+
+
+<pre class="wp-block-code"><code>   1.https://player.bilibili.com/player.html?bvid=BV号
+   2.https://player.bilibili.com/player.html?aid=av号</code></pre>
+
+
+
+<h2 class="wp-block-heading">三、代码</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;iframe src="链接&amp;amp;high_quality=1" width="100%" height="600" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" allowfullscreen="allowfullscreen"> &lt;/iframe></code></pre>
+
+
+
+<h2 class="wp-block-heading">四、详讲</h2>
+
+
+
+<pre class="wp-block-code"><code>high_quality -&gt; 是否高清【1: 高清(最高1080p) / 0: 最低解析度(预设)】
+ 
+page -&gt; 起始下标为1 (预设为1)
+ 
+as_wide -&gt; 是否宽屏【1: 宽屏, 0: 小屏】
+ 
+danmaku -&gt; 是否开启弹幕【1: 开启(预设), 0: 关闭】
+ 
+allowfullscreen -&gt; allowfullscreen= “ture” 允许全萤幕播放</code></pre>
+<p><a href="/archives/567">网站插入高清bilibili视频代码</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/567/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Argon主题博客美化</title>
+		<link>/archives/507</link>
+					<comments>/archives/507#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2023 06:29:34 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[WP]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=507</guid>
+
+					<description><![CDATA[<p>前言 常言道：工欲善其事必先利其器，在发表文章前，美化博客，使其利于自己的观看与管理极其重要，所以我四处搜寻， [&#8230;]</p>
+<p><a href="/archives/507">Argon主题博客美化</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[<div class="wp-block-image is-style-default">
+<figure class="aligncenter size-large"><img decoding="async" src="https://s1.ax1x.com/2023/03/06/ppVR0kF.jpg" alt=""/></figure></div>
+
+
+<h2 class="wp-block-heading" id="header-id-1">前言</h2>
+
+
+
+<p>常言道：工欲善其事必先利其器，在发表文章前，美化博客，使其利于自己的观看与管理极其重要，所以我四处搜寻，得到了以下美化代码。</p>
+
+
+
+<p>但是，有时候我们走得太远，会忘了为什么出发。希望阅览本文章的人不要忘记初心，想想一开始为什么搭建博客。我相信大部分朋友都是为了记录自己学习笔记，生活故事。</p>
+
+
+
+<p>所以，有时候博客美化过度会适得其反，望各位仔细斟酌，莫要使自己的博客变成了花架子，好的文章才是博客之本，立足之根。</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-2">主题资源</h2>
+
+
+
+<p>链接：<a rel="noreferrer noopener" href="https://pan.baidu.com/s/1yyA-m_h_wku7n3qzK-eYEQ?pwd=echo" target="_blank">https://pan.baidu.com/s/1yyA-m_h_wku7n3qzK-eYEQ?pwd=echo</a>&nbsp;</p>
+
+
+
+<p>提取码：echo</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-3">我的博客美化 JSON</h2>
+
+
+
+<p><strong><code>注意</code>：可复制一键导入</strong></p>
+
+
+
+<p><strong>别忘记在主题设置页面修改头像、背景以及底部信息等设置哦</strong></p>
+
+
+
+<pre id="jInREkTAMPZFZ5nFQoFPJvIigVM1XreZ" class="wp-block-code"><code>{"argon_theme_color":"#5e72e4","argon_theme_color_hex_preview":"#5e72e4","argon_show_customize_theme_color_picker":true,"argon_enable_immersion_color":"true","argon_darkmode_autoswitch":"time","argon_enable_amoled_dark":"false","argon_card_radius":"15","argon_card_shadow":"default","argon_page_layout":"double","argon_article_list_waterflow":"2","argon_article_list_layout":"1","argon_font":"serif","argon_assets_path":"sourcegcdn","argon_custom_assets_path":"","argon_wp_path":"/","argon_dateformat":"YMD","argon_enable_headroom":"true","argon_toolbar_title":"Echo","argon_toolbar_icon":"","argon_toolbar_icon_link":" ","argon_toolbar_blur":"true","argon_banner_title":"Echo‘s blog","argon_banner_subtitle":"Banner 副标题","argon_banner_size":"fullscreen","argon_page_background_banner_style":"transparent","argon_show_toolbar_mask":true,"argon_banner_background_url":"--bing--","argon_banner_background_color_type":"shape-primary","argon_banner_background_hide_shapes":true,"argon_enable_banner_title_typing_effect":"true","argon_banner_typing_effect_interval":"100","argon_page_background_url":"https://yy.liveout.cn/background/wallhaven-yxjm57_1920x1080.png","argon_page_background_dark_url":"https://yy.liveout.cn/background/wallhaven-6dqjdl_1920x1080.png","argon_page_background_opacity":"1","argon_sidebar_banner_title":"左侧栏标题","argon_sidebar_banner_subtitle":"左侧栏子标题（格言）","argon_sidebar_auther_name":"Echo","argon_sidebar_auther_image":"https://yy.liveout.cn/photo/photo1.png","argon_sidebar_author_description":"左侧栏作者简介","argon_sidebar_announcement":"","argon_fab_show_settings_button":"false","argon_fab_show_darkmode_button":"true","argon_fab_show_gotocomment_button":"false","argon_seo_description":"网站描述 (Description Meta 标签)","argon_seo_keywords":"搜索引擎关键词（Keywords Meta 标签）","argon_article_meta":"time|categories|views","argon_show_readingtime":"true","argon_reading_speed":"580","argon_reading_speed_en":"80","argon_reading_speed_code":"10","argon_show_thumbnail_in_banner_in_content_page":"false","argon_first_image_as_thumbnail_by_default":"true","argon_reference_list_title":"参考","argon_show_sharebtn":"true","argon_show_headindex_number":"false","argon_donate_qrcode_url":"https://www.liveout.cn/wp-content/uploads/2022/10/wechat1.jpg","argon_additional_content_after_post":"文末附加内容","argon_related_post":"category,tag","argon_related_post_sort_orderby":"meta_value_num","argon_related_post_sort_order":"DESC","argon_related_post_limit":"10","argon_article_header_style":"article-header-style-2","argon_outdated_info_time_type":"createdtime","argon_outdated_info_days":"1","argon_outdated_info_tip_type":"inpost","argon_outdated_info_tip_content":"本文最后更新于%modify_date_delta% 天前，其中的信息可能已经过时，如有错误请发送邮件到big_fw@foxmail.com","argon_archives_timeline_show_month":"true","argon_archives_timeline_url":"https://www.liveout.cn/pigeonhole/","argon_footer_html":"&lt;style&gt;\n/* 核心样式 */\n.github-badge {\ndisplay: inline-block;\nborder-radius: 4px;\ntext-shadow: none;\nfont-size: 13.1px;\ncolor: #fff;\nline-height: 15px;\nmargin-bottom: 5px;\nfont-family: \"Open Sans\", sans-serif;\n}\n.github-badge .badge-subject {\ndisplay: inline-block;\nbackground-color: #4d4d4d;\npadding: 4px 4px 4px 6px;\nborder-top-left-radius: 4px;\nborder-bottom-left-radius: 4px;\nfont-family: \"Open Sans\", sans-serif;\n}\n.github-badge .badge-value {\ndisplay: inline-block;\npadding: 4px 6px 4px 4px;\nborder-top-right-radius: 4px;\nborder-bottom-right-radius: 4px;\nfont-family: \"Open Sans\", sans-serif;\n}\n.github-badge-big {\ndisplay: inline-block;\nborder-radius: 6px;\ntext-shadow: none;\nfont-size: 14.1px;\ncolor: #fff;\nline-height: 18px;\nmargin-bottom: 7px;\n}\n.github-badge-big .badge-subject {\ndisplay: inline-block;\nbackground-color: #4d4d4d;\npadding: 4px 4px 4px 6px;\nborder-top-left-radius: 4px;\nborder-bottom-left-radius: 4px;\n}\n.github-badge-big .badge-value {\ndisplay: inline-block;\npadding: 4px 6px 4px 4px;\nborder-top-right-radius: 4px;\nborder-bottom-right-radius: 4px;\n}\n.bg-orange {\nbackground-color: #ec8a64 !important;\n}\n.bg-red {\nbackground-color: #cb7574 !important;\n}\n.bg-apricots {\nbackground-color: #f7c280 !important;\n}\n.bg-casein {\nbackground-color: #dfe291 !important;\n}\n.bg-shallots {\nbackground-color: #97c3c6 !important;\n}\n.bg-ogling {\nbackground-color: #95c7e0 !important;\n}\n.bg-haze {\nbackground-color: #9aaec7 !important;\n}\n.bg-mountain-terrier {\nbackground-color: #99a5cd !important;\n}\n&lt;/style&gt;\n \n&lt;div class=\"github-badge-big\"&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;i class=\"fa fa-id-card\"&gt;&lt;/i&gt; 备案号 &lt;/span\n&gt;&lt;span class=\"badge-value bg-orange\"&gt;\n&lt;a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" one-link-mark=\"yes\"\n&gt;苏ICP备0000000000号&lt;/a\n&gt;\n|\n&lt;a\nhref=\"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode= 32072202010255\"\ntarget=\"_blank\"\none-link-mark=\"yes\"\n&gt;苏公网安备 00000000000000号&lt;/a\n&gt;&lt;/span\n&gt;\n&lt;/div&gt;\n\n \n&lt;div class=\"github-badge\"&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;img src=\"https://www.liveout.cn/wp-content/uploads/2022/10/又拍云_logo4.png\" height=\"20\" width=\"20\"/&gt;&lt;/i&gt; CDN&lt;/span\n&gt;&lt;span class=\"badge-value bg-shallots\"\n&gt;&lt;a href=\"\" target=\"_blank\" one-link-mark=\"yes\"&gt;&lt;/a\n&gt;&lt;a\nhref=\"https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral\"\ntarget=\"_blank\"\none-link-mark=\"yes\"\n&gt;Upyun&lt;/a\n&gt;&lt;/span\n&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;i class=\"fa fa-wordpress\"&gt;&lt;/i&gt; Powered&lt;/span\n&gt;&lt;span class=\"badge-value bg-green\"\n&gt;&lt;a href=\"https://cn.wordpress.org/\" target=\"_blank\" one-link-mark=\"yes\"\n&gt;WordPress&lt;/a\n&gt;&lt;/span\n&gt;\n&lt;/div&gt;\n&lt;div class=\"github-badge-big\"&gt;\n&lt;span class=\"badge-subject\"&gt;Copyright &lt;/span\n&gt;&lt;span class=\"badge-value bg-red\"&gt;\n2022-2022\n&lt;i class=\"fa fa-copyright\"&gt;&lt;/i&gt; Echo&lt;/span\n&gt;\n&lt;/script&gt;\n&lt;/div&gt;\n&lt;div class=\"github-badge-big\"&gt;\n&lt;span class=\"badge-subject\"&gt;&lt;i class=\"fa fa-clock-o\"&gt;&lt;/i&gt; Running Time&lt;/span\n&gt;&lt;span class=\"badge-value bg-apricots\"\n&gt;&lt;span id=\"blog_running_days\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt;\ndays\n&lt;span id=\"blog_running_hours\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt; H\n&lt;span id=\"blog_running_mins\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt; M\n&lt;span id=\"blog_running_secs\" class=\"odometer odometer-auto-theme\"&gt;&lt;/span&gt;\nS&lt;/span\n&gt;\n &lt;script no-pjax=\"\"&gt;\nvar blog_running_days = document.getElementById(\"blog_running_days\");\nvar blog_running_hours = document.getElementById(\"blog_running_hours\");\nvar blog_running_mins = document.getElementById(\"blog_running_mins\");\nvar blog_running_secs = document.getElementById(\"blog_running_secs\");\nfunction refresh_blog_running_time() {\nvar time = new Date() - new Date(2020, 0,0, 0, 0, 0);\nvar d = parseInt(time / 24 / 60 / 60 / 1000);\nvar h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);\nvar m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);\nvar s = parseInt((time % (60 * 1000)) / 1000);\nblog_running_days.innerHTML = d;\nblog_running_hours.innerHTML = h;\nblog_running_mins.innerHTML = m;\nblog_running_secs.innerHTML = s;\n}\nrefresh_blog_running_time();\nif (typeof bottomTimeIntervalHasSet == \"undefined\") {\nvar bottomTimeIntervalHasSet = true;\nsetInterval(function () {\nrefresh_blog_running_time();\n}, 500);\n}\n&lt;/script&gt;\n","argon_enable_code_highlight":"true","argon_code_theme":"vs2015","argon_code_highlight_hide_linenumber":"true","argon_code_highlight_break_line":"false","argon_code_highlight_transparent_linenumber":"false","argon_math_render":"none","argon_mathjax_cdn_url":"//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js","argon_mathjax_v2_cdn_url":"//cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-AMS_HTML","argon_katex_cdn_url":"//cdn.jsdelivr.net/npm/katex@0.11.1/dist/","argon_enable_lazyload":"true","argon_lazyload_threshold":"800","argon_lazyload_effect":"fadeIn","argon_lazyload_loading_style":"1","argon_enable_fancybox":"true","argon_enable_zoomify":"false","argon_zoomify_duration":"200","argon_zoomify_easing":"cubic-bezier(0.4,0,0,1)","argon_zoomify_scale":"0.9","argon_enable_pangu":"article","argon_custom_html_head":"","argon_custom_html_foot":"&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css\"&gt;\n&lt;script src=\"https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js\"&gt;&lt;/script&gt;\n&lt;script src=\"https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js\"&gt;&lt;/script&gt;\n \n&lt;meting-js \n    server=\"netease\" \n    type=\"playlist\" \n    id=\"7373135320\"\n    fixed=\"true\" \n    mini=\"true\"\n    order=\"list\"\n    loop=\"all\"\n    preload=\"auto\"\n    list-folded=\"true\"\n    lrc-type=\"0\"\n&gt;\n&lt;/meting-js&gt;\n\n\n","argon_enable_smoothscroll_type":"1_pulse","argon_enable_into_article_animation":"true","argon_disable_pjax_animation":"false","argon_comment_pagination_type":"page","argon_comment_emotion_keyboard":"true","argon_hide_name_email_site_input":"false","argon_comment_need_captcha":"false","argon_get_captcha_by_ajax":"false","argon_comment_allow_markdown":"true","argon_comment_allow_editing":"true","argon_comment_allow_privatemode":"true","argon_comment_allow_mailnotice":"true","argon_comment_mailnotice_checkbox_checked":true,"argon_comment_enable_qq_avatar":"true","argon_comment_avatar_vcenter":"false","argon_who_can_visit_comment_edit_history":"commentsender","argon_enable_comment_pinning":"true","argon_enable_comment_upvote":"true","argon_comment_ua":"platform,browser","argon_show_comment_parent_info":"true","argon_fold_long_comments":"true","argon_gravatar_cdn":"gravatar.pho.ink/avatar/","argon_text_gravatar":"true","argon_enable_search_filters":"true","argon_search_filters_type":"*post,*page,shuoshuo","argon_pjax_disabled":"false","argon_hide_categories":"","argon_enable_login_css":"true","argon_home_show_shuoshuo":"false","argon_fold_long_shuoshuo":"true","argon_enable_timezone_fix":"false","argon_hide_shortcode_in_preview":"true","argon_trim_words_count":"0","argon_enable_mobile_scale":"false","argon_disable_googlefont":"false","argon_disable_codeblock_style":"false","argon_update_source":"github","argon_hide_footer_author":"true"}</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-4">年度倒计时显示 (左侧栏)</h2>
+
+
+
+<p><strong>在左侧栏里添加工具 —— 简码，复制一下代码粘贴进去</strong></p>
+
+
+
+<pre id="9wpvTWrkx69wEObbXnpoK390ceS9xEXV" class="wp-block-code"><code>&lt;div class="progress-wrapper" style="padding: 0"&gt;
+&lt;div class="progress-info"&gt;
+&lt;div class="progress-label"&gt;
+&lt;span id="yearprogress_yearname"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id="yearprogress_text_container" class="progress-percentage"&gt;
+&lt;span id="yearprogress_progresstext"&gt;&lt;/span&gt;
+&lt;span id="yearprogress_progresstext_full"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+&lt;div id="yearprogress_progressbar" class="progress-bar bg-primary"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script no-pjax=""&gt;
+function yearprogress_refresh() {
+let year = new Date().getFullYear();
+$("#yearprogress_yearname").text(year);
+let from = new Date(year, 0, 1, 0, 0, 0);
+let to = new Date(year, 11, 31, 23, 59, 59);
+let now = new Date();
+let progress = (((now - from) / (to - from + 1)) * 100).toFixed(7);
+let progressshort = (((now - from) / (to - from + 1)) * 100).toFixed(2);
+$("#yearprogress_progresstext").text(progressshort + "%");
+$("#yearprogress_progresstext_full").text(progress + "%");
+$("#yearprogress_progressbar").css("width", progress + "%");
+}
+yearprogress_refresh();
+if (typeof yearProgressIntervalHasSet == "undefined") {
+var yearProgressIntervalHasSet = true;
+setInterval(function () {
+yearprogress_refresh();
+}, 500);
+}
+&lt;/script&gt;
+&lt;style&gt;
+#yearprogress_text_container {
+width: 100%;
+height: 22px;
+overflow: hidden;
+user-select: none;
+}
+#yearprogress_text_container &gt; span {
+transition: all 0.3s ease;
+display: block;
+}
+#yearprogress_text_container:hover &gt; span {
+transform: translateY(-20px);
+}
+&lt;/style&gt;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-5">音乐播放功能</h2>
+
+
+
+<p><strong><code>server="netease"</code>&nbsp;指定音乐平台为网易云，<code>type="song"</code>&nbsp;指单曲类型，<code>id="7373135320"</code>&nbsp;为音乐的 id（这里的 id 为打开音乐歌单，网址显示的 id）</strong></p>
+
+
+
+<p><strong>开启吸底模式&nbsp;<code>fixed="true"</code>, 开启迷你模式</strong>&nbsp;<code>mini="true"</code>, 随机播放&nbsp;<code>order="random"</code>, 关闭底部歌词&nbsp;<code>lrc-type="0"</code></p>
+
+
+
+<p><strong><code>注意</code></strong>：id 需要为自己创建的歌单，不能为我喜欢的音乐；server 可以改自己用的音乐平台，如 netease (网易云)、tencent (QQ 音乐)</p>
+
+
+
+<p>具体参数设置点击此链接：<a href="https://yy.liveout.cn/article/Learn/front-end/aplayer%E5%8F%82%E6%95%B0.png" target="_blank" rel="noreferrer noopener">https://yy.liveout.cn/article/Learn/front-end/aplayer%E5%8F%82%E6%95%B0.png</a></p>
+
+
+
+<p>Aplayer 播放器官网文档：<a href="https://ace520.github.io/blog/post/2020/05/26/aplayer/">APlayer HTML5 音乐播放器 | ACE-BLOG (ace520.github.io)</a></p>
+
+
+
+<pre id="lICd6MqMJnJmzHyPmxLsBO7vwCYI33pD" class="wp-block-code"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"&gt;&lt;/script&gt;
+ 
+&lt;meting-js 
+    server="netease" 
+    type="playlist" 
+    id="7360465359"
+    fixed="true" 
+    mini="true"
+    order="random"
+    loop="all"
+    preload="auto"
+    list-folded="false"&gt;
+&lt;/meting-js&gt;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-6">动态背景</h2>
+
+
+
+<p><strong>背景可以通过更改 url 链接设置为自己的动态视频</strong>，<em>尽量不要太大，否则别人访问时会刷新许久</em></p>
+
+
+
+<p><code>注意</code><strong>视频链接已过期，可更换为自己的链接</strong></p>
+
+
+
+<pre id="XygN24oH4bIpDTOCB55lQzMQTUFLFB60" class="wp-block-code"><code>&lt;video
+src="https://new.gcxstudio.cn/wp-content/uploads/2022/03/daymode.mp4" /*白天动态视频链接*/
+class="bg-video bg-video-day"
+autoplay=""
+loop="loop"
+muted=""
+&gt;&lt;/video&gt;
+&lt;video
+src="https://new.gcxstudio.cn/wp-content/uploads/2022/03/darkmode.webm" /*夜间动态视频链接*/
+class="bg-video bg-video-night"
+autoplay=""
+loop="loop"
+muted=""
+&gt;&lt;/video&gt;
+&lt;style&gt;
+video.bg-video {
+position: fixed;
+z-index: -1;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+pointer-events: none;
+}
+html.darkmode video.bg-video.bg-video-day {
+opacity: 0;
+}
+html.darkmode video.bg-video.bg-video-night {
+opacity: 1;
+}
+video.bg-video.bg-video-day {
+opacity: 1;
+}
+video.bg-video.bg-video-night {
+opacity: 0;
+}
+#banner,
+#banner .shape {
+background: transparent !important;
+}
+* {
+font-family: "Comfortaa", "Open Sans", -apple-system, system-ui,
+BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+}
+&lt;/style&gt;
+&lt;script
+src="https://api.gcxstudio.cn/odometer/odometer.min.js"
+integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw="
+crossorigin="anonymous"
+&gt;&lt;/script&gt;
+ 
+ 
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+ 
+&lt;div id='aplayer'&gt;&lt;/div&gt;
+ 
+ 
+</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-7">虚拟人物 (看板娘)</h2>
+
+
+
+<p>以下代码选择一项复制即可，效果不同，自行选择</p>
+
+
+
+<p>具体文章：<a href="https://github.com/stevenjoezhang/live2d-widget">stevenjoezhang/live2d-widget: 把萌萌哒的看板娘抱回家 (ノ≧∇≦) ノ | Live2D widget for web platform (github.com)</a></p>
+
+
+
+<ol>
+<li></li>
+</ol>
+
+
+
+<pre id="iGBitY7SpC6lAtrrVRjdxlzhivZjtrYz" class="wp-block-code"><code>&lt;script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<ol start="2">
+<li><strong>其中 jsonpath: 后面的链接可按自己爱好更改，选择别的虚拟人物</strong></li>
+</ol>
+
+
+
+<pre id="KxpidaV9T7QJJIVyIfo7PIsbDW9DE1FJ" class="wp-block-code"><code>&lt;script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    L2Dwidget.init({
+        "model": {
+　　　　　　　//jsonpath控制显示那个小萝莉模型，
+            //(切换模型需要改动)
+//              "https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
+            jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 75,  //小萝莉的宽度
+            "height": 150, //小萝莉的高度
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+&lt;/script&gt;
+ 
+   /*   小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json
+      萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
+      白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
+      黑猫： https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
+      小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
+      小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json
+      初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json
+      圣职者妹妹：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
+      茶杯犬：https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+      绿毛妹妹：https://unpkg.com/live2d-widget-model-tsumiki@1.0.5/assets/tsumiki.model.json
+      金龟子妹妹：https://unpkg.com/live2d-widget-model-unitychan@1.0.5/assets/unitychan.model.json
+      https:&#47;&#47;unpkg.com/live2d-widget-model-nito@1.0.5/assets/nito.model.json
+      https://unpkg.com/live2d-widget-model-ni-j@1.0.5/assets/ni-j.model.json
+      小阿狸： https://unpkg.com/live2d-widget-model-nico@1.0.5/assets/nico.model.json
+      https://unpkg.com/live2d-widget-model-nietzche@1.0.5/assets/nietzche.model.json
+      https://unpkg.com/live2d-widget-model-nipsilon@1.0.5/assets/nipsilon.model.json
+      女学生： https://unpkg.com/live2d-widget-model-hibiki@1.0.5/assets/hibiki.model.json */</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-8">网站访问数据 (左侧栏)</h2>
+
+
+
+<ol>
+<li><strong>进入 WordPress，点击插件，搜索并且下载 Wp Statistics</strong></li>
+
+
+
+<li><strong>外观 —— 小工具 —— 站点额外内容 —— 旧版小工具 —— 统计</strong></li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://yy.liveout.cn/article/Learn/front-end/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1.jpg" alt="" width="1158" height="567"/></figure>
+
+
+
+<h2 class="wp-block-heading" id="header-id-9">网站底部信息</h2>
+
+
+
+<h3 class="wp-block-heading" id="header-id-10">CSS (样式表)</h3>
+
+
+
+<pre id="cAZupwE4vMV9YjsHwkrlppjktEQpgDKM" class="wp-block-code"><code>&lt;style&gt;
+/* 核心样式 */
+.github-badge {
+display: inline-block;
+border-radius: 4px;
+text-shadow: none;
+font-size: 13.1px;
+color: #fff;
+line-height: 15px;
+margin-bottom: 5px;
+font-family: "Open Sans", sans-serif;
+}
+.github-badge .badge-subject {
+display: inline-block;
+background-color: #4d4d4d;
+padding: 4px 4px 4px 6px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+font-family: "Open Sans", sans-serif;
+}
+.github-badge .badge-value {
+display: inline-block;
+padding: 4px 6px 4px 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+font-family: "Open Sans", sans-serif;
+}
+.github-badge-big {
+display: inline-block;
+border-radius: 6px;
+text-shadow: none;
+font-size: 14.1px;
+color: #fff;
+line-height: 18px;
+margin-bottom: 7px;
+}
+.github-badge-big .badge-subject {
+display: inline-block;
+background-color: #4d4d4d;
+padding: 4px 4px 4px 6px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+.github-badge-big .badge-value {
+display: inline-block;
+padding: 4px 6px 4px 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.bg-orange {
+background-color: #ec8a64 !important;
+}
+.bg-red {
+background-color: #cb7574 !important;
+}
+.bg-apricots {
+background-color: #f7c280 !important;
+}
+.bg-casein {
+background-color: #dfe291 !important;
+}
+.bg-shallots {
+background-color: #97c3c6 !important;
+}
+.bg-ogling {
+background-color: #95c7e0 !important;
+}
+.bg-haze {
+background-color: #9aaec7 !important;
+}
+.bg-mountain-terrier {
+background-color: #99a5cd !important;
+}
+&lt;/style&gt;
+ </code></pre>
+
+
+
+<h3 class="wp-block-heading" id="header-id-11">HTML (底部信息)</h3>
+
+
+
+<pre id="wjPp5PN46Hd9SjtlEz6OhJfcLr9y85Uu" class="wp-block-code"><code>&lt;div class="github-badge-big"&gt;
+&lt;span class="badge-subject"&gt;&lt;i class="fa fa-id-card"&gt;&lt;/i&gt; 备案号 &lt;/span
+&gt;&lt;span class="badge-value bg-orange"&gt;
+&lt;a href="https://beian.miit.gov.cn/" target="_blank" one-link-mark="yes"
+&gt;苏ICP备2022020194号&lt;/a
+&gt;
+|
+&lt;a
+href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode= 32072202010255"
+target="_blank"
+one-link-mark="yes"
+&gt;苏公网安备 32072202010255号&lt;/a
+&gt;&lt;/span
+&gt;
+&lt;/div&gt;
+&lt;div class="github-badge-big"&gt;
+&lt;span class="badge-subject"&gt;Copyright &lt;/span
+&gt;&lt;span class="badge-value bg-red"&gt;
+2022-2022
+&lt;i class="fa fa-copyright"&gt;&lt;/i&gt; Echo&lt;/span
+&gt;
+&lt;/script&gt;
+&lt;/div&gt;
+ 
+&lt;div class="github-badge"&gt;
+&lt;span class="badge-subject"&gt;&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt; Powered&lt;/span
+&gt;&lt;span class="badge-value bg-green"
+&gt;&lt;a href="https://cn.wordpress.org/" target="_blank" one-link-mark="yes"
+&gt;WordPress&lt;/a
+&gt;&lt;/span
+&gt;
+&lt;/div&gt;
+&lt;div class="github-badge-big"&gt;
+&lt;span class="badge-subject"&gt;&lt;i class="fa fa-clock-o"&gt;&lt;/i&gt; Running Time&lt;/span
+&gt;&lt;span class="badge-value bg-apricots"
+&gt;&lt;span id="blog_running_days" class="odometer odometer-auto-theme"&gt;&lt;/span&gt;
+days
+&lt;span id="blog_running_hours" class="odometer odometer-auto-theme"&gt;&lt;/span&gt; H
+&lt;span id="blog_running_mins" class="odometer odometer-auto-theme"&gt;&lt;/span&gt; M
+&lt;span id="blog_running_secs" class="odometer odometer-auto-theme"&gt;&lt;/span&gt;
+S&lt;/span
+&gt;
+ </code></pre>
+
+
+
+<h3 class="wp-block-heading" id="header-id-12">JavaScript（网站运行时间脚本）</h3>
+
+
+
+<p><strong><code>注意</code>：new Date (year, month, date, hrs, min, sec) 按给定的参数创建 日期对象</strong></p>
+
+
+
+<p><strong>其中 month 的值域为 0～11，0 代表 1 月，11 表代表 12 月；所以你输入的月份需要为自己真正月份的前一个月</strong></p>
+
+
+
+<pre id="qePcVGivf5r2vGEZRBh11n8Nb6McrxVe" class="wp-block-code"><code>&lt;script no-pjax=""&gt;
+var blog_running_days = document.getElementById("blog_running_days");
+var blog_running_hours = document.getElementById("blog_running_hours");
+var blog_running_mins = document.getElementById("blog_running_mins");
+var blog_running_secs = document.getElementById("blog_running_secs");
+function refresh_blog_running_time() {
+var time = new Date() - new Date(2022, 5, 31, 0, 0, 0); /*此处日期的月份改为自己真正月份的前一个月*/
+var d = parseInt(time / 24 / 60 / 60 / 1000);
+var h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);
+var m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);
+var s = parseInt((time % (60 * 1000)) / 1000);
+blog_running_days.innerHTML = d;
+blog_running_hours.innerHTML = h;
+blog_running_mins.innerHTML = m;
+blog_running_secs.innerHTML = s;
+}
+refresh_blog_running_time();
+if (typeof bottomTimeIntervalHasSet == "undefined") {
+var bottomTimeIntervalHasSet = true;
+setInterval(function () {
+refresh_blog_running_time();
+}, 500);
+}
+&lt;/script&gt;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-13">字体，鼠标等特效</h2>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-bensz wp-block-embed-bensz"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="WncgyEFhNZ"><a href="https://blognas.hwb0307.com/linux/docker/744">Docker系列 WordPress系列 特效</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="《Docker系列 WordPress系列 特效》—Bensz" src="https://blognas.hwb0307.com/linux/docker/744/embed#?secret=b1MmKbfhUq#?secret=WncgyEFhNZ" data-secret="WncgyEFhNZ" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading" id="header-id-14">教程视频</h2>
+
+
+
+<p><a href="https://www.bilibili.com/video/BV1qM411k7NK/?spm_id_from=333.999.0.0">个人博客网站美化代码使用<em>哔哩哔哩</em>&nbsp;bilibili</a></p>
+
+
+
+<p><a href="https://www.bilibili.com/video/BV1uW4y1E7wA/?spm_id_from=333.999.0.0">个人博客网站 (WordPress) 基本使用<em>哔哩哔哩</em>&nbsp;bilibili</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="header-id-15">相关链接</h2>
+
+
+
+<p><strong>本文所涉及的代码出自以下博客文章，十分感谢下面各位大佬的分享</strong></p>
+
+
+
+<p><strong>关于 Argon 主题 更多美化内容文章</strong>：&nbsp;<a href="https://new.gcxstudio.cn/archives/argon-theme-settings/">Argon 主题的美化设置 – Gong_cx (gcxstudio.cn)</a></p>
+
+
+
+<p><strong>关于博客中添加音乐插件</strong>:&nbsp;<a href="https://echeverra.cn/aplayer" target="_blank" rel="noreferrer noopener">https://echeverra.cn/aplayer</a></p>
+
+
+
+<p><strong>Argon 主题 GitHub 地址</strong>：<a href="https://github.com/solstice23/argon-theme">solstice23/argon-theme:&nbsp;&nbsp;Argon – 一个轻盈、简洁的 WordPress 主题 (github.com)</a></p>
+
+
+
+<p><strong>Argon 主题制作人博客</strong>：<a href="https://solstice23.top/">solstice23 – Blog</a></p>
+
+
+
+<p><strong>Argon 主题使用文档</strong>：<a href="https://argon-docs-old.solstice23.top/">首页 – Argon Theme Docs (solstice23.top)</a></p>
+
+
+
+<p>作者：<a href="https://www.liveout.cn/" target="_blank" rel="noreferrer noopener">Echo</a></p>
+
+
+
+<p>原文地址：<a href="https://www.liveout.cn/argon_beauty/" target="_blank" rel="noreferrer noopener">Argon主题博客美化 – Echo （在新窗口中打开）</a></p>
+<p><a href="/archives/507">Argon主题博客美化</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/507/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>免费随机图片api接口(转载)</title>
+		<link>/archives/495</link>
+					<comments>/archives/495#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2023 05:42:37 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[图片]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=495</guid>
+
+					<description><![CDATA[<p>1、api接口整合 近期由于新浪对图片设置了防盗链，所以许多api已失效，本站api已恢复正常 樱花：http [&#8230;]</p>
+<p><a href="/archives/495">免费随机图片api接口(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h1 class="wp-block-heading" id="header-id-1">1、api接口整合</h1>
+
+
+
+<blockquote class="wp-block-quote">
+<p><em>近期由于新浪对图片设置了防盗链，所以许多api已失效，本站api已恢复正常</em></p>
+</blockquote>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<blockquote class="wp-block-quote">
+<p>樱花：<a target="_blank" rel="noreferrer noopener" href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a><br>搏天：<a target="_blank" rel="noreferrer noopener" href="https://api.btstu.cn/sjbz/api.php">https://api.btstu.cn/sjbz/api.php</a><br>樱道：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%881">https://api.r10086.com/img-api.php?type=动漫综合1</a><br>小歪：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/api/api2.php">https://api.ixiaowai.cn/api/api2.php</a><br>保罗：<a target="_blank" rel="noreferrer noopener" href="https://api.paugram.com/wallpaper">https://api.paugram.com/wallpaper</a><br>墨天逸：<a target="_blank" rel="noreferrer noopener" href="https://api.mtyqx.cn/tapi/random.php">https://api.mtyqx.cn/tapi/random.php</a><br>EEE.DOG：<a target="_blank" rel="noreferrer noopener" href="https://api.yimian.xyz/img">https://api.yimian.xyz/img</a><br>东方Project：<a target="_blank" rel="noreferrer noopener" href="https://img.paulzzh.tech/touhou/random">https://img.paulzzh.tech/touhou/random</a><br>likepoems随机图：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/mc">https://api.likepoems.com/img/aliyun/mc</a><br>洛川唧上的萌部图片:<br><a target="_blank" rel="noreferrer noopener" href="https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/">https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/</a><br>Unsplash Image：<a target="_blank" rel="noreferrer noopener" href="https://source.unsplash.com/random">https://source.unsplash.com/random</a><br>缙哥哥博客:&nbsp;<a target="_blank" rel="noreferrer noopener" href="https://api.dujin.org/pic/yuanshen/">https://api.dujin.org/pic/yuanshen/</a><br>其它随机图：<a target="_blank" rel="noreferrer noopener" href="https://api.wuque.cc/random/images">https://api.wuque.cc/random/images</a></p>
+</blockquote>
+
+
+
+<h1 class="wp-block-heading" id="header-id-2">2、api网站整合</h1>
+
+
+
+<h2 class="wp-block-heading" id="header-id-3">2.1 樱花 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://www.dmoe.cc/">https://www.dmoe.cc/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a><img decoding="async" src="blob:http://space520.42web.io/2bc7d1fa-b515-41cd-b04b-e3e1e701d9b8" alt="樱花"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-4">2.2 搏天</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.btstu.cn/doc/sjbz.php">https://api.btstu.cn/doc/sjbz.php</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.btstu.cn/sjbz/api.php">https://api.btstu.cn/sjbz/api.php</a><img decoding="async" src="blob:http://space520.42web.io/e789f460-9cef-42c4-8b8a-977458a3bf1d" alt="搏天"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-5">2.3 樱道 (访问较慢)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://img.r10086.com/">https://img.r10086.com/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<br>二次元动漫(1-18)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%881">https://api.r10086.com/img-api.php?type=动漫综合1</a><br>东京食尸鬼(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=东京食尸鬼横屏系列1</a><br>Fate(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=Fate%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=Fate横屏系列1</a><br>为美好世界献上祝福(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%B8%BA%E7%BE%8E%E5%A5%BD%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=为美好世界献上祝福横屏系列1</a><br>某科学的超电磁炮(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84%E8%B6%85%E7%94%B5%E7%A3%81%E7%82%AE%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=某科学的超电磁炮横屏系列1</a><br>原神(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%8E%9F%E7%A5%9E%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=原神横屏系列1</a><br>我的世界：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=我的世界系列1</a><br>神奇宝贝(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%A5%9E%E5%A5%87%E5%AE%9D%E8%B4%9D%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=神奇宝贝横屏系列1</a><br>龙珠(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%BE%99%E7%8F%A0%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=龙珠横屏系列1</a><br>罪恶王冠(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%BD%AA%E6%81%B6%E7%8E%8B%E5%86%A0%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=罪恶王冠横屏系列1</a><br>鬼灭之刃(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%AC%BC%E7%81%AD%E4%B9%8B%E5%88%83%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=鬼灭之刃横屏系列1</a><br>火影忍者(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=火影忍者横屏系列1</a><br>海贼王(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%B5%B7%E8%B4%BC%E7%8E%8B%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=海贼王横屏系列1</a><br>进击的巨人(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=进击的巨人横屏系列1</a><br>从零开始的异世界生活(横竖屏)：<br><a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E7%94%9F%E6%B4%BB%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=从零开始的异世界生活横屏系列1</a><br>刀剑神域(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=刀剑神域横屏系列1</a><br>钢之炼金术师(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=钢之炼金术师横屏系列1</a><br>妖精的尾巴(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%A6%96%E7%B2%BE%E7%9A%84%E5%B0%BE%E5%B7%B4%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=妖精的尾巴横屏系列1</a><br>缘之空(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%BC%98%E4%B9%8B%E7%A9%BA%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=缘之空横屏系列1</a><br>东方project：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%B8%9C%E6%96%B9project1">https://api.r10086.com/img-api.php?type=东方project1</a><br>猫娘：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%8C%AB%E5%A8%981">https://api.r10086.com/img-api.php?type=猫娘1</a><br>风景(1-10)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%A3%8E%E6%99%AF%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=风景系列1</a><br>物语(1-2)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%89%A9%E8%AF%AD%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=物语系列1</a><br>少女前线：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF1">https://api.r10086.com/img-api.php?type=少女前线1</a><br>明日方舟(1-2)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F1">https://api.r10086.com/img-api.php?type=明日方舟1</a><br>重装战姬：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%87%8D%E8%A3%85%E6%88%98%E5%A7%AC1">https://api.r10086.com/img-api.php?type=重装战姬1</a><br>P站(1-4)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=P%E7%AB%99%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=P站系列1</a><br>CG(1-5)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=CG%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=CG系列1</a><br>守望先锋：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B">https://api.r10086.com/img-api.php?type=守望先锋</a><br>王者荣耀：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80">https://api.r10086.com/img-api.php?type=王者荣耀</a><br>少女写真(1-6)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%B0%91%E5%A5%B3%E5%86%99%E7%9C%9F1">https://api.r10086.com/img-api.php?type=少女写真1</a><br>死库水萝莉：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%AD%BB%E5%BA%93%E6%B0%B4%E8%90%9D%E8%8E%89">https://api.r10086.com/img-api.php?type=死库水萝莉</a><br>萝莉：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E8%90%9D%E8%8E%89">https://api.r10086.com/img-api.php?type=萝莉</a><br>极品美女图片：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%9E%81%E5%93%81%E7%BE%8E%E5%A5%B3%E5%9B%BE%E7%89%87">https://api.r10086.com/img-api.php?type=极品美女图片</a><br>日本COS中国COS：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%97%A5%E6%9C%ACCOS%E4%B8%AD%E5%9B%BDCOS">https://api.r10086.com/img-api.php?type=日本COS中国COS</a><br>橘里橘气(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%A9%98%E9%87%8C%E6%A9%98%E6%B0%94%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=橘里橘气横屏系列1</a><img decoding="async" src="blob:http://space520.42web.io/2c37fae4-501c-4d63-a2bd-bcc000303c66" alt="樱道"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-6">2.4 小歪</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/">https://api.ixiaowai.cn/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<br>二次元动漫：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/api/api2.php">https://api.ixiaowai.cn/api/api2.php</a><br>mc酱动漫：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/mcapi/mcapi2.php">https://api.ixiaowai.cn/mcapi/mcapi2.php</a><br>高清壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/gqapi/gqapi2.php">https://api.ixiaowai.cn/gqapi/gqapi2.php</a><img decoding="async" src="blob:http://space520.42web.io/8246a67f-6b6a-4427-87e1-3a974fee3100" alt="小歪"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-7">2.5 保罗 (访问较慢)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.paugram.com/help/wallpaper">https://api.paugram.com/help/wallpaper</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.paugram.com/wallpaper/">https://api.paugram.com/wallpaper/</a><img decoding="async" src="blob:http://space520.42web.io/b1a05e43-ae76-4543-8768-14758afa137d" alt="保罗"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-8">2.6 墨天逸 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.mtyqx.cn/">https://api.mtyqx.cn/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.mtyqx.cn/api/random.php">https://api.mtyqx.cn/api/random.php</a><img decoding="async" src="blob:http://space520.42web.io/3f43152d-1fa7-4bc6-97f6-3798f0b08e17" alt="墨天逸"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-9">2.7 EEE.DOG</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://www.eee.dog/tech/rand-pic-api.html">https://www.eee.dog/tech/rand-pic-api.html</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.yimian.xyz/img">https://api.yimian.xyz/img</a><img decoding="async" src="blob:http://space520.42web.io/4d9f0a5c-a78a-4195-a78b-f55db8ab2491" alt="EEE.DOG"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-10">2.8 东方Project</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://img.paulzzh.tech/">https://img.paulzzh.tech/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://img.paulzzh.com/touhou/random">https://img.paulzzh.com/touhou/random</a><img decoding="async" src="blob:http://space520.42web.io/66fda99a-a909-4c85-a0b5-5b65b4be3924" alt="东方Project"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-11">2.9 likepoems随机图</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<br><a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/">https://api.likepoems.com/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<br>二次元PC壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/pc">https://api.likepoems.com/img/aliyun/pc</a><br>二次元PE壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/pe">https://api.likepoems.com/img/aliyun/pe</a><br>mc酱壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/mc">https://api.likepoems.com/img/aliyun/mc</a><br>pixiv壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/pixiv">https://api.likepoems.com/img/aliyun/pixiv</a><br>nature壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/nature">https://api.likepoems.com/img/aliyun/nature</a><br>必应壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/bing">https://api.likepoems.com/img/aliyun/bing</a><img decoding="async" src="blob:http://space520.42web.io/d8082b05-7371-4802-9d9e-ed0f3d8f368d" alt="likepoems"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-12">2.10 洛川唧上的萌部图片 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://tu-api.df100.ltd/">https://tu-api.df100.ltd/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/">https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/</a><img decoding="async" src="blob:http://space520.42web.io/65788357-cc52-4c00-a2ad-b24f5dac2300" alt="洛川唧"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-13">2.11 Unsplash Image</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://source.unsplash.com/">https://source.unsplash.com/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://source.unsplash.com/random">https://source.unsplash.com/random</a><img decoding="async" src="blob:http://space520.42web.io/31ffda7e-9189-43d6-ad23-7842805f8bfd" alt="Unsplash"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-14">2.12 缙哥哥博客 (访问较慢)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.dujin.org/pic/yuanshen/">https://api.dujin.org/pic/yuanshen/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.dujin.org/pic/yuanshen/">https://api.dujin.org/pic/yuanshen/</a><img decoding="async" src="blob:http://space520.42web.io/e1c34a94-a041-49a3-a4a7-3d1d7920f62e" alt="原神"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-15">2.13 其它随机图 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.wuque.cc/random/images">https://api.wuque.cc/random/images</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.wuque.cc/random/images">https://api.wuque.cc/random/images</a><img decoding="async" src="blob:http://space520.42web.io/04c3a0b3-1536-4989-8812-ae9a99043d88" alt="随机妹子"></li>
+</ul>
+
+
+
+<h1 class="wp-block-heading" id="header-id-16">3、怎么自制随机图</h1>
+
+
+
+<h2 class="wp-block-heading" id="header-id-17">3.1 普通的随机图</h2>
+
+
+
+<p>准备图片—&gt;书写路径—&gt;书写php文件<br>在img文件夹里新建img.txt，文件中直接写图片的URL地址，如：</p>
+
+
+
+<pre id="XvWrLCWCjOUdyHS0epJToUfair7FAmpT" class="wp-block-code"><code>https:&#47;&#47;static.likepoems.com/2020/10/06/385ea1c4c8b4fbac57f5a0aa61f033761.jpghttps://static.likepoems.com/2021/06/12/20210126104630786.png</code></pre>
+
+
+
+<p>新建index.php文件。文件内容如下：</p>
+
+
+
+<pre id="Gyz3VNc664R4FViOxtmSYKalWtjc9jLm" class="wp-block-code"><code>&lt;?php<em>//存放api随机图链接的文件名img.txt</em>$filename = "img.txt";if(!file_exists($filename)){    die('文件不存在');} <em>//从文本获取链接</em>$pics = &#91;];$fs = fopen($filename, "r");while(!feof($fs)){    $line=trim(fgets($fs));    if($line!=''){        array_push($pics, $line);    }} <em>//从数组随机获取链接</em>$pic = $pics&#91;array_rand($pics)]; <em>//返回指定格式</em>$type=$_GET&#91;'type'];switch($type){ <em>//JSON返回</em>case 'json':    header('Content-type:text/json');    die(json_encode(&#91;'pic'=&gt;$pic])); default:    die(header("Location: $pic"));} ?&gt;</code></pre>
+
+
+
+<p>然后放在服务器里面的api文件夹里，绑定域名，记得开启php环境<br>访问路径：你的域名/api/img</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-18">3.2 通过新浪微博图床搭建的随机图</h2>
+
+
+
+<p>index.php</p>
+
+
+
+<pre id="Br9Dj8GyhBD60Tx7z9yduG5LNl5TyGs6" class="wp-block-code"><code>&lt;?php<em>//读取文本</em>$str = explode("\n", file_get_contents('img.txt'));$k = rand(0,count($str));$sina_img = str_re($str&#91;$k]);<em>// 定义多个新浪图片请求接口</em>$size_arr = array('large', 'mw1024', 'mw690', 'bmiddle', 'small', 'thumb180', 'thumbnail', 'square');$size = !empty($_GET&#91;'size']) ? $_GET&#91;'size'] : 'large' ;$server = rand(1,4);if(!in_array($size, $size_arr)){    $size = 'large';}$url = 'https://tva/'.$server.'.sinaimg.cn/'.$size.'/'.$sina_img.'.jpg';<em>//解析url</em>$result=array("code"=&gt;"200","imgurl"=&gt;"$url");<em>//定义type返回类型</em>$type=$_GET&#91;'return'];switch ($type){<em>//Json格式解析</em>case 'json':$imageInfo = getimagesize($url);$result&#91;'width']="$imageInfo&#91;0]";$result&#91;'height']="$imageInfo&#91;1]";header('Content-type:text/json');echo json_encode($result);break;<em>//返回图片链接</em>default:header("Location:".$result&#91;'imgurl']);break;}function str_re($str){  $str = str_replace(' ', "", $str);  $str = str_replace("\n", "", $str);  $str = str_replace("\t", "", $str);  $str = str_replace("\r", "", $str);  return $str;}?&gt;</code></pre>
+
+
+
+<p>img.txt</p>
+
+
+
+<pre id="or56iHXdwtE6kNiQU6eOkpiAYq65Etg9" class="wp-block-code"><code>007LvBV9gy1h4ogsz8i56j31hc0u0h99007LvBV9gy1h4ogszkea5j31hc0u0qko007LvBV9gy1h4ogszvqhuj31hc0u0k8t007LvBV9gy1h4ogt05g8sj30xc0n3gue007LvBV9gy1h4ogt0hx1qj31hc0xc7il</code></pre>
+
+
+
+<p>和上面的一样，只是请求的是微博的图片，比较稳定，速度快。<br>请求示例：<br>你的域名/api/img?return=json 返回json格式<br>你的域名/api/img 返回普通图片</p>
+
+
+
+<p>5.转载</p>
+
+
+
+<p>原文链接：<a rel="noreferrer noopener" href="https://likepoems.com/articles/free-random-image-api-interface/" target="_blank">https://likepoems.com/articles/free-random-image-api-interface/</a><br>来源：<a href="https://likepoems.com/" target="_blank" rel="noreferrer noopener">likepoems</a>，谢谢！^^</p>
+<p><a href="/archives/495">免费随机图片api接口(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/495/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>APlayer</title>
+		<link>/archives/374</link>
+					<comments>/archives/374#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Sat, 14 Jan 2023 13:16:30 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[音乐]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=354</guid>
+
+					<description><![CDATA[<p>哇，这么漂亮的HTML5音乐播放器</p>
+<p><a href="/archives/374">APlayer</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f36d.png" alt="🍭" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Wow, such a beautiful HTML5 music player  (哇，这么漂亮的HTML5音乐播放器)</p>
+
+
+
+<h2 class="wp-block-heading" id="安装">安装</h2>
+
+
+
+<p>使用 npm:</p>
+
+
+
+<pre class="wp-block-code"><code>npm install aplayer --save
+</code></pre>
+
+
+
+<p>使用 Yarn:</p>
+
+
+
+<pre class="wp-block-code"><code>yarn add aplayer
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="入门">入门</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="aplayer"&gt;&lt;/div&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: &#91;{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg'
+    }]
+});
+</code></pre>
+
+
+
+<p>使用模块管理器:</p>
+
+
+
+<pre class="wp-block-code"><code>import 'APlayer/dist/APlayer.min.css';
+import APlayer from 'APlayer';
+
+const ap = new APlayer(options);
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="参数">参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>名称</th><th>默认值</th><th>描述</th></tr></thead><tbody><tr><td>container</td><td>document.querySelector(&#8216;.aplayer&#8217;)</td><td>播放器容器元素</td></tr><tr><td>fixed</td><td>false</td><td>开启吸底模式,&nbsp;<a href="https://aplayer.js.org/#/home?id=fixed-mode">详情</a></td></tr><tr><td>mini</td><td>false</td><td>开启迷你模式,&nbsp;<a href="https://aplayer.js.org/#/home?id=mini-mode" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>autoplay</td><td>false</td><td>音频自动播放</td></tr><tr><td>theme</td><td>&#8216;#b7daff&#8217;</td><td>主题色</td></tr><tr><td>loop</td><td>&#8216;all&#8217;</td><td>音频循环播放, 可选值: &#8216;all&#8217;, &#8216;one&#8217;, &#8216;none&#8217;</td></tr><tr><td>order</td><td>&#8216;list&#8217;</td><td>音频循环顺序, 可选值: &#8216;list&#8217;, &#8216;random&#8217;</td></tr><tr><td>preload</td><td>&#8216;auto&#8217;</td><td>预加载，可选值: &#8216;none&#8217;, &#8216;metadata&#8217;, &#8216;auto&#8217;</td></tr><tr><td>volume</td><td>0.7</td><td>默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td></tr><tr><td>audio</td><td>&#8211;</td><td>音频信息, 应该是一个对象或对象数组</td></tr><tr><td>audio.name</td><td>&#8211;</td><td>音频名称</td></tr><tr><td>audio.artist</td><td>&#8211;</td><td>音频艺术家</td></tr><tr><td>audio.url</td><td>&#8211;</td><td>音频链接</td></tr><tr><td>audio.cover</td><td>&#8211;</td><td>音频封面</td></tr><tr><td>audio.lrc</td><td>&#8211;</td><td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>audio.theme</td><td>&#8211;</td><td>切换到此音频时的主题色，比上面的 theme 优先级高</td></tr><tr><td>audio.type</td><td>&#8216;auto&#8217;</td><td>可选值: &#8216;auto&#8217;, &#8216;hls&#8217;, &#8216;normal&#8217; 或其他自定义类型,&nbsp;<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>customAudioType</td><td>&#8211;</td><td>自定义类型，<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>mutex</td><td>true</td><td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td></tr><tr><td>lrcType</td><td>0</td><td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>listFolded</td><td>false</td><td>列表默认折叠</td></tr><tr><td>listMaxHeight</td><td>&#8211;</td><td>列表最大高度</td></tr><tr><td>storageName</td><td>&#8216;aplayer-setting&#8217;</td><td>存储播放器设置的 localStorage key</td></tr></tbody></table></figure>
+
+
+
+<p>例如:</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    mini: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: &#91;
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="api">API</h2>
+
+
+
+<ul>
+<li><code>APlayer.version</code>: 静态属性, 返回 APlayer 的版本号</li>
+
+
+
+<li><code>ap.play()</code>: 播放音频</li>
+
+
+
+<li><code>ap.pause()</code>: 暂停音频</li>
+
+
+
+<li><code>ap.seek(time: number)</code>: 跳转到特定时间，时间的单位为秒<code>ap.seek(100);</code></li>
+
+
+
+<li><code>ap.toggle()</code>: 切换播放和暂停</li>
+
+
+
+<li><code>ap.on(event: string, handler: function)</code>: 绑定音频和播放器事件，<a href="https://aplayer.js.org/#/home?id=event-binding" target="_blank" rel="noreferrer noopener">详情</a></li>
+
+
+
+<li><code>ap.volume(percentage: number, nostorage: boolean)</code>: 设置音频音量<code>ap.volume(0.1, true);</code></li>
+
+
+
+<li><code>ap.theme(color: string, index: number)</code>: 设置播放器主题色, index 默认为当前音频的 index<code>ap.theme('#000', 0);</code></li>
+
+
+
+<li><code>ap.setMode(mode: string)</code>: 设置播放器模式，mode 取值应为 &#8216;mini&#8217; 或 &#8216;normal&#8217;</li>
+
+
+
+<li><code>ap.mode</code>: 返回播放器当前模式，&#8217;mini&#8217; 或 &#8216;normal&#8217;</li>
+
+
+
+<li><code>ap.notice(text: string, time: number, opacity: number)</code>: 显示通知，时间的单位为毫秒，默认时间 2000 毫秒，默认透明度 0.8，设置时间为 0 可以取消通知自动隐藏<code>ap.notice('Amazing player', 2000, 0.8);</code></li>
+
+
+
+<li><code>ap.skipBack()</code>: 切换到上一首音频</li>
+
+
+
+<li><code>ap.skipForward()</code>: 切换到下一首音频</li>
+
+
+
+<li><code>ap.destroy()</code>: 销毁播放器</li>
+
+
+
+<li><code>ap.lrc</code>
+<ul>
+<li><code>ap.lrc.show()</code>: 显示歌词</li>
+
+
+
+<li><code>ap.lrc.hide()</code>: 隐藏歌词</li>
+
+
+
+<li><code>ap.lrc.toggle()</code>: 显示/隐藏歌词</li>
+</ul>
+</li>
+
+
+
+<li><code>ap.list</code><ul><li><code>ap.list.show()</code>: 显示播放列表</li><li><code>ap.list.hide()</code>: 隐藏播放列表</li><li><code>ap.list.toggle()</code>: 显示/隐藏播放列表</li><li><code>ap.list.add(audios: array | object)</code>: 添加一个或几个新音频到播放列表</li></ul><code>ap.list.add([{ name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg', lrc: 'lrc.lrc', theme: '#ebd0c2' }]);</code><ul><li><code>ap.list.remove(index: number)</code>: 移除播放列表中的一个音频</li></ul><code>ap.list.remove(1);</code><ul><li><code>ap.list.switch()</code>: 切换到播放列表里的其他音频</li></ul><code>ap.list.switch(1);</code>
+<ul>
+<li><code>ap.list.clear()</code>: 清空播放列表</li>
+</ul>
+</li>
+
+
+
+<li><code>ap.audio</code>: 原生 audio
+<ul>
+<li><code>ap.audio.currentTime</code>: 返回音频当前播放时间</li>
+
+
+
+<li><code>ap.audio.duration</code>: 返回音频总时间</li>
+
+
+
+<li><code>ap.audio.paused</code>: 返回音频是否暂停</li>
+
+
+
+<li>支持大多数<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank" rel="noreferrer noopener">原生audio接口</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="事件绑定">事件绑定</h2>
+
+
+
+<p><code>ap.on(event, handler)</code></p>
+
+
+
+<pre class="wp-block-code"><code>ap.on('ended', function () {
+    console.log('player ended');
+});
+</code></pre>
+
+
+
+<p>音频事件</p>
+
+
+
+<ul>
+<li>abort</li>
+
+
+
+<li>canplay</li>
+
+
+
+<li>canplaythrough</li>
+
+
+
+<li>durationchange</li>
+
+
+
+<li>emptied</li>
+
+
+
+<li>ended</li>
+
+
+
+<li>error</li>
+
+
+
+<li>loadeddata</li>
+
+
+
+<li>loadedmetadata</li>
+
+
+
+<li>loadstart</li>
+
+
+
+<li>mozaudioavailable</li>
+
+
+
+<li>pause</li>
+
+
+
+<li>play</li>
+
+
+
+<li>playing</li>
+
+
+
+<li>progress</li>
+
+
+
+<li>ratechange</li>
+
+
+
+<li>seeked</li>
+
+
+
+<li>seeking</li>
+
+
+
+<li>stalled</li>
+
+
+
+<li>suspend</li>
+
+
+
+<li>timeupdate</li>
+
+
+
+<li>volumechange</li>
+
+
+
+<li>waiting</li>
+</ul>
+
+
+
+<p>播放器事件</p>
+
+
+
+<ul>
+<li>listshow</li>
+
+
+
+<li>listhide</li>
+
+
+
+<li>listadd</li>
+
+
+
+<li>listremove</li>
+
+
+
+<li>listswitch</li>
+
+
+
+<li>listclear</li>
+
+
+
+<li>noticeshow</li>
+
+
+
+<li>noticehide</li>
+
+
+
+<li>destroy</li>
+
+
+
+<li>lrcshow</li>
+
+
+
+<li>lrchide</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="歌词">歌词</h2>
+
+
+
+<p>我们有三种方式来给 APlayer 传递歌词，使用&nbsp;<code>lrcType</code>&nbsp;参数指明使用哪种方式，然后把歌词放到&nbsp;<code>audio.lrc</code>&nbsp;参数或者 HTML 里。</p>
+
+
+
+<h3 class="wp-block-heading" id="lrc-文件方式">LRC 文件方式</h3>
+
+
+
+<p>第一种方式，把歌词放到 LRC 文件里，音频播放时会加载对应的 LRC 文件。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    lrcType: 3,
+    audio: {
+        name: 'name',
+        artist: 'artist',
+        url: 'demo.mp3',
+        cover: 'demo.jpg',
+        lrc: 'lrc.lrc'
+    }
+});
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="js-字符串方式">JS 字符串方式</h3>
+
+
+
+<p>第二种方式，把歌词放到 JS 字符串里面。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    lrcType: 1,
+    audio: {
+        name: 'name',
+        artist: 'artist',
+        url: 'demo.mp3',
+        cover: 'demo.jpg',
+        lrc: '&#91;00:00.00]APlayer\n&#91;00:04.01]is\n&#91;00:08.02]amazing'
+    }
+});
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="html-方式">HTML 方式</h3>
+
+
+
+<p>第三种方式，把歌词放到 HTML 里面。</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="player"&gt;
+    &lt;pre class="aplayer-lrc-content"&gt;
+        &#91;00:00.00]APlayer audio1
+        &#91;00:04.01]is
+        &#91;00:08.02]amazing
+        &lt;!-- ... --&gt;
+    &lt;/pre&gt;
+    &lt;pre class="aplayer-lrc-content"&gt;
+        &#91;00:00.00]APlayer audio2
+        &#91;00:04.01]is
+        &#91;00:08.02]amazing
+        &lt;!-- ... --&gt;
+    &lt;/pre&gt;
+&lt;/div&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    lrcType: 2,
+    audio: &#91;&#91;
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg'
+        }
+    ]]
+});
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="歌词格式">歌词格式</h3>
+
+
+
+<p>支持下面格式的歌词：</p>
+
+
+
+<p><code>[mm:ss]APlayer</code></p>
+
+
+
+<p><code>[mm:ss.xx]is</code></p>
+
+
+
+<p><code>[mm:ss.xxx]amazing</code></p>
+
+
+
+<p><code>[mm:ss.xx][mm:ss.xx]APlayer</code></p>
+
+
+
+<p><code>[mm:ss.xx]&lt;mm:ss.xx&gt;is</code></p>
+
+
+
+<p><code>[mm:ss.xx]amazing[mm:ss.xx]APlayer</code></p>
+
+
+
+<h2 class="wp-block-heading" id="播放列表">播放列表</h2>
+
+
+
+<p>当有多个音频时会 APlayer 会展示一个播放列表，<code>listFolded</code>&nbsp;参数指明列表是否默认折叠，<code>listMaxHeight</code>&nbsp;参数指明列表最大高度。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: &#91;
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="吸底模式">吸底模式</h2>
+
+
+
+<p>APlayer 可以通过吸底模式固定在页面底部，这种模式跟普通模式有很大不同。点击</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    fixed: true,
+    audio: &#91;{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
+    }]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="迷你模式">迷你模式</h2>
+
+
+
+<p>如果你没有足够空间来放置正常模式的播放器，那么你可以考虑使用迷你模式。</p>
+
+
+
+<p>请注意迷你模式与吸底模式冲突。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    mini: true,
+    audio: &#91;{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
+    }]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="mse-支持">MSE 支持</h2>
+
+
+
+<h3 class="wp-block-heading" id="hls">HLS</h3>
+
+
+
+<p>需要在&nbsp;<code>APlayer.min.js</code>&nbsp;前面加载&nbsp;<a rel="noreferrer noopener" href="https://github.com/video-dev/hls.js" target="_blank">hls.js</a>。</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="aplayer"&gt;&lt;/div&gt;
+&lt;script src="hls.min.js"&gt;&lt;/script&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: &#91;{
+        name: 'HLS',
+        artist: 'artist',
+        url: 'url.m3u8',
+        cover: 'cover.jpg',
+        type: 'hls'
+    }]
+});
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>// 另一种方式，使用 customAudioType
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: &#91;{
+        name: 'HLS',
+        artist: 'artist',
+        url: 'url.m3u8',
+        cover: 'cover.jpg',
+        type: 'customHls'
+    }],
+    customAudioType: {
+        'customHls': function (audioElement, audio, player) {
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(audio.url);
+                hls.attachMedia(audioElement);
+            }
+            else if (audioElement.canPlayType('application/x-mpegURL') || audioElement.canPlayType('application/vnd.apple.mpegURL')) {
+                audioElement.src = audio.url;
+            }
+            else {
+                player.notice('Error: HLS is not supported.');
+            }
+        }
+    }
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="根据封面自适应主题色">根据封面自适应主题色</h2>
+
+
+
+<p>需要额外加载&nbsp;<a rel="noreferrer noopener" href="https://github.com/lokesh/color-thief/blob/master/src/color-thief.js" target="_blank">color-thief.js</a></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="aplayer"&gt;&lt;/div&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+&lt;script src="color-thief.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    theme: '#e9e9e9',
+    audio: &#91;{
+        name: 'name1',
+        artist: 'artist1',
+        url: 'url1.mp3',
+        cover: 'cover1.jpg'
+    }, {
+        name: 'name2',
+        artist: 'artist2',
+        url: 'url2.mp3',
+        cover: 'cover2.jpg'
+    }]
+});
+
+const colorThief = new ColorThief();
+const image = new Image();
+const xhr = new XMLHttpRequest();
+const setTheme = (index) =&gt; {
+    if (!ap.list.audios&#91;index].theme) {
+        xhr.onload = function(){
+            let coverUrl = URL.createObjectURL(this.response);
+            image.onload = function(){
+                let color = colorThief.getColor(image);
+                ap.theme(`rgb(${color&#91;0]}, ${color&#91;1]}, ${color&#91;2]})`, index);
+                URL.revokeObjectURL(coverUrl)
+            };
+            image.src = coverUrl;
+        }
+        xhr.open('GET', ap.list.audios&#91;index].cover, true);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (index) =&gt; {
+    setTheme(index);
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="cdn">CDN</h2>
+
+
+
+<ul>
+<li><a href="https://www.jsdelivr.com/package/npm/aplayer" target="_blank" rel="noreferrer noopener">jsDelivr</a></li>
+
+
+
+<li><a href="https://cdnjs.com/libraries/aplayer" target="_blank" rel="noreferrer noopener">cdnjs</a></li>
+
+
+
+<li><a href="https://unpkg.com/aplayer/" target="_blank" rel="noreferrer noopener">unpkg</a></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="常见问题">常见问题</h2>
+
+
+
+<h3 class="wp-block-heading" id="为什么播放器不能在手机上自动播放？">为什么播放器不能在手机上自动播放？</h3>
+
+
+
+<p>大多数移动端浏览器禁止了音频自动播放。</p>
+
+
+
+<h2 class="wp-block-heading">参考资料</h2>
+
+
+
+<ul>
+<li><a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noreferrer noopener">首页 &#8211; APlayer</a></li>
+</ul>
+<p><a href="/archives/374">APlayer</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/374/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</title>
+		<link>/archives/262</link>
+					<comments>/archives/262#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2023 04:54:22 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[二次元]]></category>
+		<category><![CDATA[网页]]></category>
+		<category><![CDATA[调用]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=262</guid>
+
+					<description><![CDATA[<p>1. 韩小韩API 1.1. 接口文档 https://api.vvhan.com/dongman.html  [&#8230;]</p>
+<p><a href="/archives/262">【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h1 class="wp-block-heading has-text-align-center">1. 韩小韩API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.vvhan.com/dongman.html" target="_blank" rel="noreferrer noopener">https://api.vvhan.com/dongman.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.vvhan.com/api/acgimg" target="_blank" rel="noreferrer noopener">https://api.vvhan.com/api/acgimg</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">1.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">1.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.vvhan.com/api/acgimg'
+params = {'type': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "success": true,
+  "imgurl": "https://cdn.jsdelivr.net/gh/uxiaohan/GitImgTypecho/Acg/api.vvhan.com&#91;337].jpg",
+  "info": {
+    "width": 1920,
+    "height": 1080,
+    "type": "img"
+  }
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">1.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.vvhan.com/api/acgimg" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">1.8. 温馨提示</h2>
+
+
+
+<p>调用多次发现，该接口返回的图片尺寸大多是<code>1920x1800</code>，且图片<code>url</code>地址中只有最后<code>[ ]</code>里面的数值在变化，截止目前该变化范围是<code>0-696</code>，也就是该接口是从<code>697</code>张二次元图片中随机返回一张。如果你想下载该接口所有的<code>697</code>张图片，可以使用下方代码：</p>
+
+
+
+<pre class="wp-block-code"><code>'''依赖模块
+pip install requests
+'''
+import concurrent.futures as cf
+import os, time, requests
+
+<em># 单张图片下载函数</em>
+def down(fname, url):
+    res = requests.get(url)
+    with open(fname, 'wb') as f:
+        f.write(res.content)
+
+<em># 进度条打印函数</em>
+def show(num, _sum,  runTime):
+    barLen = 20
+    perFin = num/_sum
+    numFin = round(barLen*perFin)
+    numNon = barLen-numFin
+    leftTime = (1-perFin)*(runTime/perFin)
+    print(
+        f"{num:0&gt;{len(str(_sum))}}/{_sum}",
+        f"|{'█'*numFin}{' '*numNon}|",
+        f"PROCESS: {perFin*100:.0f}%",
+        f"RUN: {runTime:.0f}S",
+        f"ETA: {leftTime:.0f}S",
+        end='
+'
+    )
+    if num == _sum:
+        print()
+
+<em># 主函数（多线程）</em>
+def main():                  
+    floder = './img/'
+    os.makedirs(floder, exist_ok=True)
+    fmt = 'https://cdn.jsdelivr.net/gh/uxiaohan/GitImgTypecho/Acg/api.vvhan.com&#91;{}].jpg'
+    total = 697
+    with cf.ThreadPoolExecutor() as tp:
+        t1 = time.time()
+        futures = &#91;]
+        for i in range(total):
+            url = fmt.format(i)
+            fname = floder+os.path.basename(url)
+            future = tp.submit(down, fname, url)
+            futures.append(future)
+        count = 0
+        for future in cf.as_completed(futures):
+            count += 1
+            t2 = time.time()
+            show(count, total, t2-t1)
+    os.system('pause')
+
+
+main()
+</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">2. 樱花API</h1>
+
+
+
+<h2 class="wp-block-heading">2.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.dmoe.cc/" target="_blank" rel="noreferrer noopener">https://www.dmoe.cc/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.dmoe.cc/random.php" target="_blank" rel="noreferrer noopener">https://www.dmoe.cc/random.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'http://www.dmoe.cc/random.php'
+params = {'return': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "code": "200",
+  "imgurl": "https://tva1.sinaimg.cn/large/0072Vf1pgy1foxkil4o6qj31hc0u0nbz.jpg",
+  "width": "1920",
+  "height": "1080"
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">2.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://dmoe.cc/random.php" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">3. 岁月小筑API</h1>
+
+
+
+<h2 class="wp-block-heading">3.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="http://img.xjh.me/" target="_blank" rel="noreferrer noopener">http://img.xjh.me/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<ul>
+<li>https</li>
+</ul>
+
+
+
+<p><a href="https://img.xjh.me/random_img.php" target="_blank" rel="noreferrer noopener">https://img.xjh.me/random_img.php</a></p>
+
+
+
+<ul>
+<li>http</li>
+</ul>
+
+
+
+<p><a href="http://img.xjh.me/random_img.php" target="_blank" rel="noreferrer noopener">http://img.xjh.me/random_img.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json或302</td></tr><tr><td>type</td><td>str</td><td>返回图片类型，可选bg即背景图</td></tr><tr><td>ctype</td><td>str</td><td>背景图类型，可选acg或nature</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://img.xjh.me/random_img.php'
+params = {
+    'return': 'json',
+    'type': 'bg',
+    'cytpe': 'acg'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "error": 0,
+  "result": 200,
+  "img": "//img.xjh.me/desktop/bg/acg/53829526_p0.jpg"
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">3.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://img.xjh.me/random_img.php?type=bg&amp;return=302" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center"><s>4. Lucky小站API<mark>(失效)</mark></s></h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.nck.cc/index.php/archives/3/" target="_blank" rel="noreferrer noopener">https://www.nck.cc/index.php/archives/3/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.rrll.cc/tuceng/ecy.php" target="_blank" rel="noreferrer noopener">https://www.rrll.cc/tuceng/ecy.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>url = 'https://www.rrll.cc/tuceng/ecy.php'
+params = {
+    'return': 'json'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "code": "200",
+  "acgurl": "https://tva4.sinaimg.cn/large/0072Vf1pgy1foxkgc5msdj31hc0u01cv.jpg",
+  "width": "1920",
+  "height": "1080",
+  "size": "jpg"
+}
+</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">5. 三秋API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.ghser.com/acg.html" target="_blank" rel="noreferrer noopener">https://api.ghser.com/acg.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.ghser.com/random/api.php" target="_blank" rel="noreferrer noopener">https://api.ghser.com/random/api.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get/post</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.4. 请求参数</h2>
+
+
+
+<p>空</p>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.ghser.com/random/api.php'
+res = requests.get(url)
+print(res.url)
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.6. 响应数据</h2>
+
+
+
+<p>返回<code>302</code>重定向后的图片<code>url</code></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;tva1.sinaimg.cn/large/006gkh44ly1fz1kddbampj31hc0u0tyb.jpg
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://api.ghser.com/random/api.php" alt="在这里插入图片描述" width="250" height="333"/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">7. 呓喵酱API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.eee.dog/tech/rand-pic-api.html" target="_blank" rel="noreferrer noopener">https://www.eee.dog/tech/rand-pic-api.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.yimian.xyz/img" target="_blank" rel="noreferrer noopener">https://api.yimian.xyz/img</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get/post</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>type</td><td>str</td><td>图片类型，可选moe为二次元图</td></tr><tr><td>size</td><td>str</td><td>图片大小，可选1920&#215;1080</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.yimian.xyz/img'
+params = {
+    'type': 'moe',
+    'size': '1920x1080'
+}
+res = requests.get(url, params=params)
+print(res.url)
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.6. 响应数据</h2>
+
+
+
+<p>返回<code>302</code>重定向后的图片<code>url</code></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;yimian-image.obs.cn-east-2.myhuaweicloud.com/moe/img_865_2048x1152_96.5199966430664_null_normal.jpg?AWSAccessKeyId=6LJRZC0YN3MQXXFOWMIH&amp;Expires=1608815304&amp;Signature=C5BWWC/r1/o230t1VVLHHmH0kF4%3D
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.yimian.xyz/img" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">8. 调用代码汇总</h1>
+
+
+
+<pre class="wp-block-code"><code><em># %%1. 韩小韩API</em>
+import json, requests
+url = 'https://api.vvhan.com/api/acgimg'
+params = {'type': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%2. 樱花API</em>
+import json, requests
+url = 'http://www.dmoe.cc/random.php'
+params = {'return': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%3. 岁月小筑API</em>
+import json, requests
+url = 'https://img.xjh.me/random_img.php'
+params = {
+    'return': 'json',
+    'type': 'bg',
+    'cytpe': 'acg'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%4. Lucky小站API</em>
+import json, requests
+url = 'https://www.rrll.cc/tuceng/ecy.php'
+params = {
+    'return': 'json'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%5. 一叶三秋API</em>
+import json, requests
+url = 'https://api.ghser.com/random/api.php'
+res = requests.get(url)
+print(res.url)
+
+
+<em># %%6. 汐岑API</em>
+import json, requests
+url = 'https://acg.yanwz.cn/wallpaper/api.php'
+res = requests.get(url)
+with open('test.jpg', 'wb') as f:
+    f.write(res.content)
+
+<em># %%7. 呓喵酱API</em>
+import json, requests
+url = 'https://api.yimian.xyz/img'
+params = {
+    'type': 'moe',
+    'size': '1920x1080'
+}
+res = requests.get(url, params=params)
+print(res.url)</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">9. 网页调用示例</h1>
+
+
+
+<p>以<code>樱花API</code>为例</p>
+
+
+
+<ul>
+<li>插入图片</li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&lt;img src="http://www.dmoe.cc/random.php"/&gt;
+</code></pre>
+
+
+
+<ul>
+<li>背景图片</li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&lt;body style="background: url(http://www.dmoe.cc/random.php);"&gt;&lt;/body&gt;
+</code></pre>
+
+
+
+<p>其它<code>API</code>只需要替换<code>src</code>或<code>url</code>属性值为以下值</p>
+
+
+
+<pre class="wp-block-code"><code>1. 韩小韩API
+https:&#47;&#47;api.vvhan.com/api/acgimg
+2. 樱花API(失效)
+http://www.dmoe.cc/random.php
+3. 岁月小筑API
+https://img.xjh.me/random_img.php?return=302
+<s>4. Lucky小站API(失效)
+https://www.rrll.cc/tuceng/ecy.php</s>
+5. 一叶三秋API(失效)
+https://api.ghser.com/random/api.php
+6. 汐岑API(失效)
+https://acg.yanwz.cn/wallpaper/api.php
+7. 呓喵酱API
+https://api.yimian.xyz/img</code></pre>
+
+
+
+<span id="more-262"></span>
+
+
+
+<p class="has-text-align-left">原文地址：<a rel="noreferrer noopener" href="https://www.cnblogs.com/ghgxj/p/14219047.html" target="_blank"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">https://www.cnblogs.com/ghgxj/p/14219047.html</mark></a></p>
+<p><a href="/archives/262">【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/262/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

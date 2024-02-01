@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>图片 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/%E5%9B%BE%E7%89%87/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/图片</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Tue, 17 Jan 2023 05:42:37 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>图片 归档 - 时空之歌</title>
+	<link>/archives/tag/图片</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>免费随机图片api接口(转载)</title>
+		<link>/archives/495</link>
+					<comments>/archives/495#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2023 05:42:37 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[图片]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=495</guid>
+
+					<description><![CDATA[<p>1、api接口整合 近期由于新浪对图片设置了防盗链，所以许多api已失效，本站api已恢复正常 樱花：http [&#8230;]</p>
+<p><a href="/archives/495">免费随机图片api接口(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h1 class="wp-block-heading" id="header-id-1">1、api接口整合</h1>
+
+
+
+<blockquote class="wp-block-quote">
+<p><em>近期由于新浪对图片设置了防盗链，所以许多api已失效，本站api已恢复正常</em></p>
+</blockquote>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<blockquote class="wp-block-quote">
+<p>樱花：<a target="_blank" rel="noreferrer noopener" href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a><br>搏天：<a target="_blank" rel="noreferrer noopener" href="https://api.btstu.cn/sjbz/api.php">https://api.btstu.cn/sjbz/api.php</a><br>樱道：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%881">https://api.r10086.com/img-api.php?type=动漫综合1</a><br>小歪：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/api/api2.php">https://api.ixiaowai.cn/api/api2.php</a><br>保罗：<a target="_blank" rel="noreferrer noopener" href="https://api.paugram.com/wallpaper">https://api.paugram.com/wallpaper</a><br>墨天逸：<a target="_blank" rel="noreferrer noopener" href="https://api.mtyqx.cn/tapi/random.php">https://api.mtyqx.cn/tapi/random.php</a><br>EEE.DOG：<a target="_blank" rel="noreferrer noopener" href="https://api.yimian.xyz/img">https://api.yimian.xyz/img</a><br>东方Project：<a target="_blank" rel="noreferrer noopener" href="https://img.paulzzh.tech/touhou/random">https://img.paulzzh.tech/touhou/random</a><br>likepoems随机图：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/mc">https://api.likepoems.com/img/aliyun/mc</a><br>洛川唧上的萌部图片:<br><a target="_blank" rel="noreferrer noopener" href="https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/">https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/</a><br>Unsplash Image：<a target="_blank" rel="noreferrer noopener" href="https://source.unsplash.com/random">https://source.unsplash.com/random</a><br>缙哥哥博客:&nbsp;<a target="_blank" rel="noreferrer noopener" href="https://api.dujin.org/pic/yuanshen/">https://api.dujin.org/pic/yuanshen/</a><br>其它随机图：<a target="_blank" rel="noreferrer noopener" href="https://api.wuque.cc/random/images">https://api.wuque.cc/random/images</a></p>
+</blockquote>
+
+
+
+<h1 class="wp-block-heading" id="header-id-2">2、api网站整合</h1>
+
+
+
+<h2 class="wp-block-heading" id="header-id-3">2.1 樱花 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://www.dmoe.cc/">https://www.dmoe.cc/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a><img decoding="async" src="blob:http://space520.42web.io/2bc7d1fa-b515-41cd-b04b-e3e1e701d9b8" alt="樱花"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-4">2.2 搏天</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.btstu.cn/doc/sjbz.php">https://api.btstu.cn/doc/sjbz.php</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.btstu.cn/sjbz/api.php">https://api.btstu.cn/sjbz/api.php</a><img decoding="async" src="blob:http://space520.42web.io/e789f460-9cef-42c4-8b8a-977458a3bf1d" alt="搏天"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-5">2.3 樱道 (访问较慢)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://img.r10086.com/">https://img.r10086.com/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<br>二次元动漫(1-18)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%881">https://api.r10086.com/img-api.php?type=动漫综合1</a><br>东京食尸鬼(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=东京食尸鬼横屏系列1</a><br>Fate(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=Fate%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=Fate横屏系列1</a><br>为美好世界献上祝福(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%B8%BA%E7%BE%8E%E5%A5%BD%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=为美好世界献上祝福横屏系列1</a><br>某科学的超电磁炮(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84%E8%B6%85%E7%94%B5%E7%A3%81%E7%82%AE%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=某科学的超电磁炮横屏系列1</a><br>原神(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%8E%9F%E7%A5%9E%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=原神横屏系列1</a><br>我的世界：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=我的世界系列1</a><br>神奇宝贝(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%A5%9E%E5%A5%87%E5%AE%9D%E8%B4%9D%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=神奇宝贝横屏系列1</a><br>龙珠(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%BE%99%E7%8F%A0%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=龙珠横屏系列1</a><br>罪恶王冠(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%BD%AA%E6%81%B6%E7%8E%8B%E5%86%A0%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=罪恶王冠横屏系列1</a><br>鬼灭之刃(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%AC%BC%E7%81%AD%E4%B9%8B%E5%88%83%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=鬼灭之刃横屏系列1</a><br>火影忍者(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=火影忍者横屏系列1</a><br>海贼王(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%B5%B7%E8%B4%BC%E7%8E%8B%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=海贼王横屏系列1</a><br>进击的巨人(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=进击的巨人横屏系列1</a><br>从零开始的异世界生活(横竖屏)：<br><a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%BC%82%E4%B8%96%E7%95%8C%E7%94%9F%E6%B4%BB%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=从零开始的异世界生活横屏系列1</a><br>刀剑神域(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=刀剑神域横屏系列1</a><br>钢之炼金术师(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=钢之炼金术师横屏系列1</a><br>妖精的尾巴(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%A6%96%E7%B2%BE%E7%9A%84%E5%B0%BE%E5%B7%B4%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=妖精的尾巴横屏系列1</a><br>缘之空(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%BC%98%E4%B9%8B%E7%A9%BA%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=缘之空横屏系列1</a><br>东方project：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E4%B8%9C%E6%96%B9project1">https://api.r10086.com/img-api.php?type=东方project1</a><br>猫娘：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%8C%AB%E5%A8%981">https://api.r10086.com/img-api.php?type=猫娘1</a><br>风景(1-10)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%A3%8E%E6%99%AF%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=风景系列1</a><br>物语(1-2)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%89%A9%E8%AF%AD%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=物语系列1</a><br>少女前线：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF1">https://api.r10086.com/img-api.php?type=少女前线1</a><br>明日方舟(1-2)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F1">https://api.r10086.com/img-api.php?type=明日方舟1</a><br>重装战姬：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E9%87%8D%E8%A3%85%E6%88%98%E5%A7%AC1">https://api.r10086.com/img-api.php?type=重装战姬1</a><br>P站(1-4)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=P%E7%AB%99%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=P站系列1</a><br>CG(1-5)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=CG%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=CG系列1</a><br>守望先锋：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B">https://api.r10086.com/img-api.php?type=守望先锋</a><br>王者荣耀：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80">https://api.r10086.com/img-api.php?type=王者荣耀</a><br>少女写真(1-6)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E5%B0%91%E5%A5%B3%E5%86%99%E7%9C%9F1">https://api.r10086.com/img-api.php?type=少女写真1</a><br>死库水萝莉：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%AD%BB%E5%BA%93%E6%B0%B4%E8%90%9D%E8%8E%89">https://api.r10086.com/img-api.php?type=死库水萝莉</a><br>萝莉：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E8%90%9D%E8%8E%89">https://api.r10086.com/img-api.php?type=萝莉</a><br>极品美女图片：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%9E%81%E5%93%81%E7%BE%8E%E5%A5%B3%E5%9B%BE%E7%89%87">https://api.r10086.com/img-api.php?type=极品美女图片</a><br>日本COS中国COS：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%97%A5%E6%9C%ACCOS%E4%B8%AD%E5%9B%BDCOS">https://api.r10086.com/img-api.php?type=日本COS中国COS</a><br>橘里橘气(横竖屏)：<a target="_blank" rel="noreferrer noopener" href="https://api.r10086.com/img-api.php?type=%E6%A9%98%E9%87%8C%E6%A9%98%E6%B0%94%E6%A8%AA%E5%B1%8F%E7%B3%BB%E5%88%971">https://api.r10086.com/img-api.php?type=橘里橘气横屏系列1</a><img decoding="async" src="blob:http://space520.42web.io/2c37fae4-501c-4d63-a2bd-bcc000303c66" alt="樱道"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-6">2.4 小歪</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/">https://api.ixiaowai.cn/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<br>二次元动漫：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/api/api2.php">https://api.ixiaowai.cn/api/api2.php</a><br>mc酱动漫：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/mcapi/mcapi2.php">https://api.ixiaowai.cn/mcapi/mcapi2.php</a><br>高清壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.ixiaowai.cn/gqapi/gqapi2.php">https://api.ixiaowai.cn/gqapi/gqapi2.php</a><img decoding="async" src="blob:http://space520.42web.io/8246a67f-6b6a-4427-87e1-3a974fee3100" alt="小歪"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-7">2.5 保罗 (访问较慢)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.paugram.com/help/wallpaper">https://api.paugram.com/help/wallpaper</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.paugram.com/wallpaper/">https://api.paugram.com/wallpaper/</a><img decoding="async" src="blob:http://space520.42web.io/b1a05e43-ae76-4543-8768-14758afa137d" alt="保罗"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-8">2.6 墨天逸 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.mtyqx.cn/">https://api.mtyqx.cn/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.mtyqx.cn/api/random.php">https://api.mtyqx.cn/api/random.php</a><img decoding="async" src="blob:http://space520.42web.io/3f43152d-1fa7-4bc6-97f6-3798f0b08e17" alt="墨天逸"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-9">2.7 EEE.DOG</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://www.eee.dog/tech/rand-pic-api.html">https://www.eee.dog/tech/rand-pic-api.html</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.yimian.xyz/img">https://api.yimian.xyz/img</a><img decoding="async" src="blob:http://space520.42web.io/4d9f0a5c-a78a-4195-a78b-f55db8ab2491" alt="EEE.DOG"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-10">2.8 东方Project</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://img.paulzzh.tech/">https://img.paulzzh.tech/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://img.paulzzh.com/touhou/random">https://img.paulzzh.com/touhou/random</a><img decoding="async" src="blob:http://space520.42web.io/66fda99a-a909-4c85-a0b5-5b65b4be3924" alt="东方Project"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-11">2.9 likepoems随机图</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<br><a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/">https://api.likepoems.com/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<br>二次元PC壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/pc">https://api.likepoems.com/img/aliyun/pc</a><br>二次元PE壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/pe">https://api.likepoems.com/img/aliyun/pe</a><br>mc酱壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/mc">https://api.likepoems.com/img/aliyun/mc</a><br>pixiv壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/pixiv">https://api.likepoems.com/img/aliyun/pixiv</a><br>nature壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/nature">https://api.likepoems.com/img/aliyun/nature</a><br>必应壁纸：<a target="_blank" rel="noreferrer noopener" href="https://api.likepoems.com/img/aliyun/bing">https://api.likepoems.com/img/aliyun/bing</a><img decoding="async" src="blob:http://space520.42web.io/d8082b05-7371-4802-9d9e-ed0f3d8f368d" alt="likepoems"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-12">2.10 洛川唧上的萌部图片 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://tu-api.df100.ltd/">https://tu-api.df100.ltd/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/">https://service-5z0sdahv-1306777571.sh.apigw.tencentcs.com/release/</a><img decoding="async" src="blob:http://space520.42web.io/65788357-cc52-4c00-a2ad-b24f5dac2300" alt="洛川唧"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-13">2.11 Unsplash Image</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://source.unsplash.com/">https://source.unsplash.com/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://source.unsplash.com/random">https://source.unsplash.com/random</a><img decoding="async" src="blob:http://space520.42web.io/31ffda7e-9189-43d6-ad23-7842805f8bfd" alt="Unsplash"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-14">2.12 缙哥哥博客 (访问较慢)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.dujin.org/pic/yuanshen/">https://api.dujin.org/pic/yuanshen/</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.dujin.org/pic/yuanshen/">https://api.dujin.org/pic/yuanshen/</a><img decoding="async" src="blob:http://space520.42web.io/e1c34a94-a041-49a3-a4a7-3d1d7920f62e" alt="原神"></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="header-id-15">2.13 其它随机图 (已失效)</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>网址：<a target="_blank" rel="noreferrer noopener" href="https://api.wuque.cc/random/images">https://api.wuque.cc/random/images</a></p>
+</blockquote>
+
+
+
+<ul>
+<li>调用地址：<a target="_blank" rel="noreferrer noopener" href="https://api.wuque.cc/random/images">https://api.wuque.cc/random/images</a><img decoding="async" src="blob:http://space520.42web.io/04c3a0b3-1536-4989-8812-ae9a99043d88" alt="随机妹子"></li>
+</ul>
+
+
+
+<h1 class="wp-block-heading" id="header-id-16">3、怎么自制随机图</h1>
+
+
+
+<h2 class="wp-block-heading" id="header-id-17">3.1 普通的随机图</h2>
+
+
+
+<p>准备图片—&gt;书写路径—&gt;书写php文件<br>在img文件夹里新建img.txt，文件中直接写图片的URL地址，如：</p>
+
+
+
+<pre id="XvWrLCWCjOUdyHS0epJToUfair7FAmpT" class="wp-block-code"><code>https:&#47;&#47;static.likepoems.com/2020/10/06/385ea1c4c8b4fbac57f5a0aa61f033761.jpghttps://static.likepoems.com/2021/06/12/20210126104630786.png</code></pre>
+
+
+
+<p>新建index.php文件。文件内容如下：</p>
+
+
+
+<pre id="Gyz3VNc664R4FViOxtmSYKalWtjc9jLm" class="wp-block-code"><code>&lt;?php<em>//存放api随机图链接的文件名img.txt</em>$filename = "img.txt";if(!file_exists($filename)){    die('文件不存在');} <em>//从文本获取链接</em>$pics = &#91;];$fs = fopen($filename, "r");while(!feof($fs)){    $line=trim(fgets($fs));    if($line!=''){        array_push($pics, $line);    }} <em>//从数组随机获取链接</em>$pic = $pics&#91;array_rand($pics)]; <em>//返回指定格式</em>$type=$_GET&#91;'type'];switch($type){ <em>//JSON返回</em>case 'json':    header('Content-type:text/json');    die(json_encode(&#91;'pic'=&gt;$pic])); default:    die(header("Location: $pic"));} ?&gt;</code></pre>
+
+
+
+<p>然后放在服务器里面的api文件夹里，绑定域名，记得开启php环境<br>访问路径：你的域名/api/img</p>
+
+
+
+<h2 class="wp-block-heading" id="header-id-18">3.2 通过新浪微博图床搭建的随机图</h2>
+
+
+
+<p>index.php</p>
+
+
+
+<pre id="Br9Dj8GyhBD60Tx7z9yduG5LNl5TyGs6" class="wp-block-code"><code>&lt;?php<em>//读取文本</em>$str = explode("\n", file_get_contents('img.txt'));$k = rand(0,count($str));$sina_img = str_re($str&#91;$k]);<em>// 定义多个新浪图片请求接口</em>$size_arr = array('large', 'mw1024', 'mw690', 'bmiddle', 'small', 'thumb180', 'thumbnail', 'square');$size = !empty($_GET&#91;'size']) ? $_GET&#91;'size'] : 'large' ;$server = rand(1,4);if(!in_array($size, $size_arr)){    $size = 'large';}$url = 'https://tva/'.$server.'.sinaimg.cn/'.$size.'/'.$sina_img.'.jpg';<em>//解析url</em>$result=array("code"=&gt;"200","imgurl"=&gt;"$url");<em>//定义type返回类型</em>$type=$_GET&#91;'return'];switch ($type){<em>//Json格式解析</em>case 'json':$imageInfo = getimagesize($url);$result&#91;'width']="$imageInfo&#91;0]";$result&#91;'height']="$imageInfo&#91;1]";header('Content-type:text/json');echo json_encode($result);break;<em>//返回图片链接</em>default:header("Location:".$result&#91;'imgurl']);break;}function str_re($str){  $str = str_replace(' ', "", $str);  $str = str_replace("\n", "", $str);  $str = str_replace("\t", "", $str);  $str = str_replace("\r", "", $str);  return $str;}?&gt;</code></pre>
+
+
+
+<p>img.txt</p>
+
+
+
+<pre id="or56iHXdwtE6kNiQU6eOkpiAYq65Etg9" class="wp-block-code"><code>007LvBV9gy1h4ogsz8i56j31hc0u0h99007LvBV9gy1h4ogszkea5j31hc0u0qko007LvBV9gy1h4ogszvqhuj31hc0u0k8t007LvBV9gy1h4ogt05g8sj30xc0n3gue007LvBV9gy1h4ogt0hx1qj31hc0xc7il</code></pre>
+
+
+
+<p>和上面的一样，只是请求的是微博的图片，比较稳定，速度快。<br>请求示例：<br>你的域名/api/img?return=json 返回json格式<br>你的域名/api/img 返回普通图片</p>
+
+
+
+<p>5.转载</p>
+
+
+
+<p>原文链接：<a rel="noreferrer noopener" href="https://likepoems.com/articles/free-random-image-api-interface/" target="_blank">https://likepoems.com/articles/free-random-image-api-interface/</a><br>来源：<a href="https://likepoems.com/" target="_blank" rel="noreferrer noopener">likepoems</a>，谢谢！^^</p>
+<p><a href="/archives/495">免费随机图片api接口(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/495/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>二次元网页调用示例(少)</title>
+		<link>/archives/297</link>
+					<comments>/archives/297#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Wed, 11 Jan 2023 16:04:07 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[图片]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[二次元]]></category>
+		<category><![CDATA[调用]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=297</guid>
+
+					<description><![CDATA[<p>以樱花API&#160;为例 其它&#160;API&#160;只需要替换&#160;src&#160;或&#038;n [&#8230;]</p>
+<p><a href="/archives/297">二次元网页调用示例(少)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>以<code>樱花API</code>&nbsp;为例</p>
+
+
+
+<ul>
+<li>插入图片</li>
+</ul>
+
+
+
+<pre id="5PiKGxAyj4InIOR9q0Zgc2JtWb2qIVD1" class="wp-block-code"><code>&lt;img src="http://www.dmoe.cc/random.php"/&gt;</code></pre>
+
+
+
+<ul>
+<li>背景图片</li>
+</ul>
+
+
+
+<pre id="Al5bPx0LWzVmgXMbCDoHKGlqnx0LyhsM" class="wp-block-code"><code>&lt;body style="background: url(http://www.dmoe.cc/random.php);"&gt;&lt;/body&gt;</code></pre>
+
+
+
+<p>其它&nbsp;<code>API</code>&nbsp;只需要替换&nbsp;<code>src</code>&nbsp;或&nbsp;<code>url</code>&nbsp;属性值为以下值</p>
+
+
+
+<pre id="WJdlF30moV69IkEjosBRs2wSUmfSy6YR" class="wp-block-code"><code>1. 韩小韩API
+https:&#47;&#47;api.vvhan.com/api/acgimg
+<s>2. 樱花API</s><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">(失效)</mark><s>
+http://www.dmoe.cc/random.php</s>
+3. 岁月小筑API
+https://img.xjh.me/random_img.php?return=302
+<s>4. Lucky小站API</s><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">(失效)</mark><s>
+https://www.rrll.cc/tuceng/ecy.php
+5. 一叶三秋API<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">(失效)</mark><s>
+https://api.ghser.com/random/api.php
+6. 汐岑API<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">(失效)</mark><s>
+https://acg.yanwz.cn/wallpaper/api.php</s>
+</s></s>7. 呓喵酱API
+https://api.yimian.xyz/img</code></pre>
+
+
+
+<h2 class="has-text-align-center wp-block-heading">调用示例</h2>
+
+
+
+<h3 class="wp-block-heading">1. 韩小韩API</h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.vvhan.com/api/acgimg" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading"><s>2. 樱花API</s><mark>(失效)</mark></h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="http://www.dmoe.cc/random.php" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">3. 岁月小筑API</h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://img.xjh.me/random_img.php?return=302" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading"><s>4. Lucky小站API</s><mark>(失效)</mark></h3>
+
+
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://www.rrll.cc/tuceng/ecy.php" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading"><s>5. 一叶三秋API</s><mark>(失效)</mark></h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.ghser.com/random/api.php" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading"><s>6.  汐岑API</s><mark>(失效)</mark></h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://acg.yanwz.cn/wallpaper/api.php" alt=""/></figure>
+
+
+
+<h3 class="wp-block-heading">7.呓喵酱API</h3>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.yimian.xyz/img" alt=""/></figure>
+<p><a href="/archives/297">二次元网页调用示例(少)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/297/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

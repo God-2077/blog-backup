@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>html 归档 - 时空之歌</title>
+	<atom:link href="/archives/tag/html/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/tag/html</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Mon, 16 Jan 2023 06:08:47 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/03/cropped-63e512384757feff33d9afcf-1-150x150.jpg</url>
+	<title>html 归档 - 时空之歌</title>
+	<link>/archives/tag/html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Aplayer 搭配MetingJS音乐插件简单使用</title>
+		<link>/archives/424</link>
+					<comments>/archives/424#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Mon, 16 Jan 2023 06:08:47 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[APlayer]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[音乐]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=424</guid>
+
+					<description><![CDATA[<p>Aplayer 播放器简单使用</p>
+<p><a href="/archives/424">Aplayer 搭配MetingJS音乐插件简单使用</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">1、语法</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td class="has-text-align-center" data-align="center">属性</td><td class="has-text-align-center" data-align="center">值</td><td class="has-text-align-center" data-align="center">默认值</td><td class="has-text-align-center" data-align="center">描述</td></tr><tr><td class="has-text-align-center" data-align="center">server</td><td class="has-text-align-center" data-align="center">netease/tencent/kugou/xiami/baidu</td><td class="has-text-align-center" data-align="center"><strong>require</strong></td><td class="has-text-align-center" data-align="center">指定音乐平台(网易云：netease；QQ 音乐：tencent)</td></tr><tr><td class="has-text-align-center" data-align="center">type</td><td class="has-text-align-center" data-align="center">song/playlist/<code>album</code>/<code>artist</code></td><td class="has-text-align-center" data-align="center"><strong>require</strong></td><td class="has-text-align-center" data-align="center">类型:<br><code>song</code>，<code>playlist</code>，<code>album</code>，<code>search</code>，<code>artist</code></td></tr><tr><td class="has-text-align-center" data-align="center">id</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center"><strong>require</strong></td><td class="has-text-align-center" data-align="center">歌曲ID /播放列表ID /专辑ID /搜索关键字</td></tr><tr><td class="has-text-align-center" data-align="center">fixed</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">开启吸底模式(不需要则删掉)</td></tr><tr><td class="has-text-align-center" data-align="center">mini</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">开启迷你模式(不需要则删掉)</td></tr><tr><td class="has-text-align-center" data-align="center">autoplay</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">音频自动播放(不需要则删掉)</td></tr><tr><td class="has-text-align-center" data-align="center">order</td><td class="has-text-align-center" data-align="center">list/random</td><td class="has-text-align-center" data-align="center">list</td><td class="has-text-align-center" data-align="center">音频循环顺序(随机播放：random；列表播放：list)</td></tr><tr><td class="has-text-align-center" data-align="center">theme</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">#2980b9</td><td class="has-text-align-center" data-align="center">主题颜色，默认<code>#2980b9</code></td></tr><tr><td class="has-text-align-center" data-align="center">loop</td><td class="has-text-align-center" data-align="center">all/one/none</td><td class="has-text-align-center" data-align="center">all</td><td class="has-text-align-center" data-align="center">播放器循环播放，值：“all”，one”，“none”</td></tr><tr><td class="has-text-align-center" data-align="center">preload</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">auto</td><td class="has-text-align-center" data-align="center">预加载，可选值: &#8216;none&#8217;, &#8216;metadata&#8217;, &#8216;auto&#8217;</td></tr><tr><td class="has-text-align-center" data-align="center">volume</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">0.7</td><td class="has-text-align-center" data-align="center">默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td></tr><tr><td class="has-text-align-center" data-align="center">mutex</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">true</td><td class="has-text-align-center" data-align="center">互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td></tr><tr><td class="has-text-align-center" data-align="center">listfolded</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">false</td><td class="has-text-align-center" data-align="center">列表默认折叠</td></tr><tr><td class="has-text-align-center" data-align="center">listMaxHeight</td><td class="has-text-align-center" data-align="center">&#8211;</td><td class="has-text-align-center" data-align="center">340px</td><td class="has-text-align-center" data-align="center">列表最大高度</td></tr><tr><td class="has-text-align-center" data-align="center">storage-Name</td><td class="has-text-align-center" data-align="center">metingjs</td><td class="has-text-align-center" data-align="center">metingjs</td><td class="has-text-align-center" data-align="center">存储播放器设置的localStorage键</td></tr><tr><td class="has-text-align-center" data-align="center">lrc-type</td><td class="has-text-align-center" data-align="center">0</td><td class="has-text-align-center" data-align="center">0</td><td class="has-text-align-center" data-align="center">关闭歌词(不需要则删掉)</td></tr></tbody></table></figure>
+
+
+
+<p>示例：</p>
+
+
+
+<pre class="wp-block-code"><code><strong><code>server="netease"</code></strong></code></pre>
+
+
+
+<h2 class="wp-block-heading">2、示例</h2>
+
+
+
+<h3 class="wp-block-heading">2.1、</h3>
+
+
+
+<p><strong><code>server="netease"</code>&nbsp;指定音乐平台为网易云，<code>type="song"</code>&nbsp;指单曲类型，<code>id="7373135320"</code>&nbsp;为音乐的 id（这里的 id 为打开音乐歌单，网址显示的 id）</strong></p>
+
+
+
+<p><strong>开启吸底模式&nbsp;<code>fixed="true"</code>, 开启迷你模式</strong>&nbsp;<code>mini="true"</code>, 随机播放&nbsp;<code>order="random"</code>, 关闭底部歌词&nbsp;<code>lrc-type="0"</code></p>
+
+
+
+<p><strong><code>注意</code></strong>：id 需要为自己创建的歌单，不能为我喜欢的音乐；server 可以改自己用的音乐平台，如 netease (网易云)、tencent (QQ 音乐)</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"&gt;&lt;/script&gt;
+ 
+&lt;meting-js 
+    server="netease" 
+    type="playlist" 
+    id="7360465359"
+    fixed="true" 
+    mini="true"
+    order="random"
+    loop="all"
+    preload="auto"
+    list-folded="false"&gt;
+&lt;/meting-js&gt;</code></pre>
+
+
+
+<p>2.2、</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--css--&gt;
+ 
+　　&lt;link&nbsp;rel="stylesheet"&nbsp;href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"&gt;
+ 
+&lt;!--js--&gt;
+ 
+　　&lt;script&nbsp;src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"&gt;&lt;/script&gt;
+ 
+　　&lt;script&nbsp;src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"&gt;&lt;/script&gt;
+&lt;!--参数设置--&gt;
+&lt;meting-js
+ 
+　　server="netease"
+ 
+　　type="playlist"
+ 
+　　id="5195463265"
+ 
+　　fixed="true"
+ 
+　　autoplay="true"
+ 
+　　loop="all"
+ 
+　　order="random"
+ 
+　　preload="auto"
+ 
+　　list-folded="ture"
+ 
+　　list-max-height="500px"
+ 
+　　lrc-type="1"&gt;
+ 
+&lt;/meting-js&gt;</code></pre>
+<p><a href="/archives/424">Aplayer 搭配MetingJS音乐插件简单使用</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/424/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>APlayer</title>
+		<link>/archives/374</link>
+					<comments>/archives/374#respond</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Sat, 14 Jan 2023 13:16:30 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[音乐]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=354</guid>
+
+					<description><![CDATA[<p>哇，这么漂亮的HTML5音乐播放器</p>
+<p><a href="/archives/374">APlayer</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f36d.png" alt="🍭" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Wow, such a beautiful HTML5 music player  (哇，这么漂亮的HTML5音乐播放器)</p>
+
+
+
+<h2 class="wp-block-heading" id="安装">安装</h2>
+
+
+
+<p>使用 npm:</p>
+
+
+
+<pre class="wp-block-code"><code>npm install aplayer --save
+</code></pre>
+
+
+
+<p>使用 Yarn:</p>
+
+
+
+<pre class="wp-block-code"><code>yarn add aplayer
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="入门">入门</h2>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="aplayer"&gt;&lt;/div&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: &#91;{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg'
+    }]
+});
+</code></pre>
+
+
+
+<p>使用模块管理器:</p>
+
+
+
+<pre class="wp-block-code"><code>import 'APlayer/dist/APlayer.min.css';
+import APlayer from 'APlayer';
+
+const ap = new APlayer(options);
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="参数">参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>名称</th><th>默认值</th><th>描述</th></tr></thead><tbody><tr><td>container</td><td>document.querySelector(&#8216;.aplayer&#8217;)</td><td>播放器容器元素</td></tr><tr><td>fixed</td><td>false</td><td>开启吸底模式,&nbsp;<a href="https://aplayer.js.org/#/home?id=fixed-mode">详情</a></td></tr><tr><td>mini</td><td>false</td><td>开启迷你模式,&nbsp;<a href="https://aplayer.js.org/#/home?id=mini-mode" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>autoplay</td><td>false</td><td>音频自动播放</td></tr><tr><td>theme</td><td>&#8216;#b7daff&#8217;</td><td>主题色</td></tr><tr><td>loop</td><td>&#8216;all&#8217;</td><td>音频循环播放, 可选值: &#8216;all&#8217;, &#8216;one&#8217;, &#8216;none&#8217;</td></tr><tr><td>order</td><td>&#8216;list&#8217;</td><td>音频循环顺序, 可选值: &#8216;list&#8217;, &#8216;random&#8217;</td></tr><tr><td>preload</td><td>&#8216;auto&#8217;</td><td>预加载，可选值: &#8216;none&#8217;, &#8216;metadata&#8217;, &#8216;auto&#8217;</td></tr><tr><td>volume</td><td>0.7</td><td>默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td></tr><tr><td>audio</td><td>&#8211;</td><td>音频信息, 应该是一个对象或对象数组</td></tr><tr><td>audio.name</td><td>&#8211;</td><td>音频名称</td></tr><tr><td>audio.artist</td><td>&#8211;</td><td>音频艺术家</td></tr><tr><td>audio.url</td><td>&#8211;</td><td>音频链接</td></tr><tr><td>audio.cover</td><td>&#8211;</td><td>音频封面</td></tr><tr><td>audio.lrc</td><td>&#8211;</td><td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>audio.theme</td><td>&#8211;</td><td>切换到此音频时的主题色，比上面的 theme 优先级高</td></tr><tr><td>audio.type</td><td>&#8216;auto&#8217;</td><td>可选值: &#8216;auto&#8217;, &#8216;hls&#8217;, &#8216;normal&#8217; 或其他自定义类型,&nbsp;<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>customAudioType</td><td>&#8211;</td><td>自定义类型，<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>mutex</td><td>true</td><td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td></tr><tr><td>lrcType</td><td>0</td><td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank" rel="noreferrer noopener">详情</a></td></tr><tr><td>listFolded</td><td>false</td><td>列表默认折叠</td></tr><tr><td>listMaxHeight</td><td>&#8211;</td><td>列表最大高度</td></tr><tr><td>storageName</td><td>&#8216;aplayer-setting&#8217;</td><td>存储播放器设置的 localStorage key</td></tr></tbody></table></figure>
+
+
+
+<p>例如:</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    mini: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: &#91;
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="api">API</h2>
+
+
+
+<ul>
+<li><code>APlayer.version</code>: 静态属性, 返回 APlayer 的版本号</li>
+
+
+
+<li><code>ap.play()</code>: 播放音频</li>
+
+
+
+<li><code>ap.pause()</code>: 暂停音频</li>
+
+
+
+<li><code>ap.seek(time: number)</code>: 跳转到特定时间，时间的单位为秒<code>ap.seek(100);</code></li>
+
+
+
+<li><code>ap.toggle()</code>: 切换播放和暂停</li>
+
+
+
+<li><code>ap.on(event: string, handler: function)</code>: 绑定音频和播放器事件，<a href="https://aplayer.js.org/#/home?id=event-binding" target="_blank" rel="noreferrer noopener">详情</a></li>
+
+
+
+<li><code>ap.volume(percentage: number, nostorage: boolean)</code>: 设置音频音量<code>ap.volume(0.1, true);</code></li>
+
+
+
+<li><code>ap.theme(color: string, index: number)</code>: 设置播放器主题色, index 默认为当前音频的 index<code>ap.theme('#000', 0);</code></li>
+
+
+
+<li><code>ap.setMode(mode: string)</code>: 设置播放器模式，mode 取值应为 &#8216;mini&#8217; 或 &#8216;normal&#8217;</li>
+
+
+
+<li><code>ap.mode</code>: 返回播放器当前模式，&#8217;mini&#8217; 或 &#8216;normal&#8217;</li>
+
+
+
+<li><code>ap.notice(text: string, time: number, opacity: number)</code>: 显示通知，时间的单位为毫秒，默认时间 2000 毫秒，默认透明度 0.8，设置时间为 0 可以取消通知自动隐藏<code>ap.notice('Amazing player', 2000, 0.8);</code></li>
+
+
+
+<li><code>ap.skipBack()</code>: 切换到上一首音频</li>
+
+
+
+<li><code>ap.skipForward()</code>: 切换到下一首音频</li>
+
+
+
+<li><code>ap.destroy()</code>: 销毁播放器</li>
+
+
+
+<li><code>ap.lrc</code>
+<ul>
+<li><code>ap.lrc.show()</code>: 显示歌词</li>
+
+
+
+<li><code>ap.lrc.hide()</code>: 隐藏歌词</li>
+
+
+
+<li><code>ap.lrc.toggle()</code>: 显示/隐藏歌词</li>
+</ul>
+</li>
+
+
+
+<li><code>ap.list</code><ul><li><code>ap.list.show()</code>: 显示播放列表</li><li><code>ap.list.hide()</code>: 隐藏播放列表</li><li><code>ap.list.toggle()</code>: 显示/隐藏播放列表</li><li><code>ap.list.add(audios: array | object)</code>: 添加一个或几个新音频到播放列表</li></ul><code>ap.list.add([{ name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg', lrc: 'lrc.lrc', theme: '#ebd0c2' }]);</code><ul><li><code>ap.list.remove(index: number)</code>: 移除播放列表中的一个音频</li></ul><code>ap.list.remove(1);</code><ul><li><code>ap.list.switch()</code>: 切换到播放列表里的其他音频</li></ul><code>ap.list.switch(1);</code>
+<ul>
+<li><code>ap.list.clear()</code>: 清空播放列表</li>
+</ul>
+</li>
+
+
+
+<li><code>ap.audio</code>: 原生 audio
+<ul>
+<li><code>ap.audio.currentTime</code>: 返回音频当前播放时间</li>
+
+
+
+<li><code>ap.audio.duration</code>: 返回音频总时间</li>
+
+
+
+<li><code>ap.audio.paused</code>: 返回音频是否暂停</li>
+
+
+
+<li>支持大多数<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank" rel="noreferrer noopener">原生audio接口</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="事件绑定">事件绑定</h2>
+
+
+
+<p><code>ap.on(event, handler)</code></p>
+
+
+
+<pre class="wp-block-code"><code>ap.on('ended', function () {
+    console.log('player ended');
+});
+</code></pre>
+
+
+
+<p>音频事件</p>
+
+
+
+<ul>
+<li>abort</li>
+
+
+
+<li>canplay</li>
+
+
+
+<li>canplaythrough</li>
+
+
+
+<li>durationchange</li>
+
+
+
+<li>emptied</li>
+
+
+
+<li>ended</li>
+
+
+
+<li>error</li>
+
+
+
+<li>loadeddata</li>
+
+
+
+<li>loadedmetadata</li>
+
+
+
+<li>loadstart</li>
+
+
+
+<li>mozaudioavailable</li>
+
+
+
+<li>pause</li>
+
+
+
+<li>play</li>
+
+
+
+<li>playing</li>
+
+
+
+<li>progress</li>
+
+
+
+<li>ratechange</li>
+
+
+
+<li>seeked</li>
+
+
+
+<li>seeking</li>
+
+
+
+<li>stalled</li>
+
+
+
+<li>suspend</li>
+
+
+
+<li>timeupdate</li>
+
+
+
+<li>volumechange</li>
+
+
+
+<li>waiting</li>
+</ul>
+
+
+
+<p>播放器事件</p>
+
+
+
+<ul>
+<li>listshow</li>
+
+
+
+<li>listhide</li>
+
+
+
+<li>listadd</li>
+
+
+
+<li>listremove</li>
+
+
+
+<li>listswitch</li>
+
+
+
+<li>listclear</li>
+
+
+
+<li>noticeshow</li>
+
+
+
+<li>noticehide</li>
+
+
+
+<li>destroy</li>
+
+
+
+<li>lrcshow</li>
+
+
+
+<li>lrchide</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="歌词">歌词</h2>
+
+
+
+<p>我们有三种方式来给 APlayer 传递歌词，使用&nbsp;<code>lrcType</code>&nbsp;参数指明使用哪种方式，然后把歌词放到&nbsp;<code>audio.lrc</code>&nbsp;参数或者 HTML 里。</p>
+
+
+
+<h3 class="wp-block-heading" id="lrc-文件方式">LRC 文件方式</h3>
+
+
+
+<p>第一种方式，把歌词放到 LRC 文件里，音频播放时会加载对应的 LRC 文件。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    lrcType: 3,
+    audio: {
+        name: 'name',
+        artist: 'artist',
+        url: 'demo.mp3',
+        cover: 'demo.jpg',
+        lrc: 'lrc.lrc'
+    }
+});
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="js-字符串方式">JS 字符串方式</h3>
+
+
+
+<p>第二种方式，把歌词放到 JS 字符串里面。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    lrcType: 1,
+    audio: {
+        name: 'name',
+        artist: 'artist',
+        url: 'demo.mp3',
+        cover: 'demo.jpg',
+        lrc: '&#91;00:00.00]APlayer\n&#91;00:04.01]is\n&#91;00:08.02]amazing'
+    }
+});
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="html-方式">HTML 方式</h3>
+
+
+
+<p>第三种方式，把歌词放到 HTML 里面。</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="player"&gt;
+    &lt;pre class="aplayer-lrc-content"&gt;
+        &#91;00:00.00]APlayer audio1
+        &#91;00:04.01]is
+        &#91;00:08.02]amazing
+        &lt;!-- ... --&gt;
+    &lt;/pre&gt;
+    &lt;pre class="aplayer-lrc-content"&gt;
+        &#91;00:00.00]APlayer audio2
+        &#91;00:04.01]is
+        &#91;00:08.02]amazing
+        &lt;!-- ... --&gt;
+    &lt;/pre&gt;
+&lt;/div&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    lrcType: 2,
+    audio: &#91;&#91;
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg'
+        }
+    ]]
+});
+</code></pre>
+
+
+
+<h3 class="wp-block-heading" id="歌词格式">歌词格式</h3>
+
+
+
+<p>支持下面格式的歌词：</p>
+
+
+
+<p><code>[mm:ss]APlayer</code></p>
+
+
+
+<p><code>[mm:ss.xx]is</code></p>
+
+
+
+<p><code>[mm:ss.xxx]amazing</code></p>
+
+
+
+<p><code>[mm:ss.xx][mm:ss.xx]APlayer</code></p>
+
+
+
+<p><code>[mm:ss.xx]&lt;mm:ss.xx&gt;is</code></p>
+
+
+
+<p><code>[mm:ss.xx]amazing[mm:ss.xx]APlayer</code></p>
+
+
+
+<h2 class="wp-block-heading" id="播放列表">播放列表</h2>
+
+
+
+<p>当有多个音频时会 APlayer 会展示一个播放列表，<code>listFolded</code>&nbsp;参数指明列表是否默认折叠，<code>listMaxHeight</code>&nbsp;参数指明列表最大高度。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: &#91;
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="吸底模式">吸底模式</h2>
+
+
+
+<p>APlayer 可以通过吸底模式固定在页面底部，这种模式跟普通模式有很大不同。点击</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    fixed: true,
+    audio: &#91;{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
+    }]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="迷你模式">迷你模式</h2>
+
+
+
+<p>如果你没有足够空间来放置正常模式的播放器，那么你可以考虑使用迷你模式。</p>
+
+
+
+<p>请注意迷你模式与吸底模式冲突。</p>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    mini: true,
+    audio: &#91;{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
+    }]
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="mse-支持">MSE 支持</h2>
+
+
+
+<h3 class="wp-block-heading" id="hls">HLS</h3>
+
+
+
+<p>需要在&nbsp;<code>APlayer.min.js</code>&nbsp;前面加载&nbsp;<a rel="noreferrer noopener" href="https://github.com/video-dev/hls.js" target="_blank">hls.js</a>。</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="aplayer"&gt;&lt;/div&gt;
+&lt;script src="hls.min.js"&gt;&lt;/script&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: &#91;{
+        name: 'HLS',
+        artist: 'artist',
+        url: 'url.m3u8',
+        cover: 'cover.jpg',
+        type: 'hls'
+    }]
+});
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>// 另一种方式，使用 customAudioType
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: &#91;{
+        name: 'HLS',
+        artist: 'artist',
+        url: 'url.m3u8',
+        cover: 'cover.jpg',
+        type: 'customHls'
+    }],
+    customAudioType: {
+        'customHls': function (audioElement, audio, player) {
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(audio.url);
+                hls.attachMedia(audioElement);
+            }
+            else if (audioElement.canPlayType('application/x-mpegURL') || audioElement.canPlayType('application/vnd.apple.mpegURL')) {
+                audioElement.src = audio.url;
+            }
+            else {
+                player.notice('Error: HLS is not supported.');
+            }
+        }
+    }
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="根据封面自适应主题色">根据封面自适应主题色</h2>
+
+
+
+<p>需要额外加载&nbsp;<a rel="noreferrer noopener" href="https://github.com/lokesh/color-thief/blob/master/src/color-thief.js" target="_blank">color-thief.js</a></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;link rel="stylesheet" href="APlayer.min.css"&gt;
+&lt;div id="aplayer"&gt;&lt;/div&gt;
+&lt;script src="APlayer.min.js"&gt;&lt;/script&gt;
+&lt;script src="color-thief.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code>const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    theme: '#e9e9e9',
+    audio: &#91;{
+        name: 'name1',
+        artist: 'artist1',
+        url: 'url1.mp3',
+        cover: 'cover1.jpg'
+    }, {
+        name: 'name2',
+        artist: 'artist2',
+        url: 'url2.mp3',
+        cover: 'cover2.jpg'
+    }]
+});
+
+const colorThief = new ColorThief();
+const image = new Image();
+const xhr = new XMLHttpRequest();
+const setTheme = (index) =&gt; {
+    if (!ap.list.audios&#91;index].theme) {
+        xhr.onload = function(){
+            let coverUrl = URL.createObjectURL(this.response);
+            image.onload = function(){
+                let color = colorThief.getColor(image);
+                ap.theme(`rgb(${color&#91;0]}, ${color&#91;1]}, ${color&#91;2]})`, index);
+                URL.revokeObjectURL(coverUrl)
+            };
+            image.src = coverUrl;
+        }
+        xhr.open('GET', ap.list.audios&#91;index].cover, true);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (index) =&gt; {
+    setTheme(index);
+});
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="cdn">CDN</h2>
+
+
+
+<ul>
+<li><a href="https://www.jsdelivr.com/package/npm/aplayer" target="_blank" rel="noreferrer noopener">jsDelivr</a></li>
+
+
+
+<li><a href="https://cdnjs.com/libraries/aplayer" target="_blank" rel="noreferrer noopener">cdnjs</a></li>
+
+
+
+<li><a href="https://unpkg.com/aplayer/" target="_blank" rel="noreferrer noopener">unpkg</a></li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="常见问题">常见问题</h2>
+
+
+
+<h3 class="wp-block-heading" id="为什么播放器不能在手机上自动播放？">为什么播放器不能在手机上自动播放？</h3>
+
+
+
+<p>大多数移动端浏览器禁止了音频自动播放。</p>
+
+
+
+<h2 class="wp-block-heading">参考资料</h2>
+
+
+
+<ul>
+<li><a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noreferrer noopener">首页 &#8211; APlayer</a></li>
+</ul>
+<p><a href="/archives/374">APlayer</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/374/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</title>
+		<link>/archives/262</link>
+					<comments>/archives/262#comments</comments>
+		
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2023 04:54:22 +0000</pubDate>
+				<category><![CDATA[IT]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[文章]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[二次元]]></category>
+		<category><![CDATA[网页]]></category>
+		<category><![CDATA[调用]]></category>
+		<guid isPermaLink="false">http://space520.42web.io/?p=262</guid>
+
+					<description><![CDATA[<p>1. 韩小韩API 1.1. 接口文档 https://api.vvhan.com/dongman.html  [&#8230;]</p>
+<p><a href="/archives/262">【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h1 class="wp-block-heading has-text-align-center">1. 韩小韩API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.vvhan.com/dongman.html" target="_blank" rel="noreferrer noopener">https://api.vvhan.com/dongman.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.vvhan.com/api/acgimg" target="_blank" rel="noreferrer noopener">https://api.vvhan.com/api/acgimg</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">1.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">1.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.vvhan.com/api/acgimg'
+params = {'type': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>1.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "success": true,
+  "imgurl": "https://cdn.jsdelivr.net/gh/uxiaohan/GitImgTypecho/Acg/api.vvhan.com&#91;337].jpg",
+  "info": {
+    "width": 1920,
+    "height": 1080,
+    "type": "img"
+  }
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">1.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.vvhan.com/api/acgimg" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">1.8. 温馨提示</h2>
+
+
+
+<p>调用多次发现，该接口返回的图片尺寸大多是<code>1920x1800</code>，且图片<code>url</code>地址中只有最后<code>[ ]</code>里面的数值在变化，截止目前该变化范围是<code>0-696</code>，也就是该接口是从<code>697</code>张二次元图片中随机返回一张。如果你想下载该接口所有的<code>697</code>张图片，可以使用下方代码：</p>
+
+
+
+<pre class="wp-block-code"><code>'''依赖模块
+pip install requests
+'''
+import concurrent.futures as cf
+import os, time, requests
+
+<em># 单张图片下载函数</em>
+def down(fname, url):
+    res = requests.get(url)
+    with open(fname, 'wb') as f:
+        f.write(res.content)
+
+<em># 进度条打印函数</em>
+def show(num, _sum,  runTime):
+    barLen = 20
+    perFin = num/_sum
+    numFin = round(barLen*perFin)
+    numNon = barLen-numFin
+    leftTime = (1-perFin)*(runTime/perFin)
+    print(
+        f"{num:0&gt;{len(str(_sum))}}/{_sum}",
+        f"|{'█'*numFin}{' '*numNon}|",
+        f"PROCESS: {perFin*100:.0f}%",
+        f"RUN: {runTime:.0f}S",
+        f"ETA: {leftTime:.0f}S",
+        end='
+'
+    )
+    if num == _sum:
+        print()
+
+<em># 主函数（多线程）</em>
+def main():                  
+    floder = './img/'
+    os.makedirs(floder, exist_ok=True)
+    fmt = 'https://cdn.jsdelivr.net/gh/uxiaohan/GitImgTypecho/Acg/api.vvhan.com&#91;{}].jpg'
+    total = 697
+    with cf.ThreadPoolExecutor() as tp:
+        t1 = time.time()
+        futures = &#91;]
+        for i in range(total):
+            url = fmt.format(i)
+            fname = floder+os.path.basename(url)
+            future = tp.submit(down, fname, url)
+            futures.append(future)
+        count = 0
+        for future in cf.as_completed(futures):
+            count += 1
+            t2 = time.time()
+            show(count, total, t2-t1)
+    os.system('pause')
+
+
+main()
+</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">2. 樱花API</h1>
+
+
+
+<h2 class="wp-block-heading">2.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.dmoe.cc/" target="_blank" rel="noreferrer noopener">https://www.dmoe.cc/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.dmoe.cc/random.php" target="_blank" rel="noreferrer noopener">https://www.dmoe.cc/random.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'http://www.dmoe.cc/random.php'
+params = {'return': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>2.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "code": "200",
+  "imgurl": "https://tva1.sinaimg.cn/large/0072Vf1pgy1foxkil4o6qj31hc0u0nbz.jpg",
+  "width": "1920",
+  "height": "1080"
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">2.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://dmoe.cc/random.php" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">3. 岁月小筑API</h1>
+
+
+
+<h2 class="wp-block-heading">3.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="http://img.xjh.me/" target="_blank" rel="noreferrer noopener">http://img.xjh.me/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<ul>
+<li>https</li>
+</ul>
+
+
+
+<p><a href="https://img.xjh.me/random_img.php" target="_blank" rel="noreferrer noopener">https://img.xjh.me/random_img.php</a></p>
+
+
+
+<ul>
+<li>http</li>
+</ul>
+
+
+
+<p><a href="http://img.xjh.me/random_img.php" target="_blank" rel="noreferrer noopener">http://img.xjh.me/random_img.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json或302</td></tr><tr><td>type</td><td>str</td><td>返回图片类型，可选bg即背景图</td></tr><tr><td>ctype</td><td>str</td><td>背景图类型，可选acg或nature</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://img.xjh.me/random_img.php'
+params = {
+    'return': 'json',
+    'type': 'bg',
+    'cytpe': 'acg'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>3.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "error": 0,
+  "result": 200,
+  "img": "//img.xjh.me/desktop/bg/acg/53829526_p0.jpg"
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading">3.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://img.xjh.me/random_img.php?type=bg&amp;return=302" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center"><s>4. Lucky小站API<mark>(失效)</mark></s></h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.nck.cc/index.php/archives/3/" target="_blank" rel="noreferrer noopener">https://www.nck.cc/index.php/archives/3/</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.rrll.cc/tuceng/ecy.php" target="_blank" rel="noreferrer noopener">https://www.rrll.cc/tuceng/ecy.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>return</td><td>str</td><td>响应数据格式，可选json</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>url = 'https://www.rrll.cc/tuceng/ecy.php'
+params = {
+    'return': 'json'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>4.6. 响应数据</h2>
+
+
+
+<pre class="wp-block-code"><code>{
+  "code": "200",
+  "acgurl": "https://tva4.sinaimg.cn/large/0072Vf1pgy1foxkgc5msdj31hc0u01cv.jpg",
+  "width": "1920",
+  "height": "1080",
+  "size": "jpg"
+}
+</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">5. 三秋API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.ghser.com/acg.html" target="_blank" rel="noreferrer noopener">https://api.ghser.com/acg.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.ghser.com/random/api.php" target="_blank" rel="noreferrer noopener">https://api.ghser.com/random/api.php</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get/post</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.4. 请求参数</h2>
+
+
+
+<p>空</p>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.ghser.com/random/api.php'
+res = requests.get(url)
+print(res.url)
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.6. 响应数据</h2>
+
+
+
+<p>返回<code>302</code>重定向后的图片<code>url</code></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;tva1.sinaimg.cn/large/006gkh44ly1fz1kddbampj31hc0u0tyb.jpg
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>5.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://api.ghser.com/random/api.php" alt="在这里插入图片描述" width="250" height="333"/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">7. 呓喵酱API</h1>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.1. 接口文档</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://www.eee.dog/tech/rand-pic-api.html" target="_blank" rel="noreferrer noopener">https://www.eee.dog/tech/rand-pic-api.html</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.2. 请求地址</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p><a href="https://api.yimian.xyz/img" target="_blank" rel="noreferrer noopener">https://api.yimian.xyz/img</a></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.3. 请求方式</h2>
+
+
+
+<blockquote class="wp-block-quote">
+<p>get/post</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.4. 请求参数</h2>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>字段</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>type</td><td>str</td><td>图片类型，可选moe为二次元图</td></tr><tr><td>size</td><td>str</td><td>图片大小，可选1920&#215;1080</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.5. 示例代码</h2>
+
+
+
+<pre class="wp-block-code"><code>import json, requests
+url = 'https://api.yimian.xyz/img'
+params = {
+    'type': 'moe',
+    'size': '1920x1080'
+}
+res = requests.get(url, params=params)
+print(res.url)
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.6. 响应数据</h2>
+
+
+
+<p>返回<code>302</code>重定向后的图片<code>url</code></p>
+
+
+
+<pre class="wp-block-code"><code>https:&#47;&#47;yimian-image.obs.cn-east-2.myhuaweicloud.com/moe/img_865_2048x1152_96.5199966430664_null_normal.jpg?AWSAccessKeyId=6LJRZC0YN3MQXXFOWMIH&amp;Expires=1608815304&amp;Signature=C5BWWC/r1/o230t1VVLHHmH0kF4%3D
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><a></a>7.7. 图片预览</h2>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://api.yimian.xyz/img" alt=""/></figure>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">8. 调用代码汇总</h1>
+
+
+
+<pre class="wp-block-code"><code><em># %%1. 韩小韩API</em>
+import json, requests
+url = 'https://api.vvhan.com/api/acgimg'
+params = {'type': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%2. 樱花API</em>
+import json, requests
+url = 'http://www.dmoe.cc/random.php'
+params = {'return': 'json'}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%3. 岁月小筑API</em>
+import json, requests
+url = 'https://img.xjh.me/random_img.php'
+params = {
+    'return': 'json',
+    'type': 'bg',
+    'cytpe': 'acg'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%4. Lucky小站API</em>
+import json, requests
+url = 'https://www.rrll.cc/tuceng/ecy.php'
+params = {
+    'return': 'json'
+}
+res = requests.get(url, params=params).json()
+print(json.dumps(res, indent=2))
+
+
+<em># %%5. 一叶三秋API</em>
+import json, requests
+url = 'https://api.ghser.com/random/api.php'
+res = requests.get(url)
+print(res.url)
+
+
+<em># %%6. 汐岑API</em>
+import json, requests
+url = 'https://acg.yanwz.cn/wallpaper/api.php'
+res = requests.get(url)
+with open('test.jpg', 'wb') as f:
+    f.write(res.content)
+
+<em># %%7. 呓喵酱API</em>
+import json, requests
+url = 'https://api.yimian.xyz/img'
+params = {
+    'type': 'moe',
+    'size': '1920x1080'
+}
+res = requests.get(url, params=params)
+print(res.url)</code></pre>
+
+
+
+<h1 class="wp-block-heading has-text-align-center">9. 网页调用示例</h1>
+
+
+
+<p>以<code>樱花API</code>为例</p>
+
+
+
+<ul>
+<li>插入图片</li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&lt;img src="http://www.dmoe.cc/random.php"/&gt;
+</code></pre>
+
+
+
+<ul>
+<li>背景图片</li>
+</ul>
+
+
+
+<pre class="wp-block-code"><code>&lt;body style="background: url(http://www.dmoe.cc/random.php);"&gt;&lt;/body&gt;
+</code></pre>
+
+
+
+<p>其它<code>API</code>只需要替换<code>src</code>或<code>url</code>属性值为以下值</p>
+
+
+
+<pre class="wp-block-code"><code>1. 韩小韩API
+https:&#47;&#47;api.vvhan.com/api/acgimg
+2. 樱花API(失效)
+http://www.dmoe.cc/random.php
+3. 岁月小筑API
+https://img.xjh.me/random_img.php?return=302
+<s>4. Lucky小站API(失效)
+https://www.rrll.cc/tuceng/ecy.php</s>
+5. 一叶三秋API(失效)
+https://api.ghser.com/random/api.php
+6. 汐岑API(失效)
+https://acg.yanwz.cn/wallpaper/api.php
+7. 呓喵酱API
+https://api.yimian.xyz/img</code></pre>
+
+
+
+<span id="more-262"></span>
+
+
+
+<p class="has-text-align-left">原文地址：<a rel="noreferrer noopener" href="https://www.cnblogs.com/ghgxj/p/14219047.html" target="_blank"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">https://www.cnblogs.com/ghgxj/p/14219047.html</mark></a></p>
+<p><a href="/archives/262">【python】7个随机二次元图片api接口汇总（附网页调用示例）(转载)</a>最先出现在<a href="/">时空之歌</a>。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/262/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《禁止wordpress自动更新》的评论	</title>
+	<atom:link href="/archives/1338/feed" rel="self" type="application/rss+xml" />
+	<link>/archives/1338</link>
+	<description>我们都是阴沟里的虫子，但总还是得有人仰望星空。</description>
+	<lastBuildDate>Fri, 07 Apr 2023 04:50:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<item>
+		<title>
+		评论者：Space520		</title>
+		<link>/archives/1338#comment-110</link>
+
+		<dc:creator><![CDATA[Space520]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 04:50:16 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1338#comment-110</guid>
+
+					<description><![CDATA[回复给&lt;a href=&quot;/archives/1338#comment-109&quot;&gt;爱极客&lt;/a&gt;。
+
+原来我也是开自动更新
+但，我在一次WordPress更新后
+网站就打不开了<img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f62d.png" alt="😭" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+提示站点出现重大错误⌇●﹏●⌇
+那会，我弄的好几个小时才弄好。
+于是我就怕WordPress又来一次更新，使我网站又打不开。
+:dinosaur-powerless:]]></description>
+			<content:encoded><![CDATA[<p>回复给<a href="/archives/1338#comment-109">爱极客</a>。</p>
+<p>原来我也是开自动更新<br />
+但，我在一次WordPress更新后<br />
+网站就打不开了😭<br />
+提示站点出现重大错误⌇●﹏●⌇<br />
+那会，我弄的好几个小时才弄好。<br />
+于是我就怕WordPress又来一次更新，使我网站又打不开。<br />
+:dinosaur-powerless:</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		评论者：爱极客		</title>
+		<link>/archives/1338#comment-109</link>
+
+		<dc:creator><![CDATA[爱极客]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 00:33:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1338#comment-109</guid>
+
+					<description><![CDATA[我都是全部开自动更新的∠( ᐛ 」∠)＿]]></description>
+			<content:encoded><![CDATA[<p>我都是全部开自动更新的∠( ᐛ 」∠)＿</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
