@@ -509,7 +509,7 @@ button#fabtn_back_to_top, button#fabtn_go_to_comment, button#fabtn_toggle_blog_s
 		}</script>
 
 			<script src="/wp-content/themes/argon/assets/vendor/smoothscroll/smoothscroll1_pulse.js"></script>
-	</head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></head>
 
 <script async src="https://analytics.umami.is/script.js" data-website-id="dc594bab-87e2-4897-90b4-b12a8ed0da4b"></script>
 
@@ -1270,12 +1270,17 @@ transform: translateY(-20px);
 
 	
 	
-	<div class="additional-content-after-post"><ul>  <li>
-<b>标题：</b>一个WordPress插件，用于使用短代码插入哔哩哔哩视频</li>  <li>
-<b>作者：</b>Space520</li>  <li>
-<b>链接：</b>https://space520.eu.org/archives/2344</li>  <li>
+	<div class="additional-content-after-post"><ul>
+  <li>
+<b>标题：</b>一个WordPress插件，用于使用短代码插入哔哩哔哩视频</li>
+  <li>
+<b>作者：</b>Space520</li>
+  <li>
+<b>链接：</b>https://space520.eu.org/archives/2344</li>
+  <li>
 <b>版权声明：</b>本博客所有文章除特别声明外，均为<a href="https://baike.baidu.com/item/%E5%8E%9F%E5%88%9B/94870" target="_blank"> 原创 </a>和采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><i class="fa fa-cc"></i> CC BY-NC-SA 4.0 </a>协议。<b>转载请注明文章出处(<a href="/archives/2344">https://space520.eu.org/archives/2344</a>)及作者。</b>
-</li></ul></div>
+</li>
+</ul></div>
 			<div class="post-tags">
 			<i class="fa fa-tags" aria-hidden="true"></i>
 			<a href="/archives/tag/wordpress" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">WordPress</a>		</div>
@@ -2367,4 +2372,82 @@ Performance optimized by Redis Object Cache. Learn more: https://wprediscache.co
 
 使用 Predis (v2.1.2) 从 Redis 检索了 3343 个对象 (525 KB)。
 -->
+<style>
+    .static-notice {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #e8e8f7; /* 替换为实际的颜色值 */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 30px;
+        justify-content: space-between;
+        z-index: 2147483647;
+        transition: transform .3s ease;
+    }
+    .static-notice-line {
+        line-height: 1.8;
+    }
+    .static-notice-dismiss {
+        background: #007bff; /* 替换为实际的颜色值 */
+        border-radius: 8px;
+        padding: 5px 15px;
+        cursor: pointer;
+        user-select: none;
+        transition: transform .2s ease;
+        text-align: center;
+        color: #fcfcfc;
+    }
+    .static-notice-dismiss:hover {
+        transform: scale(1.05);
+    }
+    @media (max-width: 500px) {
+        .static-notice {
+            flex-direction: column;
+        }
+        .static-notice-line {
+            line-height: 1.6;
+        }
+        .static-notice-dismiss {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 0.5em;
+        }
+    }
+</style>
+<script>
+const staticNotice = `
+<div class="static-notice">
+<div class="static-notice-inner">
+    <div class="static-notice-line">
+        您正在访问静态化并归档的博客副本，为只读状态，且有部分按钮工作异常。
+    </div>
+    <div class="static-notice-line">
+        <a href="https://space520.eu.org/">时空之歌（https://space520.eu.org/）</a> 已经在24年三月末关闭了。
+    </div>
+    <div class="static-notice-line">
+        时空之歌 网站的部分静态化博客副本已上传到 <a href="https://github.com/God-2077/old-blog">GitHub Repositories</a>。
+    </div>
+</div>
+<div class="static-notice-dismiss">
+    <div class="static-notice-dismiss-line">
+        我知道了
+    </div>
+</div>
+</div>
+`;
+if (document.querySelector(".static-notice") == null && window.localStorage.getItem("static-notice-dismissed") != "true"){
+$("body").append(staticNotice);
+}
+$(document).on("click" , ".static-notice-dismiss" , function(){
+$(".static-notice").css("transform", "translateY(100%)");
+setTimeout(function(){
+    $(".static-notice").remove();
+}, 300);
+window.localStorage.setItem("static-notice-dismissed", "true");
+});
+</script>
 </html>

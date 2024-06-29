@@ -53,7 +53,7 @@ if(darkmodeAutoSwitch=='system'){var darkmodeMediaQuery=window.matchMedia("(pref
 if(darkmodeAutoSwitch=='time'){toggleDarkmodeByTime()}
 if(darkmodeAutoSwitch=='alwayson'){setDarkmode(!0)}
 function toggleAmoledDarkMode(){$("html").toggleClass("amoled-dark");if($("html").hasClass("amoled-dark")){localStorage.setItem("Argon_Enable_Amoled_Dark_Mode","true")}else{localStorage.setItem("Argon_Enable_Amoled_Dark_Mode","false")}}
-if(localStorage.getItem("Argon_Enable_Amoled_Dark_Mode")=="true"){$("html").addClass("amoled-dark")}else if(localStorage.getItem("Argon_Enable_Amoled_Dark_Mode")=="false"){$("html").removeClass("amoled-dark")}</script> <script type="litespeed/javascript">if(navigator.userAgent.indexOf("Safari")!==-1&&navigator.userAgent.indexOf("Chrome")===-1){$("html").addClass("using-safari")}</script> </head> <script type="litespeed/javascript" data-src="https://analytics.umami.is/script.js" data-website-id="dc594bab-87e2-4897-90b4-b12a8ed0da4b"></script> <body class="page-template page-template-timeline page-template-timeline-php page page-id-455">
+if(localStorage.getItem("Argon_Enable_Amoled_Dark_Mode")=="true"){$("html").addClass("amoled-dark")}else if(localStorage.getItem("Argon_Enable_Amoled_Dark_Mode")=="false"){$("html").removeClass("amoled-dark")}</script> <script type="litespeed/javascript">if(navigator.userAgent.indexOf("Safari")!==-1&&navigator.userAgent.indexOf("Chrome")===-1){$("html").addClass("using-safari")}</script> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></head> <script type="litespeed/javascript" data-src="https://analytics.umami.is/script.js" data-website-id="dc594bab-87e2-4897-90b4-b12a8ed0da4b"></script> <body class="page-template page-template-timeline page-template-timeline-php page page-id-455">
 <div id="toolbar"><header class="header-global"><nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-primary headroom--not-bottom headroom--not-top headroom--pinned"><div class="container">
 <button id="open_sidebar" class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle sidebar">
 <span class="navbar-toggler-icon"></span>
@@ -890,4 +890,82 @@ $(window.pjaxLoaded);$(document).on('pjax:end',window.pjaxLoaded)}</script>  <sc
 <!-- Page supported by LiteSpeed Cache 6.0.0.1 on 2024-01-20 15:09:37 -->
 <!-- Guest Mode -->
 <!-- QUIC.cloud UCSS loaded ✅ -->
+<style>
+    .static-notice {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #e8e8f7; /* 替换为实际的颜色值 */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 30px;
+        justify-content: space-between;
+        z-index: 2147483647;
+        transition: transform .3s ease;
+    }
+    .static-notice-line {
+        line-height: 1.8;
+    }
+    .static-notice-dismiss {
+        background: #007bff; /* 替换为实际的颜色值 */
+        border-radius: 8px;
+        padding: 5px 15px;
+        cursor: pointer;
+        user-select: none;
+        transition: transform .2s ease;
+        text-align: center;
+        color: #fcfcfc;
+    }
+    .static-notice-dismiss:hover {
+        transform: scale(1.05);
+    }
+    @media (max-width: 500px) {
+        .static-notice {
+            flex-direction: column;
+        }
+        .static-notice-line {
+            line-height: 1.6;
+        }
+        .static-notice-dismiss {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 0.5em;
+        }
+    }
+</style>
+<script>
+const staticNotice = `
+<div class="static-notice">
+<div class="static-notice-inner">
+    <div class="static-notice-line">
+        您正在访问静态化并归档的博客副本，为只读状态，且有部分按钮工作异常。
+    </div>
+    <div class="static-notice-line">
+        <a href="https://space520.eu.org/">时空之歌（https://space520.eu.org/）</a> 已经在24年三月末关闭了。
+    </div>
+    <div class="static-notice-line">
+        时空之歌 网站的部分静态化博客副本已上传到 <a href="https://github.com/God-2077/old-blog">GitHub Repositories</a>。
+    </div>
+</div>
+<div class="static-notice-dismiss">
+    <div class="static-notice-dismiss-line">
+        我知道了
+    </div>
+</div>
+</div>
+`;
+if (document.querySelector(".static-notice") == null && window.localStorage.getItem("static-notice-dismissed") != "true"){
+$("body").append(staticNotice);
+}
+$(document).on("click" , ".static-notice-dismiss" , function(){
+$(".static-notice").css("transform", "translateY(100%)");
+setTimeout(function(){
+    $(".static-notice").remove();
+}, 300);
+window.localStorage.setItem("static-notice-dismissed", "true");
+});
+</script>
 </html>
